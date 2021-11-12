@@ -1,0 +1,200 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+background: linear-gradient(to right, #3f5efb40, #fc466b40);
+font-family: sans-serif;
+padding: 0px;
+margin: 0;
+font-size: 16px;
+}
+
+.content {
+display:flex;
+flex-direction: column;
+width: 50%;
+margin: auto;
+}
+
+.header-nav {
+font-size: 20px;
+width: 100%;
+height: 50px;
+color: white;
+display: flex;
+z-index: 1;
+padding-top: 10px;
+margin-bottom: 35px;
+
+}
+
+.header-nav > * {
+padding: 10px;
+justify-content: center;
+text-align: center;
+flex: 1;
+
+}
+
+.header-nav > *:hover {
+color: black;
+cursor: pointer;
+
+}
+
+.header-highlight {
+font-weight: bold;
+}
+
+
+.slant-header {
+position: absolute;
+top: -5px;
+width: 100%;
+height: 250px;
+background: linear-gradient(to right, #3F5EFB, #FC466B);
+transform: skewY(-5deg);
+transform-origin: bottom left;
+outline: 1px solid transparent;
+z-index: -1;
+border-radius: 0% 0% 0% 75%;
+}
+
+.slant-header-mid {
+position: absolute;
+opacity: .5;
+top: -5px;
+width: 100%;
+height: 550px;
+background: linear-gradient(to right, #3F5EFB, #FC466B);
+transform: skewY(6deg);
+transform-origin: bottom right;
+outline: 1px solid transparent;
+z-index: -1;
+border-radius: 0% 0% 35% 25%;
+}
+
+.slant-header-end {
+position: absolute;
+opacity: .25;
+top: -5px;
+width: 100%;
+height: 800px;
+background: linear-gradient(to right, #3F5EFB, #FC466B);
+transform: skewY(5deg);
+transform-origin: bottom right;
+outline: 1px solid transparent;
+z-index: -1;
+}
+
+.card {
+box-shadow: 0 0px 0px rgba(0,0,0,0.16), 0 5px 10px rgba(0,0,0,0.23);
+font-family:monospace;
+background: black;
+color: white;
+width: 100%;
+height: 300px;
+border-radius: 10px;
+margin: auto;
+margin-bottom: 50px;
+padding: 20px;
+}
+
+.footer {
+
+    margin-top: 20px;
+
+    padding: 10px;
+    flex: 1;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container > * {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.blink {
+animation: blink-cursor 1.5s infinite;
+}
+
+@keyframes blink-cursor {
+0% {
+    color: #fff;
+}
+50%{    
+    color: #fff; 
+}
+
+60%{    
+    color: black; 
+}
+
+99%{    
+    color: black; 
+}
+
+100%{   
+    color: #fff;    
+}
+}
+
+.color-js {
+    color: #fcdc00;
+}
+
+.color-html {
+color: #e54c21;
+}
+
+.color-css {
+    color: #2465f1;
+}
+
+.color-php {
+    color: #787CB4;
+}
+
+.color-csharp {
+    color: #9366CB;
+}
+
+.color-java {
+    color: #E42D2F;
+}
+
+.color-spring {
+    color:#5EB241;
+}
+
+.color-node {
+    color: #3B7F3A;
+}
+
+.color-photoshop {
+    color: #3A9FF2;
+}
+
+.color-illustrator {
+    color: #F29202;
+}
+
+.color-typescript {
+    color: #2F72BC;
+}
+
+.color-reactjs {
+    color: #77D4F2;
+}
+
+.color-sql {
+    color: #F1AA00;
+}

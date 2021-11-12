@@ -1,0 +1,48 @@
+.slant-header::after {
+    border-radius: 100%;
+    position: absolute;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    content: '';
+    bottom: 0;
+  }
+  
+  .slant-header {
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    transform: skewY(-5deg);
+    transform-origin: bottom left;
+    outline: 1px solid transparent;
+    z-index: -1;
+  }
+  
+  .slant-header-mid {
+    position: absolute;
+    opacity: .5;
+    top: -5px;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    transform: skewY(5deg);
+    transform-origin: bottom right;
+    outline: 1px solid transparent;
+    z-index: -1;
+  }
+  
+  .slant-header-end {
+    position: absolute;
+    opacity: .25;
+    top: -5px;
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    transform: skewY(5deg);
+    transform-origin: bottom right;
+    outline: 1px solid transparent;
+    z-index: -1;
+  }
