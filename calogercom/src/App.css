@@ -1,3 +1,15 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  background: linear-gradient(to right, #3f5efb40, #fc466b40);
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.App {
+  width: 100%;
+}
