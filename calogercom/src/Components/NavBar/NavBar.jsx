@@ -1,12 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Bar = styled.nav`
-    display: flex;
-    background: white;
-    padding: 10px;
+const HeaderNav = styled.nav`
+    font-size: 20px;
+    width: 100%;
     height: 50px;
+    color: white;
+    display: flex;
+    z-index: 1;
+    padding-top: 10px;
+    margin-bottom: 35px;
+
+    & > * {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        flex: 1;
+    }
     
+    &>*:hover {
+        color: black;
+        cursor: pointer;
+    }
 `
 
 const NavItem = styled.li`
@@ -18,7 +33,7 @@ const NavItem = styled.li`
 
 export default function NavBar() {
     return (
-        <Bar>
+        <HeaderNav>
             <NavItem>
                 Matthew Caloger
             </NavItem>
@@ -28,6 +43,6 @@ export default function NavBar() {
             <NavItem>
                 Blog
             </NavItem>
-        </Bar>
+        </HeaderNav>
     )
 }
