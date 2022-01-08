@@ -1,7 +1,8 @@
 
 
-        import React from 'react'
-import styled from 'styled-components'
+    import React from 'react'
+    import styled from 'styled-components'
+    import {motion} from 'framer-motion'
         
         const TerminalCard = styled.div`
             box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
@@ -14,6 +15,7 @@ import styled from 'styled-components'
             margin: auto;
             margin-bottom: 50px;
             padding: 20px;
+            user-select: none;
         `
 
         const SkillContainer = styled.div`
@@ -85,25 +87,41 @@ import styled from 'styled-components'
             }
         `
 
+        const variants = {
+            hidden: { opacity: 0 },
+            show: { opacity: 1 },
+          }
+
+        const stagger = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                    delayChildren: 0.5,
+                    staggerChildren: .5
+                }
+            }
+        }
+
         export default function Terminal() {
             return (
                  
-                <TerminalCard>
+                <TerminalCard >
                     <p>$ list skills</p>
-                    <SkillContainer>
-                        <ColorJs>js</ColorJs> 
-                        <ColorHtml>html</ColorHtml>
-                        <ColorCss>css</ColorCss>  
-                        <ColorPhp>php</ColorPhp>
-                        <ColorReactJs>reactjs</ColorReactJs>
-                        <ColorNode>node</ColorNode>
-                        <ColorTypescript>typescript</ColorTypescript>
-                        <ColorCSharp>csharp</ColorCSharp>
-                        <ColorJava>java</ColorJava>
-                        <ColorSpring>spring</ColorSpring>
-                        <ColorSql>sql</ColorSql>
-                        <ColorPhotoshop>photoshop</ColorPhotoshop>
-                        <ColorIllustrator>illustrator</ColorIllustrator>
+                    <SkillContainer as={motion.div} variants={stagger} initial="hidden" animate="show">
+                        <ColorJs as={motion.span} variants={variants} initial="hidden" animate="show">js</ColorJs> 
+                        <ColorHtml as={motion.span} variants={variants} initial="hidden" animate="show">html</ColorHtml>
+                        <ColorCss as={motion.span} variants={variants} initial="hidden" animate="show">css</ColorCss>  
+                        <ColorPhp as={motion.span} variants={variants} initial="hidden" animate="show">php</ColorPhp>
+                        <ColorReactJs as={motion.span} variants={variants} initial="hidden" animate="show">reactjs</ColorReactJs>
+                        <ColorNode as={motion.span} variants={variants} initial="hidden" animate="show">node</ColorNode>
+                        <ColorTypescript as={motion.span} variants={variants} initial="hidden" animate="show">typescript</ColorTypescript>
+                        <ColorCSharp as={motion.span} variants={variants} initial="hidden" animate="show">csharp</ColorCSharp>
+                        <ColorJava as={motion.span} variants={variants} initial="hidden" animate="show">java</ColorJava>
+                        <ColorSpring as={motion.span} variants={variants} initial="hidden" animate="show">spring</ColorSpring>
+                        <ColorSql as={motion.span} variants={variants} initial="hidden" animate="show">sql</ColorSql>
+                        <ColorPhotoshop as={motion.span} variants={variants} initial="hidden" animate="show">photoshop</ColorPhotoshop>
+                        <ColorIllustrator as={motion.span} variants={variants} initial="hidden" animate="show">illustrator</ColorIllustrator>
                     </SkillContainer>
                     <p>$ show interests</p>
                     <p>programming system-design project-management graphic-design </p>
