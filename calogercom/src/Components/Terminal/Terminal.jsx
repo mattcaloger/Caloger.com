@@ -89,45 +89,53 @@
 
         const variants = {
             hidden: { opacity: 0 },
-            show: { opacity: 1 },
+            show: { opacity: 1},
           }
 
-        const stagger = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                    delayChildren: 0.5,
-                    staggerChildren: .5
+        const container = {
+            hidden: {opacity: 0},
+            show: {
+                opacity: 1,
+                transition: {
+                    delayChildren: 0.1,
+                        staggerChildren: 0.1
+                    }
                 }
-            }
         }
 
         export default function Terminal() {
             return (
                  
-                <TerminalCard >
-                    <p>$ list skills</p>
-                    <SkillContainer as={motion.div} variants={stagger} initial="hidden" animate="show">
-                        <ColorJs as={motion.span} variants={variants} initial="hidden" animate="show">js</ColorJs> 
-                        <ColorHtml as={motion.span} variants={variants} initial="hidden" animate="show">html</ColorHtml>
-                        <ColorCss as={motion.span} variants={variants} initial="hidden" animate="show">css</ColorCss>  
-                        <ColorPhp as={motion.span} variants={variants} initial="hidden" animate="show">php</ColorPhp>
-                        <ColorReactJs as={motion.span} variants={variants} initial="hidden" animate="show">reactjs</ColorReactJs>
-                        <ColorNode as={motion.span} variants={variants} initial="hidden" animate="show">node</ColorNode>
-                        <ColorTypescript as={motion.span} variants={variants} initial="hidden" animate="show">typescript</ColorTypescript>
-                        <ColorCSharp as={motion.span} variants={variants} initial="hidden" animate="show">csharp</ColorCSharp>
-                        <ColorJava as={motion.span} variants={variants} initial="hidden" animate="show">java</ColorJava>
-                        <ColorSpring as={motion.span} variants={variants} initial="hidden" animate="show">spring</ColorSpring>
-                        <ColorSql as={motion.span} variants={variants} initial="hidden" animate="show">sql</ColorSql>
-                        <ColorPhotoshop as={motion.span} variants={variants} initial="hidden" animate="show">photoshop</ColorPhotoshop>
-                        <ColorIllustrator as={motion.span} variants={variants} initial="hidden" animate="show">illustrator</ColorIllustrator>
+                <TerminalCard as={motion.div} variants={container} initial="hidden"
+                animate="show">
+                    <motion.p variants={variants}>$ list skills</motion.p>
+                    <SkillContainer as={motion.span} variants={variants}>
+                        <ColorJs>js</ColorJs> 
+                        <ColorHtml>html</ColorHtml>
+                        <ColorCss>css</ColorCss>  
+                        <ColorPhp>php</ColorPhp>
+                        <ColorReactJs>reactjs</ColorReactJs>
+                        <ColorNode>node</ColorNode>
+                        <ColorTypescript>typescript</ColorTypescript>
+                        <ColorCSharp>csharp</ColorCSharp>
+                        <ColorJava>java</ColorJava>
+                        <ColorSpring>spring</ColorSpring>
+                        <ColorSql>sql</ColorSql>
+                        <ColorPhotoshop>photoshop</ColorPhotoshop>
+                        <ColorIllustrator>illustrator</ColorIllustrator>
                     </SkillContainer>
-                    <p>$ show interests</p>
-                    <p>programming system-design project-management graphic-design </p>
-                    <p>$ display location</p>
-                    <p>Toronto</p>
-                    <p>$ <Blink>_</Blink></p>
+                    <motion.p variants={variants}>$ show interests</motion.p>
+                    <SkillContainer as={motion.span} variants={variants}>
+                        <span variants={variants}>programming</span>
+                        <span variants={variants}>system-design</span>
+                        <span variants={variants}>project-management</span>
+                        <span variants={variants}>graphic-design</span>
+                    </SkillContainer>
+
+                    <motion.p variants={variants}>$ display location</motion.p>
+                    <motion.p variants={variants}>Toronto</motion.p>
+                    <motion.p variants={variants}>$ <Blink>_</Blink></motion.p>
+
                 </TerminalCard>
             )
         }
