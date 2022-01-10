@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link, Router } from "react-router-dom";
 
 const HeaderNav = styled.nav`
     font-size: 20px;
@@ -34,15 +35,17 @@ const NavItem = styled.li`
 export default function NavBar() {
     return (
         <HeaderNav>
-            <NavItem>
-                Matthew Caloger
-            </NavItem>
-            <NavItem>
-                Projects
-            </NavItem>
-            <NavItem>
-                Blog
-            </NavItem>
+                <NavItem>
+                    <Link to="/">Matthew Caloger</Link>
+                    
+                </NavItem>
+                <NavItem>
+                    <Link to="/projects">Projects</Link>
+    
+                </NavItem>
+                <NavItem>
+                    Blog
+                </NavItem>
         </HeaderNav>
     )
 }

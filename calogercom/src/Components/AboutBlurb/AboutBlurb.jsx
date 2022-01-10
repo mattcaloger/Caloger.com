@@ -13,36 +13,31 @@ const AboutBlock = styled.div`
     }
 `
 
-const AboutImgContainer = styled.div`
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    background: white;
-    border-radius: 100%;
-    padding: 10px;
-`
 
-const AboutImg = styled.img`
+const BlurbCard = styled.div`
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
+    font-family: monospace;
+    background: rgba(256,256,256,.5);
+    backdrop-filter: blur(10px);
+    color: black;
     width: 100%;
-    height: auto;
-    border-radius: 100%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    user-select: none;
 `
-
 
 
 
 export default function AboutBlurb() {
     return (
         <AboutBlock>
-            <AboutImgContainer>
-                <AboutImg src="https://www.pngitem.com/pimgs/m/41-414389_account-avatar-face-head-person-profile-user-person.png"></AboutImg>
-            </AboutImgContainer>
             
-            <div>
+            
+            <BlurbCard>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam sed recusandae quo, quam impedit sapiente? Amet enim reprehenderit vitae eaque placeat repellat fugiat. Expedita numquam quis officia quos? Blanditiis.
-            </div>
+            </BlurbCard>
             
         </AboutBlock>
 
