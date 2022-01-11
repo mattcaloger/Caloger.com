@@ -4,23 +4,26 @@ import styled from 'styled-components'
 import ProjectCard from './ProjectCard'
 
 
-const variants = {
+const ProjectChild = {
     hidden: { opacity: 0 },
     show: { opacity: 1},
   }
 
-const container = {
+const ProjectContainer = {
     hidden: { opacity: 0 },
     show: {
         opacity: 1,
         transition: {
-                delayChildren: 3,
-                staggerChildren: 3
-            }
+            delayChildren: 1,
+            staggerChildren: .4
         }
+    }
 }
 
-const ProjectsContainer = styled.div`
+
+
+export default function ProjectsPage() {
+    const ProjectsContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
 
@@ -28,14 +31,12 @@ const ProjectsContainer = styled.div`
         margin-top: 10px;
         margin-bottom: 10px;
     }
-`
-
-export default function ProjectsPage() {
+`;
     return (
-        <ProjectsContainer as={motion.div} variants={container} initial="hidden" animate="show">
-            <ProjectCard as={motion.div} variants={variants} title="Project1" />
-            <ProjectCard as={motion.div} variants={variants} title="Project2" />
-            <ProjectCard as={motion.div} variants={variants} title="Project3" />
+        <ProjectsContainer variants={ProjectContainer} initial="hidden" animate="show"> 
+            <ProjectCard title="Project1" as={motion.div} variants={ProjectChild}/>
+            <ProjectCard title="Project2" as={motion.div} variants={ProjectChild}/>
+            <ProjectCard title="Project3" as={motion.div} variants={ProjectChild}/>
         </ProjectsContainer>
     )
 }
