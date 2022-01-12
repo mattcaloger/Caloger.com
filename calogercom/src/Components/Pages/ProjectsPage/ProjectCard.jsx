@@ -4,7 +4,9 @@ import { motion } from 'framer-motion'
 
 
 
-export default function ProjectCard() {
+export default function ProjectCard(props) {
+    
+
     const Card = styled.div`
 
     display: flex;
@@ -19,21 +21,30 @@ export default function ProjectCard() {
     width: 100%;
     border-radius: 10px;
     margin: auto;
-    margin-bottom: 50px;
+
     padding: 20px;
     user-select: none;
+    transition: all .2s;
+
+    &:hover {
+        background: rgba(256,256,256,1);
+        transform: scale(1.1);
+        transition: all .2s;
+    }
+    
+
 `
-
-
 
 const Title = styled.div`
     flex: 3;
 `
 
+
+
     return (
         <Card>
             <img src="" />
-            <Title>abc</Title>
+            <Title>{props.title}</Title>
             <span>GitHub</span>
         </Card>
     )

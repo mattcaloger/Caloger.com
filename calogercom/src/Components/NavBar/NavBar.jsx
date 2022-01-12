@@ -17,15 +17,19 @@ const HeaderNav = styled.nav`
         justify-content: center;
         text-align: center;
         flex: 1;
+        transition: all .2s;
     }
     
     &>*:hover {
         color: black;
         cursor: pointer;
+        transition: all .2s;
     }
 `
 
 const NavItem = styled.li`
+    color: white;
+    transition: all .2s;
     all: unset;
     flex: 1;
     align-self: center;

@@ -6,7 +6,7 @@ const SlantHeaderStart = styled.div`
     top: -5px;
     width: 100%;
 
-    height: 250px;
+    height: 200px;
     background: linear-gradient(to right, #3F5EFB, #FC466B);
     transform: skewY(-5deg);
     transform-origin: bottom left;
@@ -19,7 +19,7 @@ const SlantHeaderEnd = styled.div`
     opacity: .5;
     top: -5px;
     width: 100%;
-    height: 500px;
+    height: 200px;
     background: linear-gradient(to right, #3F5EFB, #FC466B);
     transform: skewY(5deg);
     transform-origin: bottom right;
