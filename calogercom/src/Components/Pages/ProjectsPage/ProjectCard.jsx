@@ -2,12 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-
-
-export default function ProjectCard(props) {
-    
-
-    const Card = styled.div`
+const Card = styled.div`
 
     display: flex;
     height: 100px;
@@ -39,8 +34,8 @@ const Title = styled.div`
     flex: 3;
 `
 
-
-
+export default function ProjectCard(props) {
+  
     return (
         <Card>
             <img src="" />

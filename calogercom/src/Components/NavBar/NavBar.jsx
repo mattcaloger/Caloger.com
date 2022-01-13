@@ -47,9 +47,7 @@ export default function NavBar() {
                     <Link to="/projects">Projects</Link>
     
                 </NavItem>
-                <NavItem>
-                    Blog
-                </NavItem>
+
         </HeaderNav>
     )
 }
