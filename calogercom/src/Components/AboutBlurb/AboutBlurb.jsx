@@ -16,7 +16,6 @@ const AboutBlock = styled.div`
 
 const BlurbCard = styled.div`
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
-    font-family: monospace;
     background: rgba(256,256,256,.5);
     backdrop-filter: blur(10px);
     color: black;
