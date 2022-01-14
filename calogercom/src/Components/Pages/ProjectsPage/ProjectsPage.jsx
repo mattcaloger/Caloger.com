@@ -9,7 +9,7 @@ import EscargoImage from '../../../img/escargo.jpg'
 import { ColorCSharp, ColorCss, ColorHtml, ColorJava, ColorJs, ColorPhp, ColorReactJs, ColorSpring } from '../../Terminal/Languages'
 import TerminalCard from '../../Terminal/TerminalCard'
 import SpanRow from '../../Terminal/SpanRow'
-
+import TerminalButton from '../../Terminal/TerminalButton'
 
 
 const ProjectChild = {
@@ -54,12 +54,14 @@ const Tag = styled.span`
     cursor: default;
 `
 
+
+
 export default function ProjectsPage() {
     
     return (
         <ProjectsContainer variants={ProjectContainer} initial="hidden" animate="show"> 
-            <Link to="Budgie">
-                <TerminalCard>
+            
+                <TerminalCard color="white">
                     <Title>Budgie</Title>
                     <p>
                         <Tag>full-stack</Tag> <Tag>data-viz</Tag>
@@ -71,23 +73,44 @@ export default function ProjectsPage() {
                     </SpanRow>
                     
                     <p>An expense tracker with data visualization and the ability to add/remove expenses and incomes while displaying graphs based on the ipput data.</p>
+
+                    <SpanRow>
+                        
+                            <TerminalButton>
+                                <Link to="Budgie">> details</Link>
+                            </TerminalButton>
+                        
+                        <TerminalButton>
+                            <a href="https://github.com/mattusoperandi/Budgie">> code</a>
+                        </TerminalButton>
+                    </SpanRow>
+                        
+                    
                 </TerminalCard>
-            </Link>
-            <Link to="Canyon">
+            
+
                 <TerminalCard>
-                    <Title>Canyon</Title>
+                    <Title>Buildsheet Editor</Title>
                     <p>
-                        <Tag>vanilla-js</Tag> <Tag>front-end</Tag> <Tag>framework</Tag>
+                        <Tag>desktop-app</Tag> <Tag>win-forms</Tag>
                     </p>
                     <SpanRow>
-                        <ColorJs>javascript</ColorJs>
+                        <ColorCSharp>c-sharp</ColorCSharp>
                     </SpanRow>
                     <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+                    <SpanRow>
+                        
+                        <TerminalButton>
+                            <Link to="buildsheet">> details</Link>
+                        </TerminalButton>
+                        
+                    </SpanRow>
                 </TerminalCard>
-            </Link>
-            <Link to="EmilySite">
+
+            
+
                 <TerminalCard>
-                    <Title>Emily's Portfolio</Title>
+                    <Title>Graphic Designer's Portfolio</Title>
                     <p>
                         <Tag>website</Tag>
                     </p>
@@ -98,9 +121,20 @@ export default function ProjectsPage() {
                     </SpanRow>
 
                     <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+
+                    <SpanRow>
+                        
+                            <TerminalButton>
+                                <Link to="emilysite">> details</Link>
+                            </TerminalButton>
+                        
+                        <TerminalButton>
+                            <a href="https://github.com/mattusoperandi/Budgie">> code</a>
+                        </TerminalButton>
+                    </SpanRow>
                 </TerminalCard>
-            </Link>
-            <Link to="Helpdesk">
+
+
                 <TerminalCard>
                     <Title>Helpdesk</Title>
                     <p>
@@ -113,9 +147,41 @@ export default function ProjectsPage() {
                     </SpanRow>
 
                     <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+
+                    <SpanRow>
+                        
+                            <TerminalButton>
+                                <Link to="helpdesk">> details</Link>
+                            </TerminalButton>
+                        
+                        <TerminalButton>
+                            <a href="https://github.com/mattusoperandi/Budgie">> code</a>
+                        </TerminalButton>
+                    </SpanRow>
                 </TerminalCard>
-            </Link>
-            <Link to="ShippingApp">
+
+                <TerminalCard>
+                    <Title>Canyon</Title>
+                    <p>
+                        <Tag>vanilla-js</Tag> <Tag>front-end</Tag> <Tag>framework</Tag>
+                    </p>
+                    <SpanRow>
+                        <ColorJs>javascript</ColorJs>
+                    </SpanRow>
+                    <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+
+                    <SpanRow>
+                        
+                            <TerminalButton>
+                                <Link to="canyon">> details</Link>
+                            </TerminalButton>
+                        
+                        <TerminalButton>
+                            <a href="https://github.com/mattusoperandi/Budgie">> code</a>
+                        </TerminalButton>
+                    </SpanRow>
+                </TerminalCard>
+ 
             <TerminalCard>
                     <Title>Escargo</Title>
                     <p>
@@ -127,8 +193,18 @@ export default function ProjectsPage() {
                         <ColorCss>css</ColorCss>
                     </SpanRow>
                     <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+
+                    <SpanRow>
+                        
+                            <TerminalButton>
+                                <Link to="escargo">> details</Link>
+                            </TerminalButton>
+                        
+                        <TerminalButton>
+                            <a href="https://github.com/mattusoperandi/Budgie">> code</a>
+                        </TerminalButton>
+                    </SpanRow>
                 </TerminalCard>
-            </Link>
             
         </ProjectsContainer>
     )

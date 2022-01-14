@@ -1,8 +1,10 @@
 
 import styled from 'styled-components'
 
-const SpanRow = styled.div`
+const SpanRow = styled.p`
             display: flex;
+            font-weight: bold;
+
             *:first-child {
                 margin-right: 5px;
             }

@@ -2,17 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 
 const AboutImgContainer = styled.div`
+    margin: auto;
     display:flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 150px;
-    background: white;
+
     border-radius: 100%;
     padding: 10px;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
-    font-family: monospace;
-    background: rgba(256,256,256,.75);
+
     backdrop-filter: blur(10px);
 `
 

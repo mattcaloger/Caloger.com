@@ -11,6 +11,7 @@ const HeaderNav = styled.nav`
     z-index: 1;
     padding-top: 10px;
     margin-bottom: 35px;
+    font-weight: bold;
 
     & > * {
         padding: 10px;

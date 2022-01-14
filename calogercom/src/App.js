@@ -7,6 +7,7 @@ import Content from './Components/Layout/Content';
 import AboutBlurb from './Components/AboutBlurb/AboutBlurb';
 import { motion } from 'framer-motion';
 import AppRouter from './Components/AppRouter/AppRouter';
+import Footer from './Components/Footer/Footer';
 
 const variants = {
   hidden: { opacity: 0 },
@@ -32,6 +33,8 @@ function App() {
     animate="show">
       
         <AppRouter />
+
+        <Footer />
           
       </Content>
       

@@ -6,9 +6,10 @@ import Terminal from '../../Terminal/Terminal'
 export default function HomePage() {
     return (
         <div>
-            <Terminal />
-            <ProfilePicture />
             <AboutBlurb />
+            <Terminal />
+            
+            
         </div>
     )
 }
