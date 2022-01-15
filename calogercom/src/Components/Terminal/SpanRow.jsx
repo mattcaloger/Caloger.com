@@ -17,6 +17,10 @@ const SpanRow = styled.p`
             *:last-child {
                 margin-left: 5px;
             }
+
+            *:only-child {
+                margin-left: 0;
+            }
         `
 
 export default SpanRow

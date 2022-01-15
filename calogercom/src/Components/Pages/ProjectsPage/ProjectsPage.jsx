@@ -76,9 +76,9 @@ export default function ProjectsPage() {
 
                     <SpanRow>
                         
-                            <TerminalButton>
-                                <Link to="Budgie">> details</Link>
-                            </TerminalButton>
+                        <TerminalButton>
+                            <Link to="Budgie">> details</Link>
+                        </TerminalButton>
                         
                         <TerminalButton>
                             <a href="https://github.com/mattusoperandi/Budgie">> code</a>
@@ -98,13 +98,16 @@ export default function ProjectsPage() {
                         <ColorCSharp>c-sharp</ColorCSharp>
                     </SpanRow>
                     <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+
+                        
                     <SpanRow>
                         
                         <TerminalButton>
-                            <Link to="buildsheet">> details</Link>
+                            <Link to="buildshet">> details</Link>
                         </TerminalButton>
-                        
                     </SpanRow>
+                        
+
                 </TerminalCard>
 
             

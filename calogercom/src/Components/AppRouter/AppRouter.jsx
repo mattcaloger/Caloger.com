@@ -15,6 +15,7 @@ import CanyonProject from '../Pages/ProjectsPage/Projects/CanyonProject';
 import EmilySiteProject from '../Pages/ProjectsPage/Projects/EmilySiteProject';
 import ReactChatProject from '../Pages/ProjectsPage/Projects/ReactChatProject';
 import ShippingAppProject from '../Pages/ProjectsPage/Projects/ShippingAppProject';
+import Contact from '../Pages/Contact/Contact';
 
 
 export default function AppRouter() {
@@ -34,6 +35,8 @@ export default function AppRouter() {
                 <Route path="projects/emilysite" element={<EmilySiteProject />} />
                 <Route path="projects/reactchat" element={<ReactChatProject />} />
                 <Route path="projects/shippingapp" element={<ShippingAppProject />} />
+
+                <Route path="contact" element={<Contact />} />
             </Routes>
         </BrowserRouter>
     )

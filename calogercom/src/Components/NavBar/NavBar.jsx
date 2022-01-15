@@ -10,7 +10,8 @@ const HeaderNav = styled.nav`
     display: flex;
     z-index: 1;
     padding-top: 10px;
-    margin-bottom: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
 
     & > * {
@@ -29,25 +30,40 @@ const HeaderNav = styled.nav`
 `
 
 const NavItem = styled.li`
+    display:flex;
     color: white;
     transition: all .2s;
     all: unset;
     flex: 1;
     align-self: center;
+    justify-content: center;
+    user-select: none;
     text-align: center;
 `
+const HighlightedLink = styled.div`
+    font-size: 30px;
+`
+
 
 export default function NavBar() {
     return (
         <HeaderNav>
-                <NavItem>
-                    <Link to="/">Matthew Caloger</Link>
-                    
-                </NavItem>
-                <NavItem>
+            
+            <NavItem>
                     <Link to="/projects">Projects</Link>
     
                 </NavItem>
+
+                <NavItem>
+                    <Link to="/"><HighlightedLink>Matthew Caloger</HighlightedLink></Link>
+                    
+                </NavItem>
+                
+                <NavItem>
+                    <Link to="/contact">Contact</Link>
+    
+                </NavItem>
+                
 
         </HeaderNav>
     )

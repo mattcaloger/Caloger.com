@@ -29,12 +29,10 @@ function App() {
   return (
     <div className="App"> 
       <StylizedSlant/>
-      <Content as={motion.div} variants={container} initial="hidden"
-    animate="show">
+      <Content as={motion.div} variants={container} initial="hidden" animate="show">
       
         <AppRouter />
 
-        <Footer />
           
       </Content>
       
