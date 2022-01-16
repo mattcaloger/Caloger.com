@@ -13,7 +13,6 @@ const HeaderNav = styled.nav`
     margin-top: 25px;
     margin-bottom: 25px;
     font-weight: bold;
-    transition: all .2s;
 
     & > * {
         padding: 10px;
@@ -49,15 +48,19 @@ const HighlightedLink = styled.div`
 export default function NavBar() {
     return (
         <HeaderNav>
-            <NavItem>
-                    <Link to="/">Matthew Caloger</Link>
-                    
-                </NavItem>
+            
             <NavItem>
                     <Link to="/projects">Projects</Link>
     
                 </NavItem>
-
+<NavItem>
+                    <Link to="/"><HighlightedLink>Matthew Caloger</HighlightedLink></Link>
+                    
+                </NavItem>
+                <NavItem>
+                    <Link to="/blog">Blog</Link>
+    
+                </NavItem>
                 
 
         </HeaderNav>

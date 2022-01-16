@@ -43,30 +43,58 @@ const CenteredTerminalCardComponent = styled.div`
 
         `
 
+const FooterComponent = styled.div`
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    display: flex;
+    z-index: 1;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+
+    & > * {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        flex: 1;
+
+    }
+    
+    &>*:hover {
+        color: rgba(0, 0, 0, .65);
+        cursor: pointer;
+
+    }
+`
+
+const FooterItem = styled.div`
+    display:flex;
+    color: white;
+
+    all: unset;
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+    user-select: none;
+    text-align: center;
+`
+
+
+        
 export default function Footer() {
     return (
-        <FooterContainer>
-            <ResponsiveRow>
-                <div>
-                    <CenteredTerminalCardComponent>email</CenteredTerminalCardComponent>
-                </div>
-                <div>
-                    
-                </div>
-                <div>
-                    <CenteredTerminalCardComponent>github</CenteredTerminalCardComponent>
-                </div>
-                <div>
+        <FooterComponent>
 
-                </div>
-                <div>
-                    <CenteredTerminalCardComponent>linkedin</CenteredTerminalCardComponent>
-                </div>
+
                 
-                
-                
-            </ResponsiveRow>
-        </FooterContainer>
+                <FooterItem>Email</FooterItem>
+                <FooterItem>GitHub</FooterItem>
+                <FooterItem>Linkedin</FooterItem>
+
+        </FooterComponent>
             
             
     )

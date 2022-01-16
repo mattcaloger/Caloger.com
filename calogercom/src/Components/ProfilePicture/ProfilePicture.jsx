@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ProfilePic from '../../img/photo.png'
 
 const AboutImgContainer = styled.div`
     margin: auto;
@@ -24,7 +25,7 @@ const AboutImg = styled.img`
 export default function ProfilePicture() {
     return (
         <AboutImgContainer>
-                <AboutImg src="https://www.pngitem.com/pimgs/m/41-414389_account-avatar-face-head-person-profile-user-person.png"></AboutImg>
+                <AboutImg src={ProfilePic}></AboutImg>
             </AboutImgContainer>
     )
 }

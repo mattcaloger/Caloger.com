@@ -44,7 +44,7 @@ export default function AboutBlurb() {
                 <ProfilePicture />
 
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam sed recusandae quo, quam impedit sapiente? Amet enim reprehenderit vitae eaque placeat repellat fugiat. Expedita numquam quis officia quos? Blanditiis.
+                    I am an IT Technician with over 5 years of experience in the field. My goal is to become a software engineer to apply my passion for programming and system design. I greatly enjoy problem-solving and engineering solutions that help others succeed.
                 </p>
                 
             </BlurbCard>
