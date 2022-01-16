@@ -57,7 +57,7 @@
                  
                 <TerminalCard as={motion.div} variants={container} initial="hidden"
                 animate="show">
-                    <motion.p variants={variants}>~ skills</motion.p>
+                    <motion.p variants={variants}>% Skills</motion.p>
                     <SpanRow as={motion.span} variants={variants}>
                         <ColorJs>javascript</ColorJs> 
                         <ColorHtml>html</ColorHtml>
@@ -73,17 +73,19 @@
                         <ColorPhotoshop>photoshop</ColorPhotoshop>
                         <ColorIllustrator>illustrator</ColorIllustrator>
                     </SpanRow>
-                    <motion.p variants={variants}>~ interests</motion.p>
+                    <motion.p variants={variants}>% Interests</motion.p>
                     <SpanRow as={motion.span} variants={variants}>
                         <span variants={variants}>programming</span>
                         <span variants={variants}>system-design</span>
                         <span variants={variants}>project-management</span>
+                        <span variants={variants}>ui-ux</span>
+
                         <span variants={variants}>graphic-design</span>
                     </SpanRow>
 
-                    <motion.p variants={variants}>~ location</motion.p>
+                    <motion.p variants={variants}>% Location</motion.p>
                     <motion.p variants={variants}>Toronto, Canada</motion.p>
-                    <motion.p variants={variants}>~ <Blink>_</Blink></motion.p>
+                    <motion.p variants={variants}>% <Blink>_</Blink></motion.p>
 
                 </TerminalCard>
             )

@@ -3,6 +3,7 @@ import AboutBlurb from '../../AboutBlurb/AboutBlurb'
 import ProfilePicture from '../../ProfilePicture/ProfilePicture'
 import Terminal from '../../Terminal/Terminal'
 import styled from 'styled-components'
+import PageTitle from '../../Layout/PageTitle'
 
 const HomePageContainer = styled.div`
     display: flex;
@@ -14,9 +15,12 @@ const HomePageContainer = styled.div`
     }
 `
 
+
+
 export default function HomePage() {
     return (
         <HomePageContainer>
+            <PageTitle>About Me</PageTitle>
             <AboutBlurb />
             <Terminal />
             

@@ -10,6 +10,7 @@ import { ColorCSharp, ColorCss, ColorHtml, ColorJava, ColorJs, ColorPhp, ColorRe
 import TerminalCard from '../../Terminal/TerminalCard'
 import SpanRow from '../../Terminal/SpanRow'
 import TerminalButton from '../../Terminal/TerminalButton'
+import PageTitle from '../../Layout/PageTitle'
 
 
 const ProjectChild = {
@@ -59,8 +60,9 @@ const Tag = styled.span`
 export default function ProjectsPage() {
     
     return (
+        
         <ProjectsContainer variants={ProjectContainer} initial="hidden" animate="show"> 
-            
+                <PageTitle>Projects</PageTitle>
                 <TerminalCard color="white">
                     <Title>01. Budgie</Title>
                     <p>

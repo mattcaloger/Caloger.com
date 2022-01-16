@@ -82,17 +82,25 @@ const FooterItem = styled.div`
     text-align: center;
 `
 
+const FooterItemSelectable = styled.div`
+    display:flex;
+    color: white;
+
+    all: unset;
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+
+    text-align: center;
+`
 
         
 export default function Footer() {
     return (
-        <FooterComponent>
-
-
-                
-                <FooterItem>Email</FooterItem>
-                <FooterItem>GitHub</FooterItem>
-                <FooterItem>Linkedin</FooterItem>
+        <FooterComponent>   
+                <FooterItem><a href="https://github.com/mattusoperandi">GitHub</a></FooterItem>
+                <FooterItemSelectable><a href="mailto:mattcaloger@gmail.com">mattcaloger@gmail.com</a></FooterItemSelectable>
+                <FooterItem><a href="https://www.linkedin.com/in/matthew-caloger/">Linkedin</a></FooterItem>
 
         </FooterComponent>
             
