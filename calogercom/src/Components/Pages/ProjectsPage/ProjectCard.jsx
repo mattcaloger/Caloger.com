@@ -62,6 +62,7 @@ export default function ProjectCard(props) {
     return (
         <TerminalCard>
             {props.title}
+            {props.languages}
         </TerminalCard>
     )
 }

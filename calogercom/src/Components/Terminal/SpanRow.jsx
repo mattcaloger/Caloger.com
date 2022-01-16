@@ -19,7 +19,7 @@ const SpanRow = styled.p`
             }
 
             *:only-child {
-                margin-left: 0;
+                margin-left: 0 ;
             }
         `
 
