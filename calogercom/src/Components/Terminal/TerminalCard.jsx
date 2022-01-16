@@ -13,6 +13,7 @@ const TerminalCardComponent = styled.div`
             margin-bottom: 50px;
             padding: 20px;
             user-select: none;
+            flex-wrap: wrap;
         `
 
 export default function TerminalCard(props) {

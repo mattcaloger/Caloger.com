@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to right, #3f5efb40, #fc466b40);
+  /* background: linear-gradient(to right, #43cea2, #185a9d); */
 
   padding: 0px;
 

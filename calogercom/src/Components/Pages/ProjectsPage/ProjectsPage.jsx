@@ -62,7 +62,7 @@ export default function ProjectsPage() {
         <ProjectsContainer variants={ProjectContainer} initial="hidden" animate="show"> 
             
                 <TerminalCard color="white">
-                    <Title>Budgie</Title>
+                    <Title>01. Budgie</Title>
                     <p>
                         <Tag>full-stack</Tag> <Tag>data-viz</Tag>
                     </p>
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
             
 
                 <TerminalCard>
-                    <Title>Buildsheet Editor</Title>
+                    <Title>02. Buildsheet Editor</Title>
                     <p>
                         <Tag>desktop-app</Tag> <Tag>win-forms</Tag>
                     </p>
@@ -113,7 +113,7 @@ export default function ProjectsPage() {
             
 
                 <TerminalCard>
-                    <Title>Graphic Designer's Portfolio</Title>
+                    <Title>03. Graphic Designer's Portfolio</Title>
                     <p>
                         <Tag>website</Tag>
                     </p>
@@ -139,7 +139,7 @@ export default function ProjectsPage() {
 
 
                 <TerminalCard>
-                    <Title>Helpdesk</Title>
+                    <Title>04. Helpdesk</Title>
                     <p>
                         <Tag>full-stack</Tag> <Tag>authentication</Tag> <Tag>authorization</Tag>
                     </p>
@@ -164,7 +164,7 @@ export default function ProjectsPage() {
                 </TerminalCard>
 
                 <TerminalCard>
-                    <Title>Canyon</Title>
+                    <Title>05. Canyon</Title>
                     <p>
                         <Tag>vanilla-js</Tag> <Tag>front-end</Tag> <Tag>framework</Tag>
                     </p>
@@ -186,7 +186,7 @@ export default function ProjectsPage() {
                 </TerminalCard>
  
             <TerminalCard>
-                    <Title>Escargo</Title>
+                    <Title>06. Escargo</Title>
                     <p>
                         <Tag>full-stack</Tag> <Tag>authentication</Tag> <Tag>authorization</Tag>
                     </p>

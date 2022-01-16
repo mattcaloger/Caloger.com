@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const SpanRow = styled.p`
             display: flex;
             font-weight: bold;
+            flex-wrap: wrap;
 
             *:first-child {
                 margin-right: 5px;

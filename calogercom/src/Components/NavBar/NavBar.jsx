@@ -6,33 +6,34 @@ const HeaderNav = styled.nav`
     font-size: 20px;
     width: 100%;
     height: 50px;
-    color: white;
+    color: black;
     display: flex;
     z-index: 1;
     padding-top: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+    transition: all .2s;
 
     & > * {
         padding: 10px;
         justify-content: center;
         text-align: center;
         flex: 1;
-        transition: all .2s;
+
     }
     
     &>*:hover {
-        color: black;
+        color: rgba(0, 0, 0, .65);
         cursor: pointer;
-        transition: all .2s;
+
     }
 `
 
 const NavItem = styled.li`
     display:flex;
     color: white;
-    transition: all .2s;
+
     all: unset;
     flex: 1;
     align-self: center;
