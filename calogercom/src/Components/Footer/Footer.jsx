@@ -17,25 +17,57 @@ const ResponsiveRow = styled.div`
 
 `
 
+const FooterContainer = styled.div`
+    margin-top: 25px;
+`
+
+const CenteredTerminalCardComponent = styled.div`
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
+            font-family: monospace;
+            background: black;
+            backdrop-filter: blur(10px);
+            color: white;
+            width: 100%;
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: 50px;
+            padding: 20px;
+            user-select: none;
+            justify-content: center;
+            align-content: center;
+
+            &:hover {
+                color:black;
+                background: white;
+            }
+
+        `
+
 export default function Footer() {
     return (
-        <TerminalCard>
+        <FooterContainer>
             <ResponsiveRow>
                 <div>
-                    <TerminalButton>> email</TerminalButton>
+                    <CenteredTerminalCardComponent>email</CenteredTerminalCardComponent>
                 </div>
                 <div>
-                    <TerminalButton>> github</TerminalButton>
+                    
                 </div>
+                <div>
+                    <CenteredTerminalCardComponent>github</CenteredTerminalCardComponent>
+                </div>
+                <div>
 
+                </div>
                 <div>
-                    <TerminalButton>> linkedin</TerminalButton>
+                    <CenteredTerminalCardComponent>linkedin</CenteredTerminalCardComponent>
                 </div>
                 
                 
                 
             </ResponsiveRow>
+        </FooterContainer>
             
-        </TerminalCard>
+            
     )
 }

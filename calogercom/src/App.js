@@ -33,8 +33,10 @@ function App() {
       
         <AppRouter />
 
-          
+          <Footer />
       </Content>
+
+      
       
     </div>
   );

@@ -5,7 +5,6 @@ import ProfilePicture from '../ProfilePicture/ProfilePicture'
 const AboutBlock = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
     justify-content: center;
     align-items: center;
 
@@ -27,7 +26,6 @@ const BlurbCard = styled.div`
     width: 100%;
     border-radius: 10px;
     margin: auto;
-    margin-bottom: 50px;
     padding: 20px;
     user-select: none;
 

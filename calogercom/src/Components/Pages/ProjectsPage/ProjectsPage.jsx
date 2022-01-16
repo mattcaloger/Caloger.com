@@ -38,8 +38,8 @@ const ProjectsContainer = styled(motion.div)`
     
 
     &>* {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
 
     }
 

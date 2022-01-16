@@ -9,9 +9,9 @@ const HeaderNav = styled.nav`
     color: black;
     display: flex;
     z-index: 1;
-    padding-top: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-weight: bold;
     transition: all .2s;
 
@@ -49,21 +49,15 @@ const HighlightedLink = styled.div`
 export default function NavBar() {
     return (
         <HeaderNav>
-            
+            <NavItem>
+                    <Link to="/">Matthew Caloger</Link>
+                    
+                </NavItem>
             <NavItem>
                     <Link to="/projects">Projects</Link>
     
                 </NavItem>
 
-                <NavItem>
-                    <Link to="/"><HighlightedLink>Matthew Caloger</HighlightedLink></Link>
-                    
-                </NavItem>
-                
-                <NavItem>
-                    <Link to="/contact">Contact</Link>
-    
-                </NavItem>
                 
 
         </HeaderNav>

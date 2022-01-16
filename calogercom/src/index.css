@@ -4,11 +4,14 @@
 
 body {
   margin: 0;
+  width: 100vw;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to right, #3f5efb40, #fc466b40);
   /* background: linear-gradient(to right, #43cea2, #185a9d); */
+
+  overflow-x: hidden;
 
   padding: 0px;
 
