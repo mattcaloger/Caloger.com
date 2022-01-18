@@ -24,10 +24,6 @@ export default function BudgieProject() {
 
                         <p>I originally used the ReChart library for the data visualizations but found it wasn't as flexible as I'd like it to be, so I changed over to Chart.js and the accompanying React library for it.</p>
                     </ProjectDetails>
-                        
-                        
-
-                    
                 </SplitContainerPanel>
             </SplitContainer>
         </div>

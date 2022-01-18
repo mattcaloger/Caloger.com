@@ -7,6 +7,7 @@ import {
 
 import HomePage from '../Pages/HomePage/HomePage'
 import ProjectsPage from '../Pages/ProjectsPage/ProjectsPage';
+import Blog from '../Blog/Blog';
 import NavBar from '../NavBar/NavBar';
 import StylizedSlant from '../StylizedSlant/StylizedSlant';
 import BudgieProject from '../Pages/ProjectsPage/Projects/BudgieProject';
@@ -16,6 +17,7 @@ import EmilySiteProject from '../Pages/ProjectsPage/Projects/EmilySiteProject';
 import ReactChatProject from '../Pages/ProjectsPage/Projects/ReactChatProject';
 import ShippingAppProject from '../Pages/ProjectsPage/Projects/ShippingAppProject';
 import Contact from '../Pages/Contact/Contact';
+import BuildsheetEditorBlog from '../Blog/BlogPages/BuildsheetEditorBlog';
 
 
 export default function AppRouter() {
@@ -36,7 +38,8 @@ export default function AppRouter() {
                 <Route path="projects/reactchat" element={<ReactChatProject />} />
                 <Route path="projects/shippingapp" element={<ShippingAppProject />} />
 
-                <Route path="contact" element={<Contact />} />
+                <Route path="blog" element={<Blog />} />
+                <Route path="blog/buildsheet-editor" element={<BuildsheetEditorBlog />} />
             </Routes>
         </BrowserRouter>
     )
