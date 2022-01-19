@@ -11,7 +11,9 @@ import TerminalCard from '../../Terminal/TerminalCard'
 import SpanRow from '../../Terminal/SpanRow'
 import TerminalButton from '../../Terminal/TerminalButton'
 import PageTitle from '../../Layout/PageTitle'
-
+import Title from './Projects/Layout/Title'
+import Tag from './Projects/Layout/Tag'
+import PageContainer from './Projects/Layout/PageContainer'
 
 const ProjectChild = {
     hidden: { opacity: 0 },
@@ -29,45 +31,20 @@ const ProjectContainer = {
     }
 }
 
-const Title = styled.p`
-    font-size: 24px;
-`
-
-const ProjectsContainer = styled(motion.div)`
-    display: flex;
-    flex-direction: column;
-    
-
-    &>* {
-        margin-top: 25px;
-        margin-bottom: 25px;
-
-    }
-
-`;
-
-const Tag = styled.span`
-    background: white;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    user-select: none;
-    cursor: default;
-`
-
-
 
 export default function ProjectsPage() {
     
     return (
         
-        <ProjectsContainer variants={ProjectContainer} initial="hidden" animate="show"> 
+        <PageContainer variants={ProjectContainer} initial="hidden" animate="show"> 
                 <PageTitle>Projects</PageTitle>
-                <TerminalCard color="white">
+                <TerminalCard>
                     <Title>01. Budgie</Title>
-                    <p>
-                        <Tag>full-stack</Tag> <Tag>data-viz</Tag>
-                    </p>
+                    <SpanRow>
+                        <Tag>full-stack</Tag> 
+                        <Tag>data-viz</Tag>
+                    </SpanRow>
+
                     <SpanRow>
                         <ColorReactJs>react-js</ColorReactJs>
                         <ColorJava>java</ColorJava>
@@ -93,9 +70,9 @@ export default function ProjectsPage() {
 
                 <TerminalCard>
                     <Title>02. Buildsheet Editor</Title>
-                    <p>
+                    <SpanRow>
                         <Tag>desktop-app</Tag> <Tag>win-forms</Tag>
-                    </p>
+                    </SpanRow>
                     <SpanRow>
                         <ColorCSharp>c-sharp</ColorCSharp>
                     </SpanRow>
@@ -116,9 +93,9 @@ export default function ProjectsPage() {
 
                 <TerminalCard>
                     <Title>03. Graphic Designer's Portfolio</Title>
-                    <p>
+                    <SpanRow>
                         <Tag>website</Tag>
-                    </p>
+                    </SpanRow>
                     <SpanRow>
                         <ColorPhp>php</ColorPhp>
                         <ColorHtml>html</ColorHtml>
@@ -142,9 +119,9 @@ export default function ProjectsPage() {
 
                 <TerminalCard>
                     <Title>04. Helpdesk</Title>
-                    <p>
+                    <SpanRow>
                         <Tag>full-stack</Tag> <Tag>authentication</Tag> <Tag>authorization</Tag>
-                    </p>
+                    </SpanRow>
                     <SpanRow>
                         <ColorPhp>php</ColorPhp>
                         <ColorHtml>html</ColorHtml>
@@ -167,9 +144,9 @@ export default function ProjectsPage() {
 
                 <TerminalCard>
                     <Title>05. Canyon</Title>
-                    <p>
+                    <SpanRow>
                         <Tag>vanilla-js</Tag> <Tag>front-end</Tag> <Tag>framework</Tag>
-                    </p>
+                    </SpanRow>
                     <SpanRow>
                         <ColorJs>javascript</ColorJs>
                     </SpanRow>
@@ -188,29 +165,29 @@ export default function ProjectsPage() {
                 </TerminalCard>
  
             <TerminalCard>
-                    <Title>06. Escargo</Title>
-                    <p>
-                        <Tag>full-stack</Tag> <Tag>authentication</Tag> <Tag>authorization</Tag>
-                    </p>
-                    <SpanRow>
-                        <ColorCSharp>c-sharp</ColorCSharp>
-                        <ColorHtml>html</ColorHtml>
-                        <ColorCss>css</ColorCss>
-                    </SpanRow>
-                    <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+                <Title>06. Escargo</Title>
+                <SpanRow>
+                    <Tag>full-stack</Tag> <Tag>authentication</Tag> <Tag>authorization</Tag>
+                </SpanRow>
+                <SpanRow>
+                    <ColorCSharp>c-sharp</ColorCSharp>
+                    <ColorHtml>html</ColorHtml>
+                    <ColorCss>css</ColorCss>
+                </SpanRow>
+                <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
 
-                    <SpanRow>
-                        
-                            <TerminalButton>
-                                <Link to="escargo">> details</Link>
-                            </TerminalButton>
-                        
+                <SpanRow>
+                    
                         <TerminalButton>
-                            <a href="https://github.com/mattusoperandi/Budgie">> code</a>
+                            <Link to="escargo">> details</Link>
                         </TerminalButton>
-                    </SpanRow>
-                </TerminalCard>
+                    
+                    <TerminalButton>
+                        <a href="https://github.com/mattusoperandi/Budgie">> code</a>
+                    </TerminalButton>
+                </SpanRow>
+            </TerminalCard>
             
-        </ProjectsContainer>
+        </PageContainer>
     )
 }
