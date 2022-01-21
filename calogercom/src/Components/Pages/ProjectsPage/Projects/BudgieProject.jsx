@@ -12,10 +12,7 @@ export default function BudgieProject() {
         <div>
             <h1>Budgie</h1>
             <SplitContainer>
-                
-                <SplitContainerPanel>
-                    <img width="100" height="100" src="https://previews.123rf.com/images/lkeskinen/lkeskinen1802/lkeskinen180208322/95731150-example-stamp-typographic-label-stamp-or-icon.jpg"/>
-                </SplitContainerPanel>
+
                 <SplitContainerPanel>
                     <ProjectDetails>
                         <p>I created Budgie to gain some experience with data visualization and play around with a gradient-heavy visual style. The front-end is a React app that uses React Router for navigation.</p>

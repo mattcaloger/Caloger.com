@@ -11,7 +11,7 @@ const AboutImgContainer = styled.div`
     height: 150px;
 
     border-radius: 100%;
-    padding: 10px;
+
 
     backdrop-filter: blur(10px);
 `

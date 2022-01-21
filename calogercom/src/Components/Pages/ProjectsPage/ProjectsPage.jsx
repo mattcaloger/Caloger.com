@@ -76,7 +76,7 @@ export default function ProjectsPage() {
                     <SpanRow>
                         <ColorCSharp>c-sharp</ColorCSharp>
                     </SpanRow>
-                    <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+                    <p>A desktop application used to define the deployment of hardware and software in a medical IT environment.</p>
 
                         
                     <SpanRow>
@@ -102,7 +102,7 @@ export default function ProjectsPage() {
                         <ColorCss>css</ColorCss>
                     </SpanRow>
 
-                    <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+                    <p>A completed website to show a Graphic Designer's portfolio.</p>
 
                     <SpanRow>
                         
@@ -128,7 +128,7 @@ export default function ProjectsPage() {
                         <ColorCss>css</ColorCss>
                     </SpanRow>
 
-                    <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+                    <p>A PHP-based helpdesk.</p>
 
                     <SpanRow>
                         
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
                     <ColorHtml>html</ColorHtml>
                     <ColorCss>css</ColorCss>
                 </SpanRow>
-                <p>A vanilla-js front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+                <p>Escargo is a for-fun project to learn ASP.Net, the Entity framework, and LINQ.</p>
 
                 <SpanRow>
                     

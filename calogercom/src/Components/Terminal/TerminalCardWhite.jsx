@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const TerminalCardComponent = styled.div`
             box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
             font-family: monospace;
-            background: white;
+            background: rgba(255, 255, 255, .85);
             backdrop-filter: blur(10px);
             color: black;
             width: 100%;
