@@ -11,7 +11,7 @@ export default function ReactChatProject() {
 
                 <SplitContainerPanel>
                     <ProjectDetails>
-                        <p>This project was created to gain an understandign of Websockets and real-time communication.</p>
+                        <p>This project was created to gain an understanding of websockets and real-time communication.</p>
                     </ProjectDetails>
                 </SplitContainerPanel>
             </SplitContainer>
