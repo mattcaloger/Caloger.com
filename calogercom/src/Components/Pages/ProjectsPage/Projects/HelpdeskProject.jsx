@@ -6,7 +6,7 @@ import ProjectDetails from './Layout/ProjectDetails'
 export default function HelpdeskProject() {
     return (
         <div>
-            <h1>Helpdesk</h1>
+            <h1>University Helpdesk</h1>
             <SplitContainer>
 
                 <SplitContainerPanel>

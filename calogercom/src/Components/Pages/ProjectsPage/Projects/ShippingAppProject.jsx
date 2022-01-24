@@ -11,7 +11,7 @@ export default function ShippingAppProject() {
 
                 <SplitContainerPanel>
                     <ProjectDetails>
-                        <p>Escargo is a for-fun project to learn ASP.Net, the Entity framework, and LINQ.</p>
+                        <p>Escargo is a for-fun C# project to learn ASP.Net, the Entity framework, and LINQ.</p>
                     </ProjectDetails>
                 </SplitContainerPanel>
             </SplitContainer>
