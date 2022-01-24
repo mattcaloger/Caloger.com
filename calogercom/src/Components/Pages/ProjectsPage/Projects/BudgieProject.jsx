@@ -20,6 +20,10 @@ export default function BudgieProject() {
                         <p>The server portion was written in Java with the Spring Framework as the web layer. It uses JPA with an in-memory h2 database for storage.</p>
 
                         <p>I originally used the ReChart library for the data visualizations but found it wasn't as flexible as I'd like it to be, so I changed over to Chart.js and the accompanying React library for it.</p>
+
+                        <p>
+                            Some interesting features that are used include ascending/descending sorting, instant visual updating, and gradient charts.
+                        </p>
                     </ProjectDetails>
                 </SplitContainerPanel>
             </SplitContainer>
