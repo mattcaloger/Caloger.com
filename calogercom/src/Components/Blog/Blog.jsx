@@ -18,7 +18,7 @@ export default function Blog() {
 
                 <Title>Buildsheet Editor</Title>
                 <SpanRow>
-                    <Tag>desktop-app</Tag>
+                    <Tag>Desktop Application</Tag>
                 </SpanRow>
 
                 <p>A deep-dive into designing the Buildsheet Editor</p>
@@ -26,7 +26,7 @@ export default function Blog() {
                 <SpanRow>
                     
                         <TerminalButton>
-                            <Link to="buildsheet-editor">> details</Link>
+                            <Link to="buildsheet-editor">Details</Link>
                         </TerminalButton>
                 </SpanRow>
             </TerminalCard>

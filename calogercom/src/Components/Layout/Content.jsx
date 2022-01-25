@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ContentBox = styled.div`
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin: auto;
 
     @media only screen and (min-width: 992px) {

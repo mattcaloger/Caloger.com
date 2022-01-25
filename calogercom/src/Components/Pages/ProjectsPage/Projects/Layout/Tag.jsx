@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 const Tag = styled.span`
-    background: white;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+
+    padding: 10px;
+    border-radius: 10px;
     user-select: none;
     cursor: default;
 `

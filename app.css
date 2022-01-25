@@ -3,7 +3,8 @@
 }
 
 body {
-    background: linear-gradient(to right, #3f5efb40, #fc466b40);
+    /* background: linear-gradient(to right, #3f5efb40, #fc466b40); */
+    background: #81D4FA;
     font-family: sans-serif;
     padding: 0px;
     margin: 0;

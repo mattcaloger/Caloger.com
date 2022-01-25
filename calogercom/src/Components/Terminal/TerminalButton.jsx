@@ -1,14 +1,15 @@
 import styled from "styled-components"
 
 const TerminalButton = styled.span`
-    border: 1px solid white;
-    padding: 5px;
+    padding: 10px;
     cursor: default;
+    border: 2px solid white;
+    border-radius: 5px;
 
     &:hover {
         background: white;
         color: black;
-        
+
     }
 `
 

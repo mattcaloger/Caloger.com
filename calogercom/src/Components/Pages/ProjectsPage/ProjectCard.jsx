@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-import JavaIcon from '../../../img/lang-icons/Java_programming_language_logo.svg.png'
 import TerminalCard from '../../Terminal/TerminalCard'
 
 const Card = styled.div`

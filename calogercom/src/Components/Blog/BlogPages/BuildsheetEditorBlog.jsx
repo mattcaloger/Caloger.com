@@ -3,11 +3,15 @@ import PageTitle from '../../Layout/PageTitle'
 import PageContainer from '../../Pages/ProjectsPage/Projects/Layout/PageContainer'
 import TerminalCardWhite from '../../Terminal/TerminalCardWhite'
 
+import BlogImg from '../../../img/blog-img/BSEScreenshot.png'
+
+import BlogImage from '../../Pages/ProjectsPage/Projects/Layout/BlogImage'
 export default function BuildsheetEditorBlog() {
     return (
         <PageContainer>
             <PageTitle>Buildsheet Editor</PageTitle>
-            <TerminalCardWhite>
+            <div>
+                <BlogImage src={BlogImg} />
                 <h3>The Problem</h3>
 
                 <p>During my time at Atlantic Health Systems, I developed an application known as the “Buildsheet Editor” to drastically improve an important yet straining process. Every hospital in the system was performing a wide-scale workstation hardware upgrade to meet a standard to best support the implementation of a new core application that would be rolling out. The rollout would be performed through the following process for each workstation:</p>
@@ -36,7 +40,7 @@ export default function BuildsheetEditorBlog() {
 
                 <p>As the only one on the team that had programming experience, I was the sole developer and maintainer of the application, managing both the application-to-package database and source code, integrating technician suggestions and feedback into the application.
                 </p>
-            </TerminalCardWhite>
+            </div>
         </PageContainer>
     )
 }

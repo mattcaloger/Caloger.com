@@ -14,6 +14,10 @@ const HeaderNav = styled.nav`
     margin-bottom: 25px;
     font-weight: bold;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
     & > * {
         padding: 10px;
         justify-content: center;
@@ -39,21 +43,41 @@ const NavItem = styled.li`
     justify-content: center;
     user-select: none;
     text-align: center;
+
+    
 `
 const HighlightedLink = styled.div`
     font-size: 30px;
 `
+
+const ProjectLink = styled(NavItem)`
+  @media (max-width: 768px) {
+    order: 2
+  }
+`
+
+const NameLink = styled(NavItem)`
+@media (max-width: 768px) {
+    order: 1
+  }
+`
+const BlogLink = styled(NavItem)`
+@media (max-width: 768px) {
+    order: 3
+  }
+`
+
 
 
 export default function NavBar() {
     return (
         <HeaderNav>
             
-            <NavItem>
+            <ProjectLink className="projects">
                     <Link to="/projects">Projects</Link>
     
-                </NavItem>
-<NavItem>
+                </ProjectLink>
+                <NavItem>
                     <Link to="/"><HighlightedLink>Matthew Caloger</HighlightedLink></Link>
                     
                 </NavItem>

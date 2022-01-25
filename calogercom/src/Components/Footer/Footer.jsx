@@ -15,10 +15,13 @@ const ResponsiveRow = styled.div`
 
     }
 
+
 `
 
 const FooterContainer = styled.div`
     margin-top: 25px;
+
+    
 `
 
 const CenteredTerminalCardComponent = styled.div`
@@ -68,6 +71,15 @@ const FooterComponent = styled.div`
         cursor: pointer;
 
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        & > * {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+      }
 `
 
 const FooterItem = styled.div`

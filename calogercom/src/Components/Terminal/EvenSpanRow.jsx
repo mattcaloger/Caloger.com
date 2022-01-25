@@ -5,6 +5,7 @@ const SpanRow = styled.p`
             display: flex;
             font-weight: bold;
             flex-wrap: wrap;
+            justify-content: space-evenly;
 
             &>:first-child {
                 margin-right: 5px;

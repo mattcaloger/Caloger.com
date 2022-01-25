@@ -5,6 +5,10 @@ import Terminal from '../../Terminal/Terminal'
 import styled from 'styled-components'
 import PageTitle from '../../Layout/PageTitle'
 
+import { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock } from '../../Terminal/LanguageIcons'
+import IconImage from '../../Layout/IconImage'
+import SpanRow from '../../Terminal/SpanRow'
+
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,8 +25,10 @@ export default function HomePage() {
     return (
         <HomePageContainer>
             <PageTitle>About Me</PageTitle>
-            <AboutBlurb />
-            <Terminal />
+            <AboutBlurb>
+            </AboutBlurb>
+            
+            
             
             
         </HomePageContainer>

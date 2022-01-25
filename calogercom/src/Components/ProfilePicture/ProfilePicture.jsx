@@ -9,11 +9,8 @@ const AboutImgContainer = styled.div`
     align-items: center;
     width: 150px;
     height: 150px;
-
+    background: transparent;
     border-radius: 100%;
-
-
-    backdrop-filter: blur(10px);
 `
 
 const AboutImg = styled.img`

@@ -1,29 +1,53 @@
 import styled from "styled-components"
 
-const ColorJs = styled.span`color: #fcdc00;`
+const LangSpan = styled.span`color: black; font-size: 18px;`
 
-const ColorHtml = styled.span`color: #e54c21;`
+const LangTag = styled(LangSpan)`padding: 5px; border-radius: 5px;`
 
-const ColorCss = styled.span`color: #2465f1;`
+const ColorJs = styled(LangSpan)`color: #fcdc00;`
 
-const ColorPhp = styled.span`color: #787CB4;`
+const ColorJsTag = styled(LangTag)`background: #fcdc00; color: black; `
 
-const ColorCSharp = styled.span`color: #9366CB;`
+const ColorHtml = styled(LangSpan)`color: #e54c21;`
 
-const ColorJava = styled.span`color: #E42D2F;`
+const ColorHtmlTag = styled(LangTag)`background: #e54c21; color: white;`
 
-const ColorSpring = styled.span`color: #5EB241;`
+const ColorCss = styled(LangSpan)`color: #2465f1;`
 
-const ColorNode = styled.span`color: #3B7F3A;`
+const ColorCssTag = styled(LangTag)`background: #2465f1; color: White;`
 
-const ColorPhotoshop = styled.span`color: #3A9FF2;`
+const ColorPhp = styled(LangSpan)`color: #787CB4;`
 
-const ColorIllustrator = styled.span`color: #F29202;`
+const ColorPhpTag = styled(LangTag)`background: #787CB4; color: White;`
 
-const ColorTypescript = styled.span`color: #2F72BC;`
+const ColorCSharp = styled(LangSpan)`color: #9366CB;`
 
-const ColorReactJs = styled.span`color: #77D4F2;`
+const ColorJava = styled(LangSpan)`color: #E42D2F;`
 
-const ColorSql = styled.span`color: #F1AA00;`
+const ColorSpring = styled(LangSpan)`color: #5EB241;`
 
-export { ColorJs, ColorHtml, ColorCss, ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql }
+const ColorNode = styled(LangSpan)`color: #3B7F3A;`
+
+const ColorPhotoshop = styled(LangSpan)`color: #3A9FF2;`
+
+const ColorIllustrator = styled(LangSpan)`color: #F29202;`
+
+const ColorTypescript = styled(LangSpan)`color: #2F72BC;`
+
+const ColorReactJs = styled(LangSpan)`color: #77D4F2;`
+
+const ColorSql = styled(LangSpan)`color: #F1AA00;`
+
+const ColorCSharpTag = styled(LangTag)`background: #9366CB; color: White;`;
+const ColorJavaTag = styled(LangTag)`background: #E42D2F; color: White;`;
+const ColorSpringTag = styled(LangTag)`background: #5EB241; color: White;`;
+const ColorNodeTag = styled(LangTag)`background: #3B7F3A; color: White;`;
+const ColorPhotoshopTag = styled(LangTag)`background: #3A9FF2; color: White;`;
+const ColorIllustratorTag = styled(LangTag)`background: #F29202; color: black;`;
+const ColorTypescriptTag = styled(LangTag)`background: #2F72BC; color: White;`;
+const ColorReactJsTag = styled(LangTag)`background: #77D4F2; color: black;`;
+const ColorSqlTag = styled(LangTag)`background: #F1AA00; color: black;`;
+
+
+
+export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag }
