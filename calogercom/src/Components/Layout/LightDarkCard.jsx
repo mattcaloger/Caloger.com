@@ -5,13 +5,13 @@ const DARK_COLOUR = 'rgba(0, 0, 0, .90);'
 
 const CardContainer = styled.div`
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &>* {
-        margin-bottom: 25px;
-    }
+    transition: all ease-in .1s;
+    
     box-shadow:
         0 2px 2px rgba(0, 0, 0, 0.034),
         0 4px 4px rgba(0, 0, 0, 0.048),
@@ -19,7 +19,16 @@ const CardContainer = styled.div`
         0 8px 8px rgba(0, 0, 0, 0.072),
         0 16px 16px rgba(0, 0, 0, 0.086),
         0 32px 32px rgba(0, 0, 0, 0.12);
+
     border-radius: 10px;
+    
+    &:hover {
+        transform:scale(1.1);
+    }
+    
+    &>* {
+        margin-bottom: 25px;
+    }
 `
 
 const CardBase = styled.div`
