@@ -71,7 +71,7 @@ export default function AboutBlurb() {
             <BlurbBody>
 
                 <p>
-                    With over 5 years of experience in the IT industry, my goal is to become a software engineer to apply my passion for programming and system design. I greatly enjoy problem-solving and engineering solutions that help others succeed.
+                    With over 5 years of experience in the IT industry, my goal is to become a software engineer to apply my passion for programming and system design. I greatly enjoy problem-solving and engineering solutions that help others succeed. I am located in Toronto, Canada.
                 </p>
             </BlurbBody>
             <BlurbFooter>
