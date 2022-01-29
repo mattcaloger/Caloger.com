@@ -14,7 +14,7 @@ import PageTitle from '../../Layout/PageTitle'
 import Title from './Projects/Layout/Title'
 import Tag from './Projects/Layout/Tag'
 import PageContainer from './Projects/Layout/PageContainer'
-import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock } from '../../Terminal/LanguageIcons'
+import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
 import DividedContainer from './Projects/Layout/DividedContainer'
 import { CardContainer, DarkFooter, LightBody, LightHeader, DarkBody, LightFooter } from '../../Layout/LightDarkCard'
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
@@ -113,6 +113,31 @@ export default function ProjectsPage() {
                                 </EvenSpanRow>
                                     
 
+                        </DarkFooter>
+                    </CardContainer>
+                </Link>
+
+                <Link to="reactchat">
+                    <CardContainer>
+                        <LightHeader>
+                            <DividedContainer>
+                                    <Title>React Chat</Title>
+                                <SpanRow>
+                                    <Tag>Front End</Tag> 
+                                    <Tag>Full Stack</Tag>
+                                    <Tag>Web Sockets</Tag>
+                                </SpanRow>
+                            </DividedContainer>
+                        </LightHeader>
+                        <LightBody>
+                            <p>A real-time chat application.</p>
+                        </LightBody>
+                        <DarkFooter>
+                                <EvenSpanRow>
+                                    <TypeScriptIconBlock />
+                                    <ReactIconBlock />
+                                    <NodeIconBlock />
+                                </EvenSpanRow>
                         </DarkFooter>
                     </CardContainer>
                 </Link>
