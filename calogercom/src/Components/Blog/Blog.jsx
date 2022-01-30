@@ -11,6 +11,7 @@ import PageContainer from '../Pages/ProjectsPage/Projects/Layout/PageContainer'
 import { CardContainer, DarkHeader, LightBody, LightFooter, DarkFooter } from '../Layout/LightDarkCard'
 
 import DividedContainer from '../Pages/ProjectsPage/Projects/Layout/DividedContainer'
+import PageSubtitle from '../Layout/PageSubtitle'
 
 const BlogChild = {
     hidden: { opacity: 0 },
@@ -33,6 +34,7 @@ export default function Blog() {
     return (
         <PageContainer  variants={BlogContainer} initial="hidden" animate="show">
             <PageTitle>Blog</PageTitle>
+            <PageSubtitle>Select a blog to view details</PageSubtitle>
 
             <Link to="buildsheet-editor">
                     <CardContainer>

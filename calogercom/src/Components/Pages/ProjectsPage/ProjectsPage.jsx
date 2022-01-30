@@ -18,6 +18,7 @@ import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaIconBlock, JavaScript
 import DividedContainer from './Projects/Layout/DividedContainer'
 import { CardContainer, DarkFooter, LightBody, LightHeader, DarkBody, LightFooter } from '../../Layout/LightDarkCard'
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
+import PageSubtitle from '../../Layout/PageSubtitle'
 
 const ProjectChild = {
     hidden: { opacity: 0 },
@@ -42,6 +43,7 @@ export default function ProjectsPage() {
         
         <PageContainer variants={ProjectContainer} initial="hidden" animate="show"> 
                 <PageTitle>Projects</PageTitle>
+                <PageSubtitle>Select a project to view details</PageSubtitle>
 
             <Link to="Budgie">
                 <CardContainer>
