@@ -69,26 +69,6 @@ border-bottom-right-radius: 10px;
     }
 `
 
-
-let Container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-
-        staggerChildren: .2
-      }
-    }
-}
-
-let Child = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1
-      }
-    
-}
-
 export default function AboutBlurb() {
     return (
         <AboutBlock>
@@ -105,21 +85,19 @@ export default function AboutBlurb() {
             <BlurbFooter>
                 <PageTitle>Skills</PageTitle>
                 
-                <IconGrid as={motion.div} variants={Container}
-      initial="hidden"
-      animate="show">
-                    <JavaScriptIconBlock as={motion.div} variants={Child} />
-                    <HtmlIconBlock as={motion.div} variants={Child} />
-                    <CssIconBlock as={motion.div} variants={Child} />
-                    <ReactIconBlock as={motion.div} variants={Child} />
-                    <TypeScriptIconBlock as={motion.div} variants={Child} />
-                    <NodeIconBlock as={motion.div} variants={Child} />
-                    <CSharpIconBlock as={motion.div} variants={Child} />
-                    <JavaIconBlock as={motion.div} variants={Child} />
-                    <SpringIconBlock as={motion.div} variants={Child} />
-                    <PhpIconBlock as={motion.div} variants={Child} />
-                    <SqlIconBlock as={motion.div} variants={Child} />
-                    <DotnetIconBlock as={motion.div} variants={Child} />
+                <IconGrid>
+                    <JavaScriptIconBlock/>
+                    <HtmlIconBlock/>
+                    <CssIconBlock/>
+                    <ReactIconBlock/>
+                    <TypeScriptIconBlock/>
+                    <NodeIconBlock/>
+                    <CSharpIconBlock/>
+                    <JavaIconBlock/>
+                    <SpringIconBlock/>
+                    <PhpIconBlock/>
+                    <SqlIconBlock/>
+                    <DotnetIconBlock/>
                 </IconGrid>
             </BlurbFooter>
 

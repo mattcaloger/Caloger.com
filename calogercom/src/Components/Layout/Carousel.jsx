@@ -9,8 +9,8 @@ const Thumbnail = styled.img`
     margin: 5px;
     
     &:hover {
-        transition: all ease-in .2s;
-        transform: scale(1.1);
+        transition: all linear .1s;
+        transform: scale(.9);
     }
 `
 

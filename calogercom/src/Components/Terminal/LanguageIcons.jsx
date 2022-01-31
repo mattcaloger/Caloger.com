@@ -17,10 +17,8 @@ import React from 'react';
 
 import IconImage from '../Layout/IconImage';
 
-import { motion } from 'framer-motion';
 
-
-const IconBlock = styled(motion.div)`
+const IconBlock = styled.div`
     display:flex;
     flex-direction: column;
     font-weight: bold;
