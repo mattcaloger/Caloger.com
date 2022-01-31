@@ -18,23 +18,7 @@ import { CSharpIconBlock, CssIconBlock, DotnetIconBlock, HtmlIconBlock, JavaIcon
 import DividedContainer from './Projects/Layout/DividedContainer'
 import { CardContainer, DarkFooter, LightBody, LightHeader, DarkBody, LightFooter } from '../../Layout/LightDarkCard'
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
-import PageSubtitle from '../../Layout/PageSubtitle'
-
-const ProjectChild = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1},
-  }
-
-const ProjectContainer = {
-    hidden: { opacity: 0 },
-    show: {
-        opacity: 1,
-        transition: {
-            delayChildren: 1,
-            staggerChildren: 5
-        }
-    }
-}
+import PageSubtitle from '../../Layout/PageSubtitle';
 
 
 export default function ProjectsPage() {

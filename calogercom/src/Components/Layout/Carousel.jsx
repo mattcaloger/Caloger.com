@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { LightBody, DarkFooter, LightHeader } from './LightDarkCard';
+import { LightBody, DarkFooter, LightHeader, LightFooter } from './LightDarkCard';
+
+import ArrowSVG from '../../img/arrow.svg'
+
 const Thumbnail = styled.img`
     width: 100px;
     height: 100px;
@@ -15,13 +18,15 @@ const Thumbnail = styled.img`
 `
 
 const HighlightedThumbnail = styled(Thumbnail)`
-transform: scale(1.2);
+    transform: scale(1.2);
 `
 
 const DisplayImage = styled.img`
     width: 100%;
     object-fit: contain;
     display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 `
 
@@ -29,7 +34,8 @@ const CarouselContainer = styled.div`
    
     display: flex;
     flex-direction: column;
-
+    
+    
 `
 
 const ThumbnailContainer = styled.div`
@@ -47,11 +53,22 @@ const ThumbnailContainer = styled.div`
 const CarouselButton = styled.img`
     user-select: none;
     cursor: default;
-
+    width: 25px;
+    height: 25px;
+    transition: all linear .1s;
     &:hover {
-        font-weight: bold;
+        transform: scale(0.8);
     }
 `
+
+const PreviousButton = styled(CarouselButton)`
+    transform: scaleX(-1);
+    &:hover {
+        transform: scaleX(-1) scale(0.8);
+    }
+`;
+
+const NextButton = styled(CarouselButton)``;
 
 export default function Carousel(props) {
 
@@ -81,13 +98,13 @@ export default function Carousel(props) {
 
   return (
       <CarouselContainer>
-        <LightHeader>
+        
 
             <DisplayImage src={props.imgs[currentImage]} />
-</LightHeader>
+
         <DarkFooter>
             <ThumbnailContainer>
-            {/* <CarouselButton onClick={handlePrevious}>Previous</CarouselButton> */}
+            <PreviousButton src={ArrowSVG} onClick={handlePrevious}></PreviousButton>
             {props.imgs.map((img, index) => {
                 if(index === currentImage) {
                     return(
@@ -98,7 +115,7 @@ export default function Carousel(props) {
                 }
                 
             })}
-            {/* <CarouselButton onClick={handleNext}>Next</CarouselButton> */}
+            <NextButton src={ArrowSVG} onClick={handleNext}></NextButton>
         </ThumbnailContainer>
         </DarkFooter>
         

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import styled from "styled-components"
 
 
-const LangSpan = styled(motion.div)`color: black; font-size: 18px;`
+const LangSpan = styled.div`color: black; font-size: 18px;`
 
 const LangTag = styled(LangSpan)`padding: 5px; border-radius: 5px;`
 
