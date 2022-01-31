@@ -8,7 +8,7 @@ import Tag from '../Pages/ProjectsPage/Projects/Layout/Tag'
 import TerminalButton from '../Terminal/TerminalButton'
 import PageContainer from '../Pages/ProjectsPage/Projects/Layout/PageContainer'
 
-import { CardContainer, DarkHeader, LightBody, LightFooter, DarkFooter } from '../Layout/LightDarkCard'
+import { CardContainer, DarkHeader, LightHeader, LightBody, LightFooter, DarkFooter } from '../Layout/LightDarkCard'
 
 import DividedContainer from '../Pages/ProjectsPage/Projects/Layout/DividedContainer'
 import PageSubtitle from '../Layout/PageSubtitle'
@@ -38,14 +38,14 @@ export default function Blog() {
 
             <Link to="buildsheet-editor">
                     <CardContainer>
-                        <DarkHeader>
+                        <LightHeader>
                             <DividedContainer>
                                     <Title>BuildSheet Editor</Title>
                                 <SpanRow>
                                 <Tag>Desktop Application</Tag>
                                 </SpanRow>
                             </DividedContainer>
-                        </DarkHeader>
+                        </LightHeader>
                         <LightFooter>
                         <p>A deep-dive into designing and deploying the Buildsheet Editor</p>
                         </LightFooter>

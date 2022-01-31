@@ -9,19 +9,22 @@ import ReactIcon from '../../img/lang-icons/react.svg';
 import SpringIcon from '../../img/lang-icons/spring.svg';
 import SqlIcon from '../../img/lang-icons/sql.svg';
 import TypeScriptIcon from '../../img/lang-icons/typescript.svg';
-import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql } from './Languages';
+import DotnetIcon from '../../img/lang-icons/dotnet.svg'
+import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql, ColorDotnet } from './Languages';
 
 import styled from 'styled-components';
 import React from 'react';
 
 import IconImage from '../Layout/IconImage';
 
+import { motion } from 'framer-motion';
 
-const IconBlock = styled.div`
+
+const IconBlock = styled(motion.div)`
     display:flex;
     flex-direction: column;
     font-weight: bold;
-
+    align-items: center;
     &>*{
         margin: 5px;
     }
@@ -127,4 +130,13 @@ const SqlIconBlock = () => {
     )
 }
 
-export { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock }
+const DotnetIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={DotnetIcon} />
+            <ColorDotnet>.NET</ColorDotnet>
+        </IconBlock>
+    )
+}
+
+export { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, DotnetIconBlock }

@@ -1,7 +1,7 @@
 
 import styled from 'styled-components'
 
-const SpanRow = styled.p`
+const SpanRow = styled.div`
             display: flex;
             font-weight: bold;
             flex-wrap: wrap;

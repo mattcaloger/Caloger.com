@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const LIGHT_COLOUR = '#ffffff99';
+const LIGHT_COLOUR = 'rgba(255, 255, 255, .55);';
 const DARK_COLOUR = 'rgba(0, 0, 0, .90);'
 
 const CardContainer = styled.div`

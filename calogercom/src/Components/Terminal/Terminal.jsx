@@ -59,7 +59,7 @@ import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaScriptIconBlock, Node
                 <TerminalCard as={motion.div} variants={container} initial="hidden"
                 animate="show">
                     <SpanRow as={motion.span} variants={variants}>
-                    <CSharpIconBlock />
+                        <CSharpIconBlock />
                         <JavaScriptIconBlock />
                         <HtmlIconBlock />
                         <CssIconBlock />

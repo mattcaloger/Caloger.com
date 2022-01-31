@@ -14,7 +14,7 @@ import PageTitle from '../../Layout/PageTitle'
 import Title from './Projects/Layout/Title'
 import Tag from './Projects/Layout/Tag'
 import PageContainer from './Projects/Layout/PageContainer'
-import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
+import { CSharpIconBlock, CssIconBlock, DotnetIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
 import DividedContainer from './Projects/Layout/DividedContainer'
 import { CardContainer, DarkFooter, LightBody, LightHeader, DarkBody, LightFooter } from '../../Layout/LightDarkCard'
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
@@ -31,7 +31,7 @@ const ProjectContainer = {
         opacity: 1,
         transition: {
             delayChildren: 1,
-            staggerChildren: 1
+            staggerChildren: 5
         }
     }
 }
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
     
     return (
         
-        <PageContainer variants={ProjectContainer} initial="hidden" animate="show"> 
+        <PageContainer> 
                 <PageTitle>Projects</PageTitle>
                 <PageSubtitle>Select a project to view details</PageSubtitle>
 
@@ -187,6 +187,7 @@ export default function ProjectsPage() {
                                     <CSharpIconBlock />
                                     <HtmlIconBlock />
                                     <CssIconBlock />
+                                    <DotnetIconBlock />
                                 </EvenSpanRow>
 
                         </DarkFooter>

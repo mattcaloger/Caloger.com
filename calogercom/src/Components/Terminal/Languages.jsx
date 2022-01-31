@@ -1,6 +1,8 @@
+import { motion } from "framer-motion"
 import styled from "styled-components"
 
-const LangSpan = styled.span`color: black; font-size: 18px;`
+
+const LangSpan = styled(motion.div)`color: black; font-size: 18px;`
 
 const LangTag = styled(LangSpan)`padding: 5px; border-radius: 5px;`
 
@@ -47,7 +49,8 @@ const ColorIllustratorTag = styled(LangTag)`background: #F29202; color: black;`;
 const ColorTypescriptTag = styled(LangTag)`background: #2F72BC; color: White;`;
 const ColorReactJsTag = styled(LangTag)`background: #77D4F2; color: black;`;
 const ColorSqlTag = styled(LangTag)`background: #F1AA00; color: black;`;
+const ColorDotnet = styled(LangSpan)`color: #9E89E7;`
+const ColorDotnetTag = styled(LangTag)`background: #9E89E7; color: white;`
 
 
-
-export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag }
+export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag, ColorDotnet, ColorDotnetTag }

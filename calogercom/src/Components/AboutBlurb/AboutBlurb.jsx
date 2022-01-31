@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import ProfilePicture from '../ProfilePicture/ProfilePicture'
-import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock } from '../Terminal/LanguageIcons'
+import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, DotnetIconBlock } from '../Terminal/LanguageIcons'
 import EvenSpanRow from '../Terminal/EvenSpanRow'
 import TerminalCardWhite from '../Terminal/TerminalCardWhite'
 import PageTitle from '../Layout/PageTitle'
+import SpanRow from '../Terminal/EvenSpanRow'
+import { IconGrid } from '../Layout/IconGrid';
+import { motion } from 'framer-motion'
 
 const AboutBlock = styled.div`
     display: flex;
@@ -59,7 +62,32 @@ color: black;
 const BlurbFooter = styled(BlurbCard)`
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
+
+    &>* {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 `
+
+
+let Container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+
+        staggerChildren: .2
+      }
+    }
+}
+
+let Child = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1
+      }
+    
+}
 
 export default function AboutBlurb() {
     return (
@@ -76,20 +104,23 @@ export default function AboutBlurb() {
             </BlurbBody>
             <BlurbFooter>
                 <PageTitle>Skills</PageTitle>
-                <EvenSpanRow>
-                    
-                    <JavaScriptIconBlock />
-                    <HtmlIconBlock />
-                    <CssIconBlock />
-                    <ReactIconBlock />
-                    <TypeScriptIconBlock />
-                    <NodeIconBlock />
-                    <CSharpIconBlock />
-                    <JavaIconBlock />
-                    <SpringIconBlock />
-                    <PhpIconBlock />
-                    <SqlIconBlock />
-                </EvenSpanRow>
+                
+                <IconGrid as={motion.div} variants={Container}
+      initial="hidden"
+      animate="show">
+                    <JavaScriptIconBlock as={motion.div} variants={Child} />
+                    <HtmlIconBlock as={motion.div} variants={Child} />
+                    <CssIconBlock as={motion.div} variants={Child} />
+                    <ReactIconBlock as={motion.div} variants={Child} />
+                    <TypeScriptIconBlock as={motion.div} variants={Child} />
+                    <NodeIconBlock as={motion.div} variants={Child} />
+                    <CSharpIconBlock as={motion.div} variants={Child} />
+                    <JavaIconBlock as={motion.div} variants={Child} />
+                    <SpringIconBlock as={motion.div} variants={Child} />
+                    <PhpIconBlock as={motion.div} variants={Child} />
+                    <SqlIconBlock as={motion.div} variants={Child} />
+                    <DotnetIconBlock as={motion.div} variants={Child} />
+                </IconGrid>
             </BlurbFooter>
 
                 

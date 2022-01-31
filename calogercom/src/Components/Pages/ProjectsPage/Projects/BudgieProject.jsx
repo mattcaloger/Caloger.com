@@ -5,16 +5,23 @@ import AboutBlurb from '../../../AboutBlurb/AboutBlurb'
 import styled from 'styled-components'
 import ProjectDetails from './Layout/ProjectDetails'
 
+import TransactionImg from '../../../../img/proj-img/budgie/budgie-transaction.png'
+import IncomeImg from '../../../../img/proj-img/budgie/budgie-income.png'
+import ExpensesImg from '../../../../img/proj-img/budgie/budgie-expenses.png'
 
+import Carousel from '../../../Layout/Carousel'
+import PageTitle from '../../../Layout/PageTitle'
 
 export default function BudgieProject() {
     return (
         <div>
-            <h1>Budgie</h1>
+            <PageTitle>Budgie</PageTitle>
             <SplitContainer>
 
                 <SplitContainerPanel>
-                    <ProjectDetails>
+
+                    <Carousel imgs={[TransactionImg, IncomeImg, ExpensesImg]}></Carousel>
+
                         <p>I created Budgie to gain some experience with data visualization and play around with a gradient-heavy visual style. The front-end is a React app that uses React Router for navigation.</p>
 
                         <p>The server portion was written in Java with the Spring Framework as the web layer. It uses JPA with an in-memory h2 database for storage.</p>
@@ -24,7 +31,7 @@ export default function BudgieProject() {
                         <p>
                             Some interesting features that are used include ascending/descending sorting, instant visual updating, and gradient charts.
                         </p>
-                    </ProjectDetails>
+
                 </SplitContainerPanel>
             </SplitContainer>
         </div>

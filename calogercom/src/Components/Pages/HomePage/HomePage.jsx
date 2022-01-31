@@ -27,10 +27,6 @@ export default function HomePage() {
             <PageTitle>About Me</PageTitle>
             <AboutBlurb>
             </AboutBlurb>
-            
-            
-            
-            
         </HomePageContainer>
     )
 }
