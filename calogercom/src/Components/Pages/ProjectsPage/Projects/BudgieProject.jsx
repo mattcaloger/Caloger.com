@@ -20,7 +20,25 @@ export default function BudgieProject() {
 
                 <SplitContainerPanel>
 
-                    <Carousel imgs={[TransactionImg, IncomeImg, ExpensesImg]}></Carousel>
+                    <Carousel items={
+                        [
+                            { 
+                                title: "Transactions Page", 
+                                description: "The transaction page displays a graph of transactions (positive and negative) over time.",
+                                image: TransactionImg
+                            },
+                            {
+                                title: "Income Page", 
+                                description: "The income page displays a graph of recorded income, a pie chart of income categories, and the ability to add more income items.",
+                                image: IncomeImg
+                            }, 
+                            {
+                                title: "Expenses Page", 
+                                description: "The expense page, similar to the income page, displays a graph of recorded expenses, a pie chart of expense categories, and the ability to add more income items.",
+                                image: ExpensesImg
+                            }
+                        ]
+                    }></Carousel>
 
                         <p>I created Budgie to gain some experience with data visualization and play around with a gradient-heavy visual style. The front-end is a React app that uses React Router for navigation.</p>
 

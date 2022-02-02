@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { LightBody, DarkFooter, LightHeader, LightFooter } from './LightDarkCard';
 
 import ArrowSVG from '../../img/arrow.svg'
+import PageSubtitle from './PageSubtitle';
 
 const Thumbnail = styled.img`
     width: 100px;
@@ -72,7 +73,7 @@ const NextButton = styled(CarouselButton)``;
 
 export default function Carousel(props) {
 
-    const imageCount = props.imgs.length;
+    const imageCount = props.items.length;
 
     let [currentImage, setCurrentImage] = useState(0);
 
@@ -98,20 +99,24 @@ export default function Carousel(props) {
 
   return (
       <CarouselContainer>
-        
+            <PageSubtitle>{props.items[currentImage].title}</PageSubtitle>
 
-            <DisplayImage src={props.imgs[currentImage]} />
+            <DisplayImage src={props.items[currentImage].image} />
 
+              
         <DarkFooter>
+            <p>
+                {props.items[currentImage].description}
+            </p> 
             <ThumbnailContainer>
             <PreviousButton src={ArrowSVG} onClick={handlePrevious}></PreviousButton>
-            {props.imgs.map((img, index) => {
+            {props.items.map((item, index) => {
                 if(index === currentImage) {
                     return(
-                        <HighlightedThumbnail onClick={handleThumbnailClick} key={index} id={index} src={img} />
+                        <HighlightedThumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />
                     )
                 } else {
-                    return (<Thumbnail onClick={handleThumbnailClick} key={index} id={index} src={img} />)
+                    return (<Thumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />)
                 }
                 
             })}
