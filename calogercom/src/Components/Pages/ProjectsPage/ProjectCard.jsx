@@ -12,7 +12,7 @@ const Card = styled.div`
 
     flex-direction: column;
 
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
     background: rgba(256,256,256,.5);
     backdrop-filter: blur(10px);

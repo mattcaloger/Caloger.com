@@ -18,13 +18,8 @@ const AboutBlock = styled.div`
     &>* {
         margin-bottom: 25px;
     }
-    box-shadow:
-        0 2px 2px rgba(0, 0, 0, 0.034),
-        0 4px 4px rgba(0, 0, 0, 0.048),
-        0 6px 6px rgba(0, 0, 0, 0.06),
-        0 8px 8px rgba(0, 0, 0, 0.072),
-        0 16px 16px rgba(0, 0, 0, 0.086),
-        0 32px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
     border-radius: 10px;
 `
 

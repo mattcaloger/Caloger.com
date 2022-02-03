@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { LightBody, DarkFooter, LightHeader, LightFooter } from './LightDarkCard';
+import { LightBody, DarkFooter, LightHeader, LightFooter, DarkHeader } from './LightDarkCard';
 
 import ArrowSVG from '../../img/arrow.svg'
 import PageSubtitle from './PageSubtitle';
@@ -23,19 +23,38 @@ const HighlightedThumbnail = styled(Thumbnail)`
 `
 
 const DisplayImage = styled.img`
-    width: 100%;
+    display: block;
     object-fit: contain;
     display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+`
+
+const ImageContainer = styled.div`
+    display: flex;
+    justify-content: center; /* horizontal centering */
 `
 
 const CarouselContainer = styled.div`
    
-    display: flex;
-    flex-direction: column;
+    display: none;
     
+    @media only screen and (min-width: 992px) {
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: inherit;
+        height: auto;
+        
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
     
 `
 
@@ -69,6 +88,10 @@ const PreviousButton = styled(CarouselButton)`
     }
 `;
 
+const DescriptionText = styled.div`
+    text-align: center;
+`
+
 const NextButton = styled(CarouselButton)``;
 
 export default function Carousel(props) {
@@ -99,30 +122,36 @@ export default function Carousel(props) {
 
   return (
       <CarouselContainer>
-            <PageSubtitle>{props.items[currentImage].title}</PageSubtitle>
-
-            <DisplayImage src={props.items[currentImage].image} />
-
-              
-        <DarkFooter>
-            <p>
+          <LightHeader>
+              <PageSubtitle>{props.items[currentImage].title}</PageSubtitle>
+          </LightHeader>
+        <LightBody>
+            <ImageContainer>
+                <DisplayImage src={props.items[currentImage].image} />
+            </ImageContainer>
+            
+        </LightBody>  
+        <LightFooter>
+            <DescriptionText>
                 {props.items[currentImage].description}
-            </p> 
+            </DescriptionText> 
+            { imageCount > 1 ?  
             <ThumbnailContainer>
-            <PreviousButton src={ArrowSVG} onClick={handlePrevious}></PreviousButton>
-            {props.items.map((item, index) => {
-                if(index === currentImage) {
-                    return(
-                        <HighlightedThumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />
-                    )
-                } else {
-                    return (<Thumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />)
-                }
-                
-            })}
-            <NextButton src={ArrowSVG} onClick={handleNext}></NextButton>
-        </ThumbnailContainer>
-        </DarkFooter>
+                <PreviousButton src={ArrowSVG} onClick={handlePrevious}></PreviousButton>
+                {props.items.map((item, index) => {
+                    if(index === currentImage) {
+                        return(
+                            <HighlightedThumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />
+                        )
+                    } else {
+                        return (<Thumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />)
+                    }
+                    
+                })}
+                <NextButton src={ArrowSVG} onClick={handleNext}></NextButton>
+            </ThumbnailContainer>
+        : "" }
+        </LightFooter>
         
       </CarouselContainer>
   
