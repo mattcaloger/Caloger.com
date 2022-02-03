@@ -5,6 +5,11 @@ const SplitContainerPanelComponent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    & > * {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
     
 `
 

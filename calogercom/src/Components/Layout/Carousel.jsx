@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { LightBody, DarkFooter, LightHeader, LightFooter, DarkHeader } from './LightDarkCard';
 
@@ -26,40 +26,53 @@ const DisplayImage = styled.img`
     display: block;
     object-fit: contain;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
-    display: block;
     width: auto;
-    height: auto;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 25px;
 `
 
 const ImageContainer = styled.div`
     display: flex;
-    justify-content: center; /* horizontal centering */
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 25px;
 `
 
 const CarouselContainer = styled.div`
    
-    display: none;
-    
-    @media only screen and (min-width: 992px) {
         background: transparent;
         display: flex;
         flex-direction: column;
         margin: auto;
-        width: inherit;
+        width: 100%;
         height: auto;
-        
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
     
 `
 
 const ThumbnailContainer = styled.div`
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media only screen and (max-width: 992px) {
+        display: none;
+        flex: 0;
+    }
+
+    &>* {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+`
+
+const ControlContainer = styled.div`
+
+    // display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -100,6 +113,14 @@ export default function Carousel(props) {
 
     let [currentImage, setCurrentImage] = useState(0);
 
+    useEffect(() => {
+        const intervalClock = setInterval(() => {
+            handleNext();
+        }, 10000)
+
+        return () => clearInterval(intervalClock)
+    }, [currentImage])
+
     const handleNext = () => {
         if(currentImage === imageCount-1){
             setCurrentImage(0);
@@ -122,36 +143,15 @@ export default function Carousel(props) {
 
   return (
       <CarouselContainer>
-          <LightHeader>
-              <PageSubtitle>{props.items[currentImage].title}</PageSubtitle>
-          </LightHeader>
-        <LightBody>
+
+            <PageSubtitle>{props.items[currentImage].title}</PageSubtitle>
+
             <ImageContainer>
                 <DisplayImage src={props.items[currentImage].image} />
             </ImageContainer>
             
-        </LightBody>  
-        <LightFooter>
-            <DescriptionText>
-                {props.items[currentImage].description}
-            </DescriptionText> 
-            { imageCount > 1 ?  
-            <ThumbnailContainer>
-                <PreviousButton src={ArrowSVG} onClick={handlePrevious}></PreviousButton>
-                {props.items.map((item, index) => {
-                    if(index === currentImage) {
-                        return(
-                            <HighlightedThumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />
-                        )
-                    } else {
-                        return (<Thumbnail onClick={handleThumbnailClick} key={index} id={index} src={item.image} />)
-                    }
-                    
-                })}
-                <NextButton src={ArrowSVG} onClick={handleNext}></NextButton>
-            </ThumbnailContainer>
-        : "" }
-        </LightFooter>
+
+
         
       </CarouselContainer>
   
