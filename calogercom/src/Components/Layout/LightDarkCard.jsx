@@ -79,4 +79,4 @@ const DarkFooter = styled(FooterBase)`
     background: ${DARK_COLOUR};
 `
 
-export { CardContainer, LightHeader, LightBody, LightFooter, DarkHeader, DarkBody, DarkFooter }
+export { CardContainer, LightHeader, LightBody, LightFooter, DarkHeader, DarkBody, DarkFooter, LIGHT_COLOUR, DARK_COLOUR }

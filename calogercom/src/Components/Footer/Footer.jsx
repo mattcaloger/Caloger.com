@@ -76,8 +76,8 @@ const FooterComponent = styled.div`
         flex-direction: column;
 
         & > * {
-            margin-top: 25px;
-            margin-bottom: 25px;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
       }
 `

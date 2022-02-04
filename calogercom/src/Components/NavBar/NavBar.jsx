@@ -16,6 +16,10 @@ const HeaderNav = styled.nav`
 
     @media (max-width: 768px) {
         flex-direction: column;
+        &>* {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
       }
 
     & > * {
