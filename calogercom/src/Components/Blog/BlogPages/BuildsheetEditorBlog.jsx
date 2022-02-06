@@ -9,15 +9,17 @@ import BSEFlow from '../../../img/blog-img/bse/bseflow.png'
 import BlogImage from '../../Pages/ProjectsPage/Projects/Layout/BlogImage'
 
 import Carousel from '../../Layout/Carousel'
+import CaptionedImage from '../../Layout/CaptionedImage'
 
 export default function BuildsheetEditorBlog() {
     return (
         <PageContainer>
             <PageTitle>Buildsheet Editor</PageTitle>
             <div>
-                <Carousel items={[{title: "Buildsheet Editor", 
-        description: "An image displaying the UI of the Buildsheet Editor.",
-        image: BSEImg}]}></Carousel>
+   
+
+                <CaptionedImage image={BSEImg} title={"Buildsheet Editor"} description="An image displaying the UI of the Buildsheet Editor."></CaptionedImage>
+        
                 <h3>The Problem</h3>
 
                 <p>During my time at Atlantic Health Systems, I developed an application known as the “Buildsheet Editor” to drastically improve an important yet straining process. Every hospital in the system was performing a wide-scale workstation hardware upgrade to meet a standard to best support the implementation of a new core application that would be rolling out. The rollout would be performed through the following process for each workstation:</p>

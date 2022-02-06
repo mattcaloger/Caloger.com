@@ -15,7 +15,7 @@ const HeaderNav = styled.nav`
     font-weight: bold;
 
     @media (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: row;
         &>* {
             margin-top: 50px;
             margin-bottom: 50px;
@@ -51,18 +51,21 @@ const NavItem = styled.li`
     
 `
 const HighlightedLink = styled.div`
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
     font-size: 30px;
 `
 
 const ProjectLink = styled(NavItem)`
   @media (max-width: 768px) {
-    order: 2
+    order: 1
   }
 `
 
 const NameLink = styled(NavItem)`
 @media (max-width: 768px) {
-    order: 1
+    order: 2
   }
 `
 const BlogLink = styled(NavItem)`
@@ -77,10 +80,10 @@ export default function NavBar() {
     return (
         <HeaderNav>
             
-            <ProjectLink className="projects">
+            <NavItem>
                     <Link to="/projects">Projects</Link>
     
-                </ProjectLink>
+                </NavItem>
                 <NavItem>
                     <Link to="/"><HighlightedLink>Matthew Caloger</HighlightedLink></Link>
                     

@@ -73,7 +73,7 @@ const FooterComponent = styled.div`
     }
 
     @media (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: row;
 
         & > * {
             margin-top: 50px;
@@ -111,7 +111,7 @@ export default function Footer() {
     return (
         <FooterComponent>   
                 <FooterItem><a href="https://github.com/mattusoperandi">GitHub</a></FooterItem>
-                <FooterItemSelectable><a href="mailto:mattcaloger@gmail.com">mattcaloger@gmail.com</a></FooterItemSelectable>
+
                 <FooterItem><a href="https://www.linkedin.com/in/matthew-caloger/">Linkedin</a></FooterItem>
 
         </FooterComponent>

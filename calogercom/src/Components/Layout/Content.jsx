@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ContentBox = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 10px;
 

@@ -14,10 +14,12 @@ const CardContainer = styled.div`
     
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 10px;
-    
-    &:hover {
-        transform:scale(1.1);
+    @media (min-width: 768px) {
+         &:hover {
+            transform:scale(1.1);
+         }
     }
+   
     
     &>* {
         margin-bottom: 25px;
@@ -34,8 +36,23 @@ const CardBase = styled.div`
     width: 100%;
     &>* {
         flex: 1;
-        margin-Top: 25px;
+        margin-top: 25px;
         margin-bottom: 25px;
+    }
+
+    @media only screen and (max-width: 992px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+
+        &>* {
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
     }
 `
 
