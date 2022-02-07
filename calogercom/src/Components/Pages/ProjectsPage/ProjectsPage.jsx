@@ -20,6 +20,10 @@ import { CardContainer, DarkFooter, LightBody, LightHeader, DarkBody, LightFoote
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
 import PageSubtitle from '../../Layout/PageSubtitle';
 
+const ProjectSummary = styled.div`
+    cursor: default;
+    user-select: none;
+`
 
 export default function ProjectsPage() {
     
@@ -41,7 +45,7 @@ export default function ProjectsPage() {
                         </DividedContainer>
                     </LightHeader>
                     <LightBody>
-                        <p>An expense tracker with data visualization and the ability to add/remove expenses and incomes while displaying graphs based on the input data.</p>
+                        <ProjectSummary>An expense tracker with data visualization and the ability to add/remove expenses and incomes while displaying graphs based on the input data.</ProjectSummary>
                     </LightBody>
                     <DarkFooter>
                         <EvenSpanRow>
@@ -65,7 +69,7 @@ export default function ProjectsPage() {
                         </DividedContainer>
                     </LightHeader>
                     <LightBody>
-                        <p>A completed website to show a Graphic Designer's portfolio.</p>
+                        <ProjectSummary>A completed website to show a Graphic Designer's portfolio.</ProjectSummary>
                     </LightBody>
                     <DarkFooter>
                             <EvenSpanRow>
@@ -89,7 +93,7 @@ export default function ProjectsPage() {
                             </DividedContainer>
                         </LightHeader>
                         <LightBody>
-                            <p>A PHP-based helpdesk prototype.</p>
+                            <ProjectSummary>A PHP-based helpdesk prototype.</ProjectSummary>
                         </LightBody>
                         <DarkFooter>
                                 <EvenSpanRow>
@@ -107,7 +111,7 @@ export default function ProjectsPage() {
                     <CardContainer>
                         <LightHeader>
                             <DividedContainer>
-                                    <Title>React Chat</Title>
+                                    <Title>Instant Chat</Title>
                                 <SpanRow>
                                     <Tag>Front End</Tag> 
                                     <Tag>Full Stack</Tag>
@@ -116,7 +120,7 @@ export default function ProjectsPage() {
                             </DividedContainer>
                         </LightHeader>
                         <LightBody>
-                            <p>A real-time chat application.</p>
+                            <ProjectSummary>A real-time chat application.</ProjectSummary>
                         </LightBody>
                         <DarkFooter>
                                 <EvenSpanRow>
@@ -140,7 +144,7 @@ export default function ProjectsPage() {
                         </DividedContainer>
                     </LightHeader>
                     <LightBody>
-                        <p>A VanillaJS front-end framework that allows you to define components and dynamically render them when certain actiosn take place. Combines a state container with the observer pattern</p>
+                        <ProjectSummary>A VanillaJS front-end framework that allows you to define components and dynamically render them when certain actions take place. Combines a state container with the observer pattern</ProjectSummary>
                     </LightBody>
                     <DarkFooter>
 
@@ -152,7 +156,7 @@ export default function ProjectsPage() {
                 </CardContainer>            
                 </Link>
 
-                <Link to="Escargo">
+                {/* <Link to="Escargo">
                     <CardContainer>
                         <LightHeader>
                             <DividedContainer>
@@ -176,7 +180,7 @@ export default function ProjectsPage() {
 
                         </DarkFooter>
                     </CardContainer>    
-                </Link> 
+                </Link>  */}
         </PageContainer>
     )
 }

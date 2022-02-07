@@ -36,11 +36,11 @@ export default function EmilySiteProject() {
 
                     <PageSubtitle>Images</PageSubtitle>
 
-                    <CaptionedImage image={LandingPage} title={"Landing Page"} description={"Landign page of the website containign links to sub-sections"} />
+                    <CaptionedImage image={LandingPage} title={"Landing Page"} description={"Landign page of the website containing links to sub-sections"} />
 
-                    <CaptionedImage image={ProjectsPage} title={"Projects Page"} description={"Projects page displayign all projects, clicking the project links brings you to the individual project's page"} />  
+                    <CaptionedImage image={ProjectsPage} title={"Projects Page"} description={"Projects page displaying all projects, clicking the project links brings you to the individual project's page"} />  
 
-                    <CaptionedImage image={IndividualPage} title={"Individual Page"} description={"The individual page of a particular project, containign text and a gallery of media."} />        
+                    <CaptionedImage image={IndividualPage} title={"Individual Page"} description={"The individual page of a particular project, containing text and a gallery of media."} />        
 
                     <ViewCodeButton url="https://github.com/mattusoperandi/EmSite" />
                 </SplitContainerPanel>

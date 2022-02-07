@@ -18,7 +18,7 @@ const AboutBlock = styled.div`
     &>* {
         margin-bottom: 25px;
     }
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
     
     border-radius: 10px;
 `
@@ -87,12 +87,12 @@ export default function AboutBlurb() {
                     <ReactIconBlock/>
                     <TypeScriptIconBlock/>
                     <NodeIconBlock/>
-                    <CSharpIconBlock/>
+                    {/* <CSharpIconBlock/> */}
                     <JavaIconBlock/>
                     <SpringIconBlock/>
                     <PhpIconBlock/>
                     <SqlIconBlock/>
-                    <DotnetIconBlock/>
+                    {/* <DotnetIconBlock/> */}
                 </IconGrid>
             </BlurbFooter>
 
