@@ -61,7 +61,7 @@ export default function HelpdeskProject() {
 
                      <CaptionedImage image={TechTicketDetailsImage} title={"Technician ticket details"} description={"Technician ticket detail page with additional features compared to user ticket detail."} />
 
-                     <ViewCodeButton url="https://github.com/mattusoperandi/University-Helpdesk" />
+                     <ViewCodeButton url="https://github.com/MCaloger/University-Helpdesk" />
                 </SplitContainerPanel>
             </SplitContainer>
         </div>

@@ -24,9 +24,9 @@ export default function CanyonpProject() {
 
                     <PageSubtitle>Images</PageSubtitle>
 
-                    <CaptionedImage image={TodoImage} title={"Todo list example"} description={"An example application built witht he framework to make a to-do list app."} />
+                    <CaptionedImage image={TodoImage} title={"Todo list example"} description={"An example application built with the framework to make a to-do list app."} />
 
-                    <CaptionedImage image={DynamicCSSImage} title={"Dynamic CSS example"} description={"An example application to generate CSS dyanmically and generate component with that generated CSS."} />  
+                    <CaptionedImage image={DynamicCSSImage} title={"Dynamic CSS example"} description={"An example application to generate CSS dynamically and generate component with that generated CSS."} />  
 
                      <ViewCodeButton url="https://github.com/mattusoperandi/CanyonJS" />
                 </SplitContainerPanel>

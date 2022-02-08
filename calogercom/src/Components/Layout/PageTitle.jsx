@@ -7,6 +7,8 @@ font-weight: bold;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
+    user-select:none;
+    cusor: default;
 `
 
 export default PageTitle

@@ -35,7 +35,7 @@ export default function AppRouter() {
                 <Route path="projects/helpdesk" element={<HelpdeskProject />} />
                 <Route path="projects/canyon" element={<CanyonProject />} />
                 <Route path="projects/emilysite" element={<EmilySiteProject />} />
-                <Route path="projects/reactchat" element={<ReactChatProject />} />
+                <Route path="projects/instantchat" element={<ReactChatProject />} />
                 <Route path="projects/shippingapp" element={<ShippingAppProject />} />
 
                 <Route path="blog" element={<Blog />} />

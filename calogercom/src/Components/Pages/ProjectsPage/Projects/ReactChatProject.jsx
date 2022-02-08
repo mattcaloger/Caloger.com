@@ -32,7 +32,7 @@ export default function ReactChatProject() {
 
                     <CaptionedImage image={SecondMessageImage} title={"User Home"} description={"A second user sending a message"} />  
 
-                     <ViewCodeButton url="https://github.com/mattusoperandi/Instant-Chat" />
+                     <ViewCodeButton url="https://github.com/MCaloger/Instant-Chat" />
                 </SplitContainerPanel>
             </SplitContainer>
         </div>

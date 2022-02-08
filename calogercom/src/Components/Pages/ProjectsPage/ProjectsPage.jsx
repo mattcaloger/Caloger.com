@@ -107,7 +107,7 @@ export default function ProjectsPage() {
                     </CardContainer>
                 </Link>
 
-                <Link to="reactchat">
+                <Link to="instantchat">
                     <CardContainer>
                         <LightHeader>
                             <DividedContainer>

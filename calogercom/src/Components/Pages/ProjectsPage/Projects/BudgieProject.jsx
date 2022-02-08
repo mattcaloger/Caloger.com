@@ -71,7 +71,7 @@ export default function BudgieProject() {
 
                      <CaptionedImage image={CategoriesImg} title={"Category Page"} description={"The categories page lets you add and remove categories that can be selected from the income and expense pages."} />    
 
-                     <ViewCodeButton url="https://github.com/mattusoperandi/Budgie" />
+                     <ViewCodeButton url="https://github.com/MCaloger/Budgie" />
                 </SplitContainerPanel>
             </SplitContainer>
         </div>

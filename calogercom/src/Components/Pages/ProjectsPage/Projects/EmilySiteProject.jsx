@@ -42,7 +42,7 @@ export default function EmilySiteProject() {
 
                     <CaptionedImage image={IndividualPage} title={"Individual Page"} description={"The individual page of a particular project, containing text and a gallery of media."} />        
 
-                    <ViewCodeButton url="https://github.com/mattusoperandi/EmSite" />
+                    <ViewCodeButton url="https://github.com/MCaloger/EmilyDesignPortfolio" />
                 </SplitContainerPanel>
             </SplitContainer>
         </div>

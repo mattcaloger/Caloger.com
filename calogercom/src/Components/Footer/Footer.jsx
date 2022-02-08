@@ -110,7 +110,7 @@ const FooterItemSelectable = styled.div`
 export default function Footer() {
     return (
         <FooterComponent>   
-                <FooterItem><a href="https://github.com/mattusoperandi">GitHub</a></FooterItem>
+                <FooterItem><a href="https://github.com/MCaloger">GitHub</a></FooterItem>
 
                 <FooterItem><a href="https://www.linkedin.com/in/matthew-caloger/">Linkedin</a></FooterItem>
 
