@@ -28,7 +28,7 @@ export default function CanyonpProject() {
 
                     <CaptionedImage image={DynamicCSSImage} title={"Dynamic CSS example"} description={"An example application to generate CSS dynamically and generate component with that generated CSS."} />  
 
-                     <ViewCodeButton url="https://github.com/mattusoperandi/CanyonJS" />
+                     <ViewCodeButton url="https://github.com/MCaloger/CanyonJS" />
                 </SplitContainerPanel>
             </SplitContainer>
         </div>

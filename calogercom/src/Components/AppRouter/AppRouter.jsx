@@ -18,6 +18,7 @@ import ReactChatProject from '../Pages/ProjectsPage/Projects/ReactChatProject';
 import ShippingAppProject from '../Pages/ProjectsPage/Projects/ShippingAppProject';
 import Contact from '../Pages/Contact/Contact';
 import BuildsheetEditorBlog from '../Blog/BlogPages/BuildsheetEditorBlog';
+import AutomatingAccountCreationBlog from '../Blog/BlogPages/AutomatingAccountCreationBlog';
 
 
 export default function AppRouter() {
@@ -40,6 +41,7 @@ export default function AppRouter() {
 
                 <Route path="blog" element={<Blog />} />
                 <Route path="blog/buildsheet-editor" element={<BuildsheetEditorBlog />} />
+                <Route path="blog/automating-account-creation" element={<AutomatingAccountCreationBlog />} />
             </Routes>
         </BrowserRouter>
     )

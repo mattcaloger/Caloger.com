@@ -10,6 +10,7 @@ import BlogImage from '../../Pages/ProjectsPage/Projects/Layout/BlogImage'
 
 import Carousel from '../../Layout/Carousel'
 import CaptionedImage from '../../Layout/CaptionedImage'
+import PageSubtitle from '../../Layout/PageSubtitle'
 
 export default function BuildsheetEditorBlog() {
     return (
@@ -20,7 +21,7 @@ export default function BuildsheetEditorBlog() {
 
                 <CaptionedImage image={BSEImg} title={"Buildsheet Editor"} description="An image displaying the UI of the Buildsheet Editor."></CaptionedImage>
         
-                <h3>The Problem</h3>
+                <PageSubtitle>The Problem</PageSubtitle>
 
                 <p>During my time at Atlantic Health Systems, I developed an application known as the “Buildsheet Editor” to drastically improve an important yet straining process. Every hospital in the system was performing a wide-scale workstation hardware upgrade to meet a standard to best support the implementation of a new core application that would be rolling out. The rollout would be performed through the following process for each workstation:</p>
 
@@ -40,7 +41,7 @@ export default function BuildsheetEditorBlog() {
 
                 <p>The most difficult part of this process was building the package list from the software list, as they were not one-to-one. A package was a composition of software, there may be an easy one to associate, such as Adobe Reader Version n belonging to the Adobe Reader package, but this got tricky with obscure or highly specialized software where the software name may not align with the package, such as a bundle for Radiology. Furthermore, there was no defined list of software-to-package, so it really relied on experience and knowledge of each department and their software needs. This also led to many rejections in the senior technician approval process due to this, which created large delays in the rollout of this project.</p>
 
-                <h3>The Solution</h3>
+                <PageSubtitle>The Solution</PageSubtitle>
 
                 <p>Due to the multitude of challenges with this process, I got the idea to build an all-in-one editor and viewer for these buildsheets, that made the process of comparing and deriving the data painless. This went alongside with convincing the team of the importance of a software-to-package database which was used to automatically derive the necessary packages. These combined made not only the technician’s job easier, but also the reviewer’s ability to compare the old and new machine for approval.</p>
 

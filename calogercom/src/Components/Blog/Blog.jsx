@@ -52,6 +52,22 @@ export default function Blog() {
                     </CardContainer>    
                 </Link> 
 
+                <Link to="automating-account-creation">
+                    <CardContainer>
+                        <LightHeader>
+                            <DividedContainer>
+                                    <Title>Automating Account Creation</Title>
+                                <SpanRow>
+                                    <Tag>IT</Tag>
+                                    <Tag>Scripting</Tag>
+                                </SpanRow>
+                            </DividedContainer>
+                        </LightHeader>
+                        <LightFooter>
+                        <p>An exploration of automating an IT account creation process from a manual process.</p>
+                        </LightFooter>
+                    </CardContainer>    
+                </Link> 
             
         </PageContainer>
     )
