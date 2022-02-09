@@ -30,13 +30,13 @@ export default function EmilySiteProject() {
 
 
 
-                <p>This website was built using PHP and designed for my wife as a centralized location to show her design portfolio. I chose PHP as a good opportunity to learn the language and sue it as a templating engine.</p>
+                <p>This website was built using PHP and designed for my wife as a centralized location to show her design portfolio. I chose PHP as a good opportunity to learn the language and use it as a templating engine.</p>
 
                 <p>You can visit this page at <ClickableLink href="https://ekmccourt.com" target="_blank">https://ekmccourt.com</ClickableLink></p>
 
                     <PageSubtitle>Images</PageSubtitle>
 
-                    <CaptionedImage image={LandingPage} title={"Landing Page"} description={"Landign page of the website containing links to sub-sections"} />
+                    <CaptionedImage image={LandingPage} title={"Landing Page"} description={"Landing page of the website containing links to sub-sections"} />
 
                     <CaptionedImage image={ProjectsPage} title={"Projects Page"} description={"Projects page displaying all projects, clicking the project links brings you to the individual project's page"} />  
 
