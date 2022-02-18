@@ -16,6 +16,7 @@ import CanyonProject from '../Pages/ProjectsPage/Projects/CanyonProject';
 import EmilySiteProject from '../Pages/ProjectsPage/Projects/EmilySiteProject';
 import ReactChatProject from '../Pages/ProjectsPage/Projects/ReactChatProject';
 import ShippingAppProject from '../Pages/ProjectsPage/Projects/ShippingAppProject';
+import ShortcakeProject from '../Pages/ProjectsPage/Projects/ShortcakeProject'
 import Contact from '../Pages/Contact/Contact';
 import BuildsheetEditorBlog from '../Blog/BlogPages/BuildsheetEditorBlog';
 import AutomatingAccountCreationBlog from '../Blog/BlogPages/AutomatingAccountCreationBlog';
@@ -36,6 +37,7 @@ export default function AppRouter() {
                 <Route path="projects/helpdesk" element={<HelpdeskProject />} />
                 <Route path="projects/canyon" element={<CanyonProject />} />
                 <Route path="projects/emilysite" element={<EmilySiteProject />} />
+                <Route path="projects/shortcake" element={<ShortcakeProject />} />
                 <Route path="projects/instantchat" element={<ReactChatProject />} />
                 <Route path="projects/shippingapp" element={<ShippingAppProject />} />
 

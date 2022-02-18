@@ -81,6 +81,29 @@ export default function ProjectsPage() {
                 </CardContainer>
             </Link>
 
+            <Link to="shortcake">
+                <CardContainer>
+                    <LightHeader>
+                        <DividedContainer>
+                                <Title>Shortcake</Title>
+                            <SpanRow>
+                                <Tag>API</Tag> 
+                                <Tag>Back End</Tag>
+                            </SpanRow>
+                        </DividedContainer>
+                    </LightHeader>
+                    <LightBody>
+                        <ProjectSummary>Shortcake is a simple API for shortening and sharing URLs.</ProjectSummary>
+                    </LightBody>
+                    <DarkFooter>
+                            <EvenSpanRow>
+                                <JavaScriptIconBlock />
+                                <NodeIconBlock />
+                            </EvenSpanRow>
+                    </DarkFooter>
+                </CardContainer>
+            </Link>
+
             <Link to="helpdesk">
                     <CardContainer>
                         <LightHeader>

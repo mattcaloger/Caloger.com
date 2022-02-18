@@ -29,6 +29,27 @@ body {
   width: 100%;
 }
 
-a {
+/* a {
   all:unset;
+} */
+
+a:link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;	
+}	
+
+
+a:visited	{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;	
 }
+
+a:link:active	{
+  color: inherit;
+}
+
+a:visited:active {
+  color: inherit;
+}	
