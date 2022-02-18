@@ -1,22 +1,15 @@
-import { motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import ProjectCard from './ProjectCard'
 import { Link } from 'react-router-dom'
-
-import CanyonImage from '../../../img/canyon.png'
-import EscargoImage from '../../../img/escargo.jpg'
-import { ColorCSharp, ColorCss, ColorHtml, ColorJava, ColorJs, ColorPhp, ColorReactJs, ColorSpring } from '../../Terminal/Languages'
-import TerminalCard from '../../Terminal/TerminalCard'
 import SpanRow from '../../Terminal/SpanRow'
-import TerminalButton from '../../Terminal/TerminalButton'
+
 import PageTitle from '../../Layout/PageTitle'
 import Title from './Projects/Layout/Title'
 import Tag from './Projects/Layout/Tag'
 import PageContainer from './Projects/Layout/PageContainer'
-import { CSharpIconBlock, CssIconBlock, DotnetIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
+import { CssIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, SqlIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
 import DividedContainer from './Projects/Layout/DividedContainer'
-import { CardContainer, DarkFooter, LightBody, LightHeader, DarkBody, LightFooter } from '../../Layout/LightDarkCard'
+import { CardContainer, DarkFooter, LightBody, LightHeader } from '../../Layout/LightDarkCard'
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
 import PageSubtitle from '../../Layout/PageSubtitle';
 
@@ -99,6 +92,7 @@ export default function ProjectsPage() {
                             <EvenSpanRow>
                                 <JavaScriptIconBlock />
                                 <NodeIconBlock />
+                                <SqlIconBlock />
                             </EvenSpanRow>
                     </DarkFooter>
                 </CardContainer>

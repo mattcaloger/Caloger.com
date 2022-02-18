@@ -1,21 +1,8 @@
 import React from 'react'
 import SplitContainer from './Layout/SplitContainer'
 import SplitContainerPanel from './Layout/SplitContainerPanel'
-import AboutBlurb from '../../../AboutBlurb/AboutBlurb'
-import styled from 'styled-components'
-import ProjectDetails from './Layout/ProjectDetails'
-
-import TransactionImg from '../../../../img/proj-img/budgie/budgie-transaction.png'
-import IncomeImg from '../../../../img/proj-img/budgie/budgie-income.png'
-import ExpensesImg from '../../../../img/proj-img/budgie/budgie-expenses.png'
-
-import CategoriesImg from '../../../../img/proj-img/budgie/budgie-categories.png'
-
-import Carousel from '../../../Layout/Carousel'
 import PageTitle from '../../../Layout/PageTitle'
-import CaptionedImage from '../../../Layout/CaptionedImage'
 import ViewCodeButton from '../../../Layout/ViewCodeButton'
-import PageSubtitle from '../../../Layout/PageSubtitle'
 import VisibleLink from '../../../Layout/VisibleLink'
 
 export default function BudgieProject() {

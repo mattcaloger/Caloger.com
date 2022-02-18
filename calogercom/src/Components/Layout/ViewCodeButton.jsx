@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import GithubIconImg from '../../img/github.svg'
-import { CardContainer, LIGHT_COLOUR } from './LightDarkCard';
+import { LIGHT_COLOUR } from './LightDarkCard';
 
 const GitHubIcon = styled.img`
     width: 25px;

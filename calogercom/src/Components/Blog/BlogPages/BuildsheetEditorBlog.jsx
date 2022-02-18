@@ -1,14 +1,9 @@
 import React from 'react'
 import PageTitle from '../../Layout/PageTitle'
 import PageContainer from '../../Pages/ProjectsPage/Projects/Layout/PageContainer'
-import TerminalCardWhite from '../../Terminal/TerminalCardWhite'
-
 import BSEImg from '../../../img/blog-img/bse/BSEScreenshot.png'
 import BSEFlow from '../../../img/blog-img/bse/bseflow.png'
-
 import BlogImage from '../../Pages/ProjectsPage/Projects/Layout/BlogImage'
-
-import Carousel from '../../Layout/Carousel'
 import CaptionedImage from '../../Layout/CaptionedImage'
 import PageSubtitle from '../../Layout/PageSubtitle'
 

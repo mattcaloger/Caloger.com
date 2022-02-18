@@ -9,7 +9,6 @@ import HomePage from '../Pages/HomePage/HomePage'
 import ProjectsPage from '../Pages/ProjectsPage/ProjectsPage';
 import Blog from '../Blog/Blog';
 import NavBar from '../NavBar/NavBar';
-import StylizedSlant from '../StylizedSlant/StylizedSlant';
 import BudgieProject from '../Pages/ProjectsPage/Projects/BudgieProject';
 import HelpdeskProject from '../Pages/ProjectsPage/Projects/HelpdeskProject';
 import CanyonProject from '../Pages/ProjectsPage/Projects/CanyonProject';
@@ -17,7 +16,6 @@ import EmilySiteProject from '../Pages/ProjectsPage/Projects/EmilySiteProject';
 import ReactChatProject from '../Pages/ProjectsPage/Projects/ReactChatProject';
 import ShippingAppProject from '../Pages/ProjectsPage/Projects/ShippingAppProject';
 import ShortcakeProject from '../Pages/ProjectsPage/Projects/ShortcakeProject'
-import Contact from '../Pages/Contact/Contact';
 import BuildsheetEditorBlog from '../Blog/BlogPages/BuildsheetEditorBlog';
 import AutomatingAccountCreationBlog from '../Blog/BlogPages/AutomatingAccountCreationBlog';
 
