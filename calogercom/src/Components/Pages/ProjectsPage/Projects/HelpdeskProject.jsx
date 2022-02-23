@@ -45,7 +45,7 @@ export default function HelpdeskProject() {
 
                     <CaptionedImage image={SignInImage} title={"Sign In"} description={"The sign-in page for the application"} />
 
-                    <CaptionedImage image={UserHomeImage} title={"User Home"} description={"Home page aftr sign-in for standard users."} />  
+                    <CaptionedImage image={UserHomeImage} title={"User Home"} description={"Home page after sign-in for standard users."} />  
 
                      <CaptionedImage image={UserNewIssueImage} title={"user new issue"} description={"New issue page for standard users."} />      
 

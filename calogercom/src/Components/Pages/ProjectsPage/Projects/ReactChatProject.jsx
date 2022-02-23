@@ -1,7 +1,7 @@
 import React from 'react'
 import SplitContainer from './Layout/SplitContainer'
 import SplitContainerPanel from './Layout/SplitContainerPanel'
-import ProjectDetails from './Layout/ProjectDetails'
+
 import CaptionedImage from '../../../Layout/CaptionedImage'
 
 import PageTitle from '../../../Layout/PageTitle'
@@ -11,6 +11,8 @@ import PageSubtitle from '../../../Layout/PageSubtitle'
 import ViewCodeButton from '../../../Layout/ViewCodeButton'
 
 import FirstMessageImage from '../../../../img/proj-img/InstantChat/First message.png'
+
+import VisibleLink from '../../../Layout/VisibleLink';
 
 import SecondMessageImage from '../../../../img/proj-img/InstantChat/Second message.png'
 
@@ -25,6 +27,10 @@ export default function ReactChatProject() {
 
                 
                     <p>This project was created to gain an understanding of websockets and real-time communication.</p>
+
+                    <p>The front-end was developed with React and TypeScript, using <VisibleLink href="https://styled-components.com/">Styled-Components</VisibleLink> for styling.</p>
+
+                    <p>The back-end uses ndoeJS with <VisibleLink href="https://expressjs.com/">Express</VisibleLink> to serve the front-end, and <VisibleLink href="https://socket.io/">Socket.IO</VisibleLink> to handle the instant messaging.</p>
 
                     <PageSubtitle>Images</PageSubtitle>
 
