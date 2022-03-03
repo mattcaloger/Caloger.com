@@ -13,7 +13,7 @@ import PageSubtitle from '../../../Layout/PageSubtitle'
 
 export default function CanyonpProject() {
     return (
-        <div>
+        <>
 
             <PageTitle>Canyon</PageTitle>
             <SplitContainer>
@@ -31,6 +31,6 @@ export default function CanyonpProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/CanyonJS" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </>
     )
 }

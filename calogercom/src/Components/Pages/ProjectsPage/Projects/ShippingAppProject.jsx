@@ -5,7 +5,7 @@ import ProjectDetails from './Layout/ProjectDetails'
 
 export default function ShippingAppProject() {
     return (
-        <div>
+        <>
             <h1>Escargo</h1>
             <SplitContainer>
 
@@ -15,6 +15,6 @@ export default function ShippingAppProject() {
                     </ProjectDetails>
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </>
     )
 }

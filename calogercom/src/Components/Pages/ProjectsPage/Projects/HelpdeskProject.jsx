@@ -31,7 +31,7 @@ import TechTicketDetailsImage from '../../../../img/proj-img/university-helpdesk
 
 export default function HelpdeskProject() {
     return (
-        <div>
+        <>
 
             <PageTitle>University Helpdesk</PageTitle>
             <SplitContainer>
@@ -64,6 +64,6 @@ export default function HelpdeskProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/University-Helpdesk" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </>
     )
 }

@@ -29,9 +29,9 @@ const SlantHeaderEnd = styled.div`
 
 export default function StylizedSlant() {
     return (
-        <div>
+        <>
             <SlantHeaderStart />
             <SlantHeaderEnd />
-        </div>
+        </>
     )
 }
