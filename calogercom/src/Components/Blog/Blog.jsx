@@ -47,7 +47,7 @@ export default function Blog() {
                             </DividedContainer>
                         </LightHeader>
                         <LightFooter>
-                        <p>A deep-dive into designing and deploying the Buildsheet Editor</p>
+                        <p>A deep-dive into designing and deploying the Buildsheet Editor.</p>
                         </LightFooter>
                     </CardContainer>    
                 </Link> 

@@ -161,7 +161,7 @@ export default function ProjectsPage() {
                         </DividedContainer>
                     </LightHeader>
                     <LightBody>
-                        <ProjectSummary>A VanillaJS front-end framework that allows you to define components and dynamically render them when certain actions take place. Combines a state container with the observer pattern</ProjectSummary>
+                        <ProjectSummary>A VanillaJS front-end framework that allows you to define components and dynamically render them when certain actions take place. Combines a state container with the observer pattern.</ProjectSummary>
                     </LightBody>
                     <DarkFooter>
 
