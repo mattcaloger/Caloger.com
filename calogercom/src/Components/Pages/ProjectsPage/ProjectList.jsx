@@ -98,8 +98,8 @@ const projects = [
 export default function ProjectList() {
   return (
     <>
-      {projects.map(project => {
-          return <ProjectCard {...project} />
+      {projects.map((project, index) => {
+          return <ProjectCard key={index} {...project} />
       })}
     </>
   )

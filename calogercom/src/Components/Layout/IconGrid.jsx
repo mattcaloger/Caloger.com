@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion'
 
-export const IconGrid = styled(motion.div)`
+export const IconGrid = styled.div`
     display: grid; 
     grid-template-columns: repeat(5, 1fr); 
     grid-template-rows: repeat(2, 1fr); 

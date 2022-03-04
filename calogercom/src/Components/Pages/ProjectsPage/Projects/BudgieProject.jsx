@@ -52,8 +52,6 @@ export default function BudgieProject() {
 
                     <p>I originally used the <VisibleLink href="https://recharts.org/en-US/">ReChart</VisibleLink> library for the data visualizations but found it wasn't as flexible as I'd like it to be, so I changed over to <VisibleLink href="https://www.chartjs.org/">Chart.js</VisibleLink> and the accompanying <VisibleLink href="https://github.com/reactchartjs/react-chartjs-2">React ChartJS 2</VisibleLink> library for it.</p>
 
-                   
-
                     <p>
                         Some interesting features that are used include ascending/descending sorting, instant visual updating, and gradient charts.
                     </p>

@@ -7,7 +7,6 @@ import TerminalCardWhite from '../Terminal/TerminalCardWhite'
 import PageTitle from '../Layout/PageTitle'
 import SpanRow from '../Terminal/EvenSpanRow'
 import { IconGrid } from '../Layout/IconGrid';
-import { motion } from 'framer-motion'
 
 const AboutBlock = styled.div`
     display: flex;
