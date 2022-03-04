@@ -1,10 +1,8 @@
+import React from 'react'
+import styled from 'styled-components'
 
-
-    import React from 'react'
-    import styled from 'styled-components'
-    import {motion} from 'framer-motion'
-    import TerminalCard from './TerminalCard'
-    import * as Languages from './Languages'
+import TerminalCard from './TerminalCard'
+import * as Languages from './Languages'
 
     import SpanRow from './SpanRow'
 import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock } from './LanguageIcons'
@@ -36,29 +34,12 @@ import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaScriptIconBlock, Node
                 }
             }
         `
-
-        const variants = {
-            hidden: { opacity: 0 },
-            show: { opacity: 1},
-          }
-
-        const container = {
-            hidden: {opacity: 0},
-            show: {
-                opacity: 1,
-                transition: {
-                    delayChildren: 0.1,
-                        sgerChildren: 0.1
-                    }
-                }
-        }
-
+        
         export default function Terminal() {
             return (
                  
-                <TerminalCard as={motion.div} variants={container} initial="hidden"
-                animate="show">
-                    <SpanRow as={motion.span} variants={variants}>
+                <TerminalCard>
+                    <SpanRow>
                         <CSharpIconBlock />
                         <JavaScriptIconBlock />
                         <HtmlIconBlock />

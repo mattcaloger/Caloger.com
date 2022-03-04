@@ -13,26 +13,10 @@ import { CardContainer, DarkHeader, LightHeader, LightBody, LightFooter, DarkFoo
 import DividedContainer from '../Pages/ProjectsPage/Projects/Layout/DividedContainer'
 import PageSubtitle from '../Layout/PageSubtitle'
 
-const BlogChild = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1},
-  }
-
-const BlogContainer = {
-    hidden: { opacity: 0 },
-    show: {
-        opacity: 1,
-        transition: {
-            delayChildren: 1,
-            staggerChildren: 1
-        }
-    }
-}
-
 
 export default function Blog() {
     return (
-        <PageContainer  variants={BlogContainer} initial="hidden" animate="show">
+        <PageContainer>
             <PageTitle>Blog</PageTitle>
             <PageSubtitle>Select a blog to view details</PageSubtitle>
 

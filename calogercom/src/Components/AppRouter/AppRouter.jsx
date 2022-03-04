@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     BrowserRouter,
     Routes,
-    Route
+    Route,
+    useLocation
   } from "react-router-dom";
 
 import HomePage from '../Pages/HomePage/HomePage'
@@ -18,13 +19,17 @@ import ShippingAppProject from '../Pages/ProjectsPage/Projects/ShippingAppProjec
 import ShortcakeProject from '../Pages/ProjectsPage/Projects/ShortcakeProject'
 import BuildsheetEditorBlog from '../Blog/BlogPages/BuildsheetEditorBlog';
 import AutomatingAccountCreationBlog from '../Blog/BlogPages/AutomatingAccountCreationBlog';
+import ScrollToTop from './ScrollToTop';
 
 
 export default function AppRouter() {
+
     return (
         <BrowserRouter>
             <NavBar />
+            <ScrollToTop />
             <Routes>
+                
                 <Route path="/" element={<HomePage />}>
 
                 </Route>

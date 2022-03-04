@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { motion } from "framer-motion"
 
-const PageContainer = styled(motion.div)`
+const PageContainer = styled.div`
     display: flex;
     flex-direction: column;
     

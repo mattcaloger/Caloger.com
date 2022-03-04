@@ -1,67 +1,43 @@
 import React from 'react'
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import SpanRow from '../../Terminal/SpanRow'
+import Title from './Projects/Layout/Title'
+import Tag from './Projects/Layout/Tag'
+import DividedContainer from './Projects/Layout/DividedContainer'
+import { CardContainer, DarkFooter, LightBody, LightHeader } from '../../Layout/LightDarkCard'
+import EvenSpanRow from '../../Terminal/EvenSpanRow';
 
-import TerminalCard from '../../Terminal/TerminalCard'
-
-const Card = styled.div`
-
-    display: flex;
-    
-    align-items: center;
-
-    flex-direction: column;
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
-    background: rgba(256,256,256,.5);
-    backdrop-filter: blur(10px);
-    color: black;
-    width: 100%;
-    border-radius: 10px;
-    margin: auto;
-
-    padding: 20px;
+const ProjectSummary = styled.div`
+    cursor: default;
     user-select: none;
-    transition: all .2s;
-
-    &:hover {
-        background: rgba(256,256,256,1);
-        transform: scale(1.2);
-        transition: all .2s;
-    }
-    
-
-`
-
-const Row = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width:100%;
-
-    align-content: center;
-    justify-content: center;
-`
-
-const Title = styled.div`
-    font-size: 24px;
-    text-align: center;
-    flex: 3;
-`
-
-const Icon = styled.img`
-    width: 100px;
-    height: 100px;
-
 `
 
 export default function ProjectCard(props) {
-  
     return (
-        <TerminalCard>
-            {props.title}
-            {props.languages}
-        </TerminalCard>
+        <Link to={props.url}>
+            <CardContainer>
+                <LightHeader>
+                    <DividedContainer>
+                            <Title>{props.title}</Title>
+                        <SpanRow>
+                            {props.tags.map(tag => {
+                                return <Tag>{tag}</Tag>
+                            })}
+                        </SpanRow>
+                    </DividedContainer>
+                </LightHeader>
+                <LightBody>
+                    <ProjectSummary>{props.summary}</ProjectSummary>
+                </LightBody>
+                <DarkFooter>
+                    <EvenSpanRow>
+                        {props.icons.map(icon => {
+                            return icon
+                        })}
+                    </EvenSpanRow>
+                </DarkFooter>
+            </CardContainer>
+        </Link>
     )
 }
