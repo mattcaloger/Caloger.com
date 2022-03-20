@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Title from '../Pages/ProjectsPage/Projects/Layout/Title'
+import Title from '../Layout/Title'
 import SpanRow from '../Terminal/SpanRow'
-import Tag from '../Pages/ProjectsPage/Projects/Layout/Tag'
+import Tag from '../Layout/Tag'
 import { CardContainer, LightHeader, LightFooter } from '../Layout/LightDarkCard'
-import DividedContainer from '../Pages/ProjectsPage/Projects/Layout/DividedContainer'
+import DividedContainer from '../Layout/DividedContainer'
 
 export default function BlogCard(props) {
   return (

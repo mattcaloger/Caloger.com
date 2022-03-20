@@ -1,6 +1,6 @@
 import React from 'react'
 import PageTitle from '../Layout/PageTitle'
-import PageContainer from '../Pages/ProjectsPage/Projects/Layout/PageContainer'
+import PageContainer from '../Layout/PageContainer'
 import PageSubtitle from '../Layout/PageSubtitle'
 import BlogList from './BlogList'
 

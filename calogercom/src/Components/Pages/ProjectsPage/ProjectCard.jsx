@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import SpanRow from '../../Terminal/SpanRow'
-import Title from './Projects/Layout/Title'
-import Tag from './Projects/Layout/Tag'
-import DividedContainer from './Projects/Layout/DividedContainer'
-import { CardContainer, DarkFooter, LightBody, LightHeader } from '../../Layout/LightDarkCard'
+import Tag from '../../Layout/Tag'
+import DividedContainer from '../../Layout/DividedContainer'
+import { CardContainer, LightFooter, LightBody, LightHeader } from '../../Layout/LightDarkCard'
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
+import Title from '../../Layout/Title'
 
 const ProjectSummary = styled.div`
     cursor: default;
@@ -21,8 +21,8 @@ export default function ProjectCard(props) {
                     <DividedContainer>
                             <Title>{props.title}</Title>
                         <SpanRow>
-                            {props.tags.map(tag => {
-                                return <Tag>{tag}</Tag>
+                            {props.tags.map((tag, index) => {
+                                return <Tag key={index}>{tag}</Tag>
                             })}
                         </SpanRow>
                     </DividedContainer>
@@ -30,13 +30,13 @@ export default function ProjectCard(props) {
                 <LightBody>
                     <ProjectSummary>{props.summary}</ProjectSummary>
                 </LightBody>
-                <DarkFooter>
+                <LightFooter>
                     <EvenSpanRow>
-                        {props.icons.map(icon => {
-                            return icon
+                        {props.icons.map((icon, index) => {
+                            return <React.Fragment key={index}>{icon}</React.Fragment>
                         })}
                     </EvenSpanRow>
-                </DarkFooter>
+                </LightFooter>
             </CardContainer>
         </Link>
     )

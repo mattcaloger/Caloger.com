@@ -1,9 +1,9 @@
 import React from 'react'
 import PageTitle from '../../Layout/PageTitle'
-import PageContainer from '../../Pages/ProjectsPage/Projects/Layout/PageContainer'
+import PageContainer from '../../Layout/PageContainer'
 import BSEImg from '../../../img/blog-img/bse/BSEScreenshot.png'
 import BSEFlow from '../../../img/blog-img/bse/bseflow.png'
-import BlogImage from '../../Pages/ProjectsPage/Projects/Layout/BlogImage'
+import BlogImage from '../../Layout/BlogImage'
 import CaptionedImage from '../../Layout/CaptionedImage'
 import PageSubtitle from '../../Layout/PageSubtitle'
 
@@ -12,7 +12,6 @@ export default function BuildsheetEditorBlog() {
         <PageContainer>
             <PageTitle>Buildsheet Editor</PageTitle>
             <div>
-   
 
                 <CaptionedImage image={BSEImg} title={"Buildsheet Editor"} description="An image displaying the UI of the Buildsheet Editor."></CaptionedImage>
         

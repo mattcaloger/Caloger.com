@@ -7,6 +7,8 @@ import TerminalCardWhite from '../Terminal/TerminalCardWhite'
 import PageTitle from '../Layout/PageTitle'
 import SpanRow from '../Terminal/EvenSpanRow'
 import { IconGrid } from '../Layout/IconGrid';
+import { BORDER_RADIUS } from '../Layout/BorderRadius'
+import Title from '../Layout/Title'
 
 const AboutBlock = styled.div`
     display: flex;
@@ -19,7 +21,7 @@ const AboutBlock = styled.div`
     }
 
     
-    border-radius: 10px;
+    border-: 10px;
 `
 
 
@@ -27,9 +29,8 @@ const BlurbCard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(#000000dd, #000000ee);
-    backdrop-filter: blur(10px);
-    color: white;
+    color: black;
+    background: white;
     width: 100%;
 
     margin: auto;
@@ -42,20 +43,20 @@ const BlurbCard = styled.div`
 `
 
 const BlurbHeader = styled(BlurbCard)`
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: ${BORDER_RADIUS};
+    border-top-right-radius: ${BORDER_RADIUS};
     color: black;
-    background: #ffffff99;
+    background: #ffffff;
 `
 
 const BlurbBody = styled(BlurbCard)`
 color: black;
-    background: #ffffff99;
+    background: #ffffff;
 `
 
 const BlurbFooter = styled(BlurbCard)`
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
+border-bottom-left-${BORDER_RADIUS};
+border-bottom-right-${BORDER_RADIUS};
 
     &>* {
         margin-top: 25px;
@@ -77,28 +78,8 @@ export default function AboutBlurb() {
                 </p>
             </BlurbBody>
             <BlurbFooter>
-                <PageTitle>Skills</PageTitle>
                 
-                <IconGrid>
-                    <JavaScriptIconBlock/>
-                    <HtmlIconBlock/>
-                    <CssIconBlock/>
-                    <ReactIconBlock/>
-                    <TypeScriptIconBlock/>
-                    <NodeIconBlock/>
-                    {/* <CSharpIconBlock/> */}
-                    <JavaIconBlock/>
-                    <SpringIconBlock/>
-                    <PhpIconBlock/>
-                    <SqlIconBlock/>
-                    {/* <DotnetIconBlock/> */}
-                </IconGrid>
             </BlurbFooter>
-
-                
-                
-            
-            
         </AboutBlock>
 
     )

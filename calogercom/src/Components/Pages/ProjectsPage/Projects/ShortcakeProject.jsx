@@ -1,9 +1,10 @@
 import React from 'react'
-import SplitContainer from './Layout/SplitContainer'
-import SplitContainerPanel from './Layout/SplitContainerPanel'
+import SplitContainer from '../../../Layout/SplitContainer'
+import SplitContainerPanel from '../../../Layout/SplitContainerPanel'
 import PageTitle from '../../../Layout/PageTitle'
-import ViewCodeButton from '../../../Layout/ViewCodeButton'
+
 import VisibleLink from '../../../Layout/VisibleLink'
+import ViewCodeButton from '../../../Layout/ViewCodeButton'
 
 export default function BudgieProject() {
     return (

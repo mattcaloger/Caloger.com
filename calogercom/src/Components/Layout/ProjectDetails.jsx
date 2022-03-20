@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { BORDER_RADIUS } from "./BorderRadius"
 
 const ProjectDetails = styled.div`
 
@@ -7,7 +8,7 @@ const ProjectDetails = styled.div`
     backdrop-filter: blur(10px);
     color: black;
     width: 100%;
-    border-radius: 10px;
+    border-radius: ${BORDER_RADIUS};
     margin: auto;
     margin-bottom: 50px;
     padding: 20px;

@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import GithubIconImg from '../../img/github.svg'
-import { LIGHT_COLOUR } from './LightDarkCard';
+import { BORDER_RADIUS } from './BorderRadius';
+import { DROP_SHADOW, DROP_SHADOW_HOVER, LIGHT_COLOUR } from './LightDarkCard';
 
 const GitHubIcon = styled.img`
     width: 25px;
@@ -26,11 +27,12 @@ const GitHubIconContainer = styled.div`
 
     transition: all ease-in .1s;
     
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border-radius: 10px;
+    ${DROP_SHADOW}
+
+    border-radius: ${BORDER_RADIUS};
     
     &:hover {
-        transform:scale(1.1);
+        ${DROP_SHADOW_HOVER}
     }
 `
 const CenteredText = styled.div`text-align: center;`

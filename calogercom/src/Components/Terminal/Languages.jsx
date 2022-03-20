@@ -5,9 +5,9 @@ const LangSpan = styled.div`color: black; font-size: 18px;`
 
 const LangTag = styled(LangSpan)`padding: 5px; border-radius: 5px;`
 
-const ColorJs = styled(LangSpan)`color: #fcdc00;`
+const ColorJs = styled(LangSpan)`color: black;`
 
-const ColorJsTag = styled(LangTag)`background: #fcdc00; color: black; `
+const ColorJsTag = styled(LangTag)`background: black; color: black; `
 
 const ColorHtml = styled(LangSpan)`color: #e54c21;`
 

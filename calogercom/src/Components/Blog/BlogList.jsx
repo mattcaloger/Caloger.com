@@ -19,7 +19,7 @@ export default function BlogList() {
   return (
     <>
         {blogs.map((blog, index) => {
-            return <BlogCard {...blog} />
+            return <BlogCard key={index} {...blog} />
         })}
     </>
   )

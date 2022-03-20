@@ -1,7 +1,6 @@
 import React from 'react'
-import SplitContainer from './Layout/SplitContainer'
-import SplitContainerPanel from './Layout/SplitContainerPanel'
-import ProjectDetails from './Layout/ProjectDetails'
+import SplitContainer from '../../../Layout/SplitContainer'
+import SplitContainerPanel from '../../../Layout/SplitContainerPanel'
 
 import ViewCodeButton from '../../../Layout/ViewCodeButton'
 

@@ -6,7 +6,7 @@ const DARK_COLOUR = 'black';
 const DROP_SHADOW = 'box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);'
 const DROP_SHADOW_HOVER = 'box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);'
 
-const CardContainer = styled.div`
+const FlatCardContainer = styled.div`
     display: flex;
 
     flex-direction: column;
@@ -14,23 +14,15 @@ const CardContainer = styled.div`
     align-items: center;
 
     transition: all ease-in .1s;
-    
-    ${DROP_SHADOW}
 
     border-radius:${BORDER_RADIUS};
-    @media (min-width: 768px) {
-         &:hover {
-            ${DROP_SHADOW_HOVER}
-         }
-    }
-   
     
     &>* {
         margin-bottom: 25px;
     }
 `
 
-const CardBase = styled.div`
+const FlatCardBase = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,44 +56,44 @@ const CardBase = styled.div`
     }
 `
 
-const HeaderBase = styled(CardBase)`
+const FlatHeaderBase = styled(FlatCardBase)`
     border-top-left-radius: ${BORDER_RADIUS};;
     border-top-right-radius: ${BORDER_RADIUS};;
 `
 
-const FooterBase = styled(CardBase)`
+const FlatFooterBase = styled(FlatCardBase)`
     border-bottom-left-radius: ${BORDER_RADIUS};;
     border-bottom-right-radius: ${BORDER_RADIUS};;
 `
 
-const LightHeader = styled(HeaderBase)`
+const FlatLightHeader = styled(FlatHeaderBase)`
     color: black;
     background: ${LIGHT_COLOUR};
 `
 
-const DarkHeader = styled(HeaderBase)`
+const FlatDarkHeader = styled(FlatHeaderBase)`
     color: white;
     background: ${DARK_COLOUR};
 `
 
-const LightBody = styled(CardBase)`
+const FlatLightBody = styled(FlatCardBase)`
     color: black;
     background: ${LIGHT_COLOUR};
 `
 
-const DarkBody = styled(CardBase)`
+const FlatDarkBody = styled(FlatCardBase)`
     color: white;
     background: ${DARK_COLOUR};
 `
 
-const LightFooter = styled(FooterBase)`
+const FlatLightFooter = styled(FlatFooterBase)`
     color: black;
     background: ${LIGHT_COLOUR};
 `
 
-const DarkFooter = styled(FooterBase)`
+const FlatDarkFooter = styled(FlatFooterBase)`
     color: white;
     background: ${DARK_COLOUR};
 `
 
-export { CardContainer, LightHeader, LightBody, LightFooter, DarkHeader, DarkBody, DarkFooter, LIGHT_COLOUR, DARK_COLOUR, DROP_SHADOW, DROP_SHADOW_HOVER }
+export { FlatCardContainer, FlatLightHeader, FlatLightBody, FlatLightFooter, FlatDarkHeader, FlatDarkBody, FlatDarkFooter, LIGHT_COLOUR, DARK_COLOUR, DROP_SHADOW, DROP_SHADOW_HOVER }

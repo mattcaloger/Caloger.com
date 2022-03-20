@@ -79,15 +79,15 @@ const BlogLink = styled(NavItem)`
 export default function NavBar() {
     return (
         <HeaderNav>
-            
+            <NavItem>
+                    <Link to="/">Matthew Caloger</Link>
+                    
+                </NavItem>
             <NavItem>
                     <Link to="/projects">Projects</Link>
     
                 </NavItem>
-                <NavItem>
-                    <Link to="/"><HighlightedLink>Matthew Caloger</HighlightedLink></Link>
-                    
-                </NavItem>
+                
                 <NavItem>
                     <Link to="/blog">Blog</Link>
     
