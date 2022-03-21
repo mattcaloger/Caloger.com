@@ -10,7 +10,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(to right, hsla(230, 96%, 62%, 0.251), hsla(348, 97%, 63%, 0.251)); */
 
-  background: linear-gradient(to right, hsla(206.57,89.74%,54.12%, .5), hsla(87.86,50.00%,67.06%, 0.5));
+  /* background: linear-gradient(to right, hsla(206.57,89.74%,54.12%, .5), hsla(87.86,50.00%,67.06%, 0.5)); */
+  background: #eee;
   /* background: linear-gradient(to right, hsla(229, 96%, 62%, 0.251), hsla(108, 97%, 63%, 0.251)); */
   /* background: #B2EBF2; */
    /* background: #fff;  */

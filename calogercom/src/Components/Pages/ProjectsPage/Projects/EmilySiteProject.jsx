@@ -1,8 +1,7 @@
 import React from 'react'
-import SplitContainer from './Layout/SplitContainer'
-import SplitContainerPanel from './Layout/SplitContainerPanel'
-import ProjectDetails from './Layout/ProjectDetails'
-import BlogImage from './Layout/BlogImage'
+import SplitContainer from '../../../Layout/SplitContainer'
+import SplitContainerPanel from '../../../Layout/SplitContainerPanel'
+
 
 import PageTitle from '../../../Layout/PageTitle'
 import CaptionedImage from '../../../Layout/CaptionedImage'

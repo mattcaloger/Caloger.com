@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { LightBody, DarkFooter, LightHeader, LightFooter, DarkHeader } from './LightDarkCard';
-
 import ArrowSVG from '../../img/arrow.svg'
 import PageSubtitle from './PageSubtitle';
+import { BORDER_RADIUS } from './BorderRadius';
 
 const Thumbnail = styled.img`
     width: 100px;
@@ -26,8 +26,8 @@ const DisplayImage = styled.img`
     display: block;
     object-fit: contain;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: ${BORDER_RADIUS};
+    border-top-right-radius: ${BORDER_RADIUS};
 
     display: block;
     width: auto;

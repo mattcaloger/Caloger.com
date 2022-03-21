@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import React from 'react'; 
-import PageSubtitle from "./PageSubtitle";
 
 export const DisplayImage = styled.img`
     display: block;
@@ -9,7 +8,8 @@ export const DisplayImage = styled.img`
     width: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
+    border: 1px solid grey;
+    margin-bottom: 25px;
 
 `
 
@@ -19,13 +19,10 @@ export const ImageContainer = styled.div`
     flex-direction: column;
     width: inherit;
     height: auto; 
-
     border-radius: 10px;
 
-    &>* {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
+    margin-top: 25px;
+    margin-bottom: 25px;
 `
 
 const DescriptionText = styled.div`
@@ -38,8 +35,6 @@ font-size: 16px;
 export default function CaptionedImage(props) {
   return (
   <ImageContainer>
-
-      
       <DisplayImage src={props.image} alt={props.description} />
       <DescriptionText>{props.description}</DescriptionText>
   </ImageContainer>

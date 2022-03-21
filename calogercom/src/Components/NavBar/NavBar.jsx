@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link, Router } from "react-router-dom";
 
 const HeaderNav = styled.nav`
-    font-size: 20px;
+    font-size: 24px;
     width: 100%;
     height: 50px;
     color: black;
@@ -73,8 +73,6 @@ const BlogLink = styled(NavItem)`
     order: 3
   }
 `
-
-
 
 export default function NavBar() {
     return (

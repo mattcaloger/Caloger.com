@@ -1,9 +1,9 @@
 import React from 'react'
 
 import PageTitle from '../../Layout/PageTitle'
-import PageContainer from './Projects/Layout/PageContainer'
 import PageSubtitle from '../../Layout/PageSubtitle';
 import ProjectList from './ProjectList'
+import PageContainer from '../../Layout/PageContainer';
 
 export default function ProjectsPage() {
     

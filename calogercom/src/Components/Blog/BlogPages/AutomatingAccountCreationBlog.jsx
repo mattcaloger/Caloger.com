@@ -1,11 +1,6 @@
 import React from 'react'
 import PageTitle from '../../Layout/PageTitle'
-import PageContainer from '../../Pages/ProjectsPage/Projects/Layout/PageContainer'
-import TerminalCardWhite from '../../Terminal/TerminalCardWhite'
-
-
-import CaptionedImage from '../../Layout/CaptionedImage'
-import PageSubtitle from '../../Layout/PageSubtitle'
+import PageContainer from '../../Layout/PageContainer'
 
 export default function AutomatingAccountCreationBlog() {
     return (

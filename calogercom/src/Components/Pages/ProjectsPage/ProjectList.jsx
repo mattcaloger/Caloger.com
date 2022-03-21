@@ -3,6 +3,21 @@ import { CssIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIc
 import ProjectCard from './ProjectCard'
 
 const projects = [
+    {
+        url: "stasher",
+        title: "Stasher",
+        summary: "A secure message sharing service.",
+        tags: [
+            "Full Stack", 
+            "Security"
+        ],
+        icons: [
+            <TypeScriptIconBlock />,
+            <ReactIconBlock />, 
+            <JavaIconBlock />, 
+            <SpringIconBlock/>,
+        ]
+    },
   {
       url: "Budgie",
       title: "Budgie",
