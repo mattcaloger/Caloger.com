@@ -36,9 +36,6 @@ export default function BudgieProject() {
             <SplitContainer>
 
                 <SplitContainerPanel>
-
-                    
-
                     <p>I created Budgie to gain some experience with data visualization and play around with a gradient-heavy visual style. The front-end is a React app that uses <VisibleLink href="https://reactrouter.com/">React Router</VisibleLink> for navigation.</p>
 
                     <p>The server portion was written in Java with the Spring Framework as the web layer. It uses JPA with an in-memory h2 database for storage.</p>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const PageSubtitle = styled.div`
     font-weight: bold;
-    font-size: 2 0px;
+    font-size: 16px;
     text-align: center;
     width: 100%;
     margin: auto;
