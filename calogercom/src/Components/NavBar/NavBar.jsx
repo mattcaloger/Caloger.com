@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link, Router } from "react-router-dom";
 import { DROP_SHADOW } from '../Layout/LightDarkCard';
 import { PRIMARY } from '../Layout/Colors';
+import { ReactComponent as Logo1 } from '../../img/logo/logo1_white.svg'
 
 const HeaderNav = styled.nav`
     background: ${PRIMARY};
@@ -13,8 +14,11 @@ const HeaderNav = styled.nav`
     height: 75px;
     display: flex;
     z-index: 1;
+    justify-content: space-between;
 
     font-weight: bold;
+
+    
 
     ${DROP_SHADOW}
 
@@ -25,9 +29,12 @@ const HeaderNav = styled.nav`
             padding-bottom: 50px;
         }
       }
+`
 
-    
-    
+const NavGroup = styled.div`
+display: flex;
+flex-direction: row;
+    height: 100%;
     &>*:hover {
         color: rgba(0, 0, 0, .65);
         cursor: pointer;
@@ -35,15 +42,11 @@ const HeaderNav = styled.nav`
     }
 
     & > * {
+        margin-left: 18.75px;
         justify-content: center;
         text-align: center;
-        flex: 1;
         align-self: center;
     }
-`
-
-const NavGroup = styled.div`
-    
 `
 
 const NavItem = styled.li`
@@ -85,25 +88,42 @@ const BlogLink = styled(NavItem)`
   }
 `
 
+const LogoContainer = styled.div`
+  height: 37.5px;
+  width: 37.5px;
+`
+
 export default function NavBar() {
     return (
         <HeaderNav>
-            <Link to="/projects">
-                <NavItem>
-                    Projects
-                </NavItem>
-            </Link>
+
+        <NavGroup>
+            <LogoContainer>
+                <Logo1 />
+            </LogoContainer>
+
             <Link to="/">
                 <NavItem>
                     <HighlightedLink>Matthew Caloger</HighlightedLink>
                 </NavItem>
             </Link>
+        </NavGroup>
+        <NavGroup>
+             <Link to="/projects">
+                <NavItem>
+                    Projects
+                </NavItem>
+            </Link>
+            
             <Link to="/blog">
                 <NavItem>
                     Blog
 
                 </NavItem>
             </Link>
+        </NavGroup>
+            
+           
             
         </HeaderNav>
     )

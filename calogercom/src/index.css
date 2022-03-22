@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  width: 100vw;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,9 +16,11 @@ body {
    /* background: #fff;  */
   /* background: linear-gradient(to right, #43cea2, #185a9d); */
 
-  overflow-x: hidden;
+  /* overflow-x: auto; */
 
   padding: 0px;
+
+  scrollbar-gutter: stable both-edges;
 
   font-size: 18px;
 }
