@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BORDER_RADIUS } from "./BorderRadius";
+import { PRIMARY } from "./Colors";
 
 const LIGHT_COLOUR = 'white';
 const DARK_COLOUR = 'black';
@@ -7,6 +8,7 @@ const DROP_SHADOW = 'box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,
 const DROP_SHADOW_HOVER = 'box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);'
 
 const FlatCardContainer = styled.div`
+    border-top: 5px solid ${PRIMARY};
     display: flex;
 
     flex-direction: column;

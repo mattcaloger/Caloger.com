@@ -1,40 +1,49 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link, Router } from "react-router-dom";
+import { DROP_SHADOW } from '../Layout/LightDarkCard';
+import { PRIMARY } from '../Layout/Colors';
 
 const HeaderNav = styled.nav`
-    font-size: 24px;
+    background: ${PRIMARY};
+    color: white;
+
+    font-size: 20px;
     width: 100%;
-    height: 50px;
-    color: black;
+    height: 75px;
     display: flex;
     z-index: 1;
 
-    margin-top: 25px;
-    margin-bottom: 25px;
     font-weight: bold;
+
+    ${DROP_SHADOW}
 
     @media (max-width: 768px) {
         flex-direction: row;
         &>* {
-            margin-top: 50px;
-            margin-bottom: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
       }
 
-    & > * {
-        padding: 10px;
-        justify-content: center;
-        text-align: center;
-        flex: 1;
-
-    }
+    
     
     &>*:hover {
         color: rgba(0, 0, 0, .65);
         cursor: pointer;
 
     }
+
+    & > * {
+        justify-content: center;
+        text-align: center;
+        flex: 1;
+        align-self: center;
+    }
+`
+
+const NavGroup = styled.div`
+    
 `
 
 const NavItem = styled.li`
@@ -51,6 +60,8 @@ const NavItem = styled.li`
     
 `
 const HighlightedLink = styled.div`
+justify-content: center;
+text-align: center;
     @media (max-width: 768px) {
         font-size: 22px;
     }
@@ -77,21 +88,23 @@ const BlogLink = styled(NavItem)`
 export default function NavBar() {
     return (
         <HeaderNav>
-            
-            <NavItem>
-                    <Link to="/projects">Projects</Link>
-    
-                </NavItem>
+            <Link to="/projects">
                 <NavItem>
-                    <Link to="/"><HighlightedLink>Matthew Caloger</HighlightedLink></Link>
-                    
+                    Projects
                 </NavItem>
+            </Link>
+            <Link to="/">
                 <NavItem>
-                    <Link to="/blog">Blog</Link>
-    
+                    <HighlightedLink>Matthew Caloger</HighlightedLink>
                 </NavItem>
-                
+            </Link>
+            <Link to="/blog">
+                <NavItem>
+                    Blog
 
+                </NavItem>
+            </Link>
+            
         </HeaderNav>
     )
 }

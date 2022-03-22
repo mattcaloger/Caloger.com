@@ -6,13 +6,7 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div className="App"> 
-      
-      <Content>
-      
-        <AppRouter />
-
-          <Footer />
-      </Content>
+      <AppRouter />
     </div>
   );
 }

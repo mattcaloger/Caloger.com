@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import React from 'react'; 
+import { BORDER_RADIUS } from "./BorderRadius";
 
 export const DisplayImage = styled.img`
     display: block;
@@ -19,7 +20,7 @@ export const ImageContainer = styled.div`
     flex-direction: column;
     width: inherit;
     height: auto; 
-    border-radius: 10px;
+    border-radius: ${BORDER_RADIUS};
 
     margin-top: 25px;
     margin-bottom: 25px;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import GithubIconImg from '../../img/github.svg'
 import { BORDER_RADIUS } from './BorderRadius';
 import { DROP_SHADOW, DROP_SHADOW_HOVER, LIGHT_COLOUR } from './LightDarkCard';
+import { PRIMARY } from './Colors';
 
 const GitHubIcon = styled.img`
     width: 25px;
@@ -10,6 +11,7 @@ const GitHubIcon = styled.img`
 `
 
 const GitHubIconContainer = styled.div`
+    border-top: 5px solid ${PRIMARY};
     margin: auto;
     display: flex;
     flex-direction: row ;

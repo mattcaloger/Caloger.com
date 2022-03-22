@@ -1,63 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import TerminalButton from '../Terminal/TerminalButton'
-import TerminalCard from '../Terminal/TerminalCard'
-
-const ResponsiveRow = styled.div`
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &>* {
-        text-align: center;
-        flex: 1;
-
-    }
-
-
-`
-
-const FooterContainer = styled.div`
-    margin-top: 25px;
-
-    
-`
-
-const CenteredTerminalCardComponent = styled.div`
-            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 5px 10px rgba(0, 0, 0, 0.23);
-            font-family: monospace;
-            background: black;
-            backdrop-filter: blur(10px);
-            color: white;
-            width: 100%;
-            border-radius: 10px;
-            margin: auto;
-            margin-bottom: 50px;
-            padding: 20px;
-            user-select: none;
-            justify-content: center;
-            align-content: center;
-
-            &:hover {
-                color:black;
-                background: white;
-            }
-
-        `
+import { BORDER_RADIUS } from '../Layout/BorderRadius'
+import { PRIMARY, SECONDARY } from '../Layout/Colors'
+import Content from '../Layout/Content'
 
 const FooterComponent = styled.div`
-    font-size: 20px;
-    width: 100%;
-    height: 50px;
-    color: black;
     display: flex;
-    z-index: 1;
-
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-weight: bold;
-
     & > * {
         padding: 10px;
         justify-content: center;
@@ -65,7 +13,7 @@ const FooterComponent = styled.div`
         flex: 1;
 
     }
-    
+
     &>*:hover {
         color: rgba(0, 0, 0, .65);
         cursor: pointer;
@@ -79,7 +27,23 @@ const FooterComponent = styled.div`
             margin-top: 50px;
             margin-bottom: 50px;
         }
-      }
+    }
+`
+
+const FooterContainer = styled.footer`
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    color: ${PRIMARY};
+    display: flex;
+    z-index: 1;
+
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+
+    
 `
 
 const FooterItem = styled.div`
@@ -109,12 +73,20 @@ const FooterItemSelectable = styled.div`
         
 export default function Footer() {
     return (
-        <FooterComponent>   
-                <FooterItem><a href="https://github.com/MCaloger">GitHub</a></FooterItem>
+        <FooterContainer>   
+            <Content> 
+                <FooterComponent>
+                    <FooterItem>
+                        <a href="https://github.com/MCaloger">GitHub</a>
+                    </FooterItem>
 
-                <FooterItem><a href="https://www.linkedin.com/in/matthew-caloger/">Linkedin</a></FooterItem>
-
-        </FooterComponent>
+                    <FooterItem>
+                        <a href="https://www.linkedin.com/in/matthew-caloger/">Linkedin</a>
+                    </FooterItem> 
+                </FooterComponent>
+                       
+            </Content>
+        </FooterContainer>
             
             
     )

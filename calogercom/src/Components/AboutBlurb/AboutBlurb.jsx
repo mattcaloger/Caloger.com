@@ -9,8 +9,10 @@ import SpanRow from '../Terminal/EvenSpanRow'
 import { IconGrid } from '../Layout/IconGrid';
 import { BORDER_RADIUS } from '../Layout/BorderRadius'
 import Title from '../Layout/Title'
+import { PRIMARY } from '../Layout/Colors'
 
 const AboutBlock = styled.div`
+    border-top: 5px solid ${PRIMARY};
     display: flex;
     flex-direction: column;
     justify-content: center;
