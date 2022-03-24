@@ -3,25 +3,17 @@ import styled from 'styled-components'
 import { Link, Router } from "react-router-dom";
 import { DROP_SHADOW } from '../Layout/LightDarkCard';
 import { PRIMARY } from '../Layout/Colors';
-import { ReactComponent as Logo1 } from '../../img/logo/logo1_white.svg'
 
 const HeaderNav = styled.nav`
     background: ${PRIMARY};
     color: white;
-
     font-size: 20px;
     width: 100%;
     height: 75px;
     display: flex;
     z-index: 1;
-    justify-content: space-between;
-
     font-weight: bold;
-
-    
-
     ${DROP_SHADOW}
-
     @media (max-width: 768px) {
         flex-direction: row;
         &>* {
@@ -29,37 +21,33 @@ const HeaderNav = styled.nav`
             padding-bottom: 50px;
         }
       }
-`
-
-const NavGroup = styled.div`
-display: flex;
-flex-direction: row;
-    height: 100%;
+    
+    
     &>*:hover {
         color: rgba(0, 0, 0, .65);
         cursor: pointer;
-
     }
-
     & > * {
-        margin-left: 18.75px;
         justify-content: center;
         text-align: center;
+        flex: 1;
         align-self: center;
     }
+`
+
+const NavGroup = styled.div`
+    
 `
 
 const NavItem = styled.li`
     display:flex;
     color: white;
-
     all: unset;
     flex: 1;
     align-self: center;
     justify-content: center;
     user-select: none;
     text-align: center;
-
     
 `
 const HighlightedLink = styled.div`
@@ -88,42 +76,25 @@ const BlogLink = styled(NavItem)`
   }
 `
 
-const LogoContainer = styled.div`
-  height: 37.5px;
-  width: 37.5px;
-`
-
 export default function NavBar() {
     return (
         <HeaderNav>
-
-        <NavGroup>
-            <LogoContainer>
-                <Logo1 />
-            </LogoContainer>
-
+            <Link to="/projects">
+                <NavItem>
+                    Projects
+                </NavItem>
+            </Link>
             <Link to="/">
                 <NavItem>
                     <HighlightedLink>Matthew Caloger</HighlightedLink>
                 </NavItem>
             </Link>
-        </NavGroup>
-        <NavGroup>
-             <Link to="/projects">
-                <NavItem>
-                    Projects
-                </NavItem>
-            </Link>
-            
             <Link to="/blog">
                 <NavItem>
                     Blog
 
                 </NavItem>
             </Link>
-        </NavGroup>
-            
-           
             
         </HeaderNav>
     )

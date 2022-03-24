@@ -34,9 +34,9 @@ const BlurbCard = styled.div`
     color: black;
     background: white;
     width: 100%;
-
+    padding-left: 25px;
+    padding-right: 25px;
     margin: auto;
-    padding: 20px;
     user-select: none;
     &>* {
         flex: 1;
@@ -71,6 +71,7 @@ export default function AboutBlurb() {
         <AboutBlock>
             
             <BlurbHeader>
+                <PageTitle>About Me</PageTitle>
                 <ProfilePicture />
             </BlurbHeader>
             <BlurbBody>

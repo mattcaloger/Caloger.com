@@ -12,6 +12,11 @@ import { CardContainer, LightHeader } from '../../Layout/LightDarkCard'
 import { FlatCardContainer, FlatLightBody, FlatLightFooter } from '../../Layout/LightDarkCardFlat'
 import { IconGrid } from '../../Layout/IconGrid'
 
+import { CardContainerMini, LightHeaderMini, LightBodyMini, LightFooterMini} from '../../Layout/LightDarkCardMini'
+
+import { Link } from 'react-router-dom'
+import Title from '../../Layout/Title'
+
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -27,7 +32,6 @@ const HomePageContainer = styled.div`
 export default function HomePage() {
     return (
         <HomePageContainer>
-            <PageTitle>About Me</PageTitle>
             <AboutBlurb />
             
             <FlatCardContainer>
@@ -42,8 +46,20 @@ export default function HomePage() {
                         <LanguageIcons.ReactIconBlock />
                         <LanguageIcons.TypeScriptIconBlock />
                     </IconGrid>
+
+                    {/* <PageTitle>Examples</PageTitle>
+                    
+                    <Link to="/projects/">
+                        <CardContainerMini>
+
+                            <Title>Graphic Designer's Portfolio</Title>
+
+                        </CardContainerMini>
+                    </Link> */}
+
                 </FlatLightBody>
-                <FlatLightFooter></FlatLightFooter>
+                <FlatLightFooter>
+                </FlatLightFooter>
             </FlatCardContainer>
 
             <FlatCardContainer>
