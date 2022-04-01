@@ -10,7 +10,7 @@ import HomePage from '../Pages/HomePage/HomePage'
 import ProjectsPage from '../Pages/ProjectsPage/ProjectsPage';
 import Blog from '../Blog/Blog';
 import NavBar from '../NavBar/NavBar';
-import BudgieProject from '../Pages/ProjectsPage/Projects/StasherProject';
+import BudgieProject from '../Pages/ProjectsPage/Projects/BudgieProject';
 import HelpdeskProject from '../Pages/ProjectsPage/Projects/HelpdeskProject';
 import CanyonProject from '../Pages/ProjectsPage/Projects/CanyonProject';
 import EmilySiteProject from '../Pages/ProjectsPage/Projects/EmilySiteProject';
@@ -44,13 +44,16 @@ export default function AppRouter() {
                     </Route>
 
                     <Route path="projects/stasher" element={<StasherProject />} />
+                    
                     <Route path="projects/budgie" element={<BudgieProject />} />
+
                     <Route path="projects/helpdesk" element={<HelpdeskProject />} />
                     <Route path="projects/canyon" element={<CanyonProject />} />
                     <Route path="projects/emilysite" element={<EmilySiteProject />} />
                     <Route path="projects/shortcake" element={<ShortcakeProject />} />
                     <Route path="projects/instantchat" element={<ReactChatProject />} />
                     <Route path="projects/shippingapp" element={<ShippingAppProject />} />
+                    
 
                     <Route path="blog" element={<Blog />} />
                     <Route path="blog/spring-react-guide" element={<SpringReactGuide />} />

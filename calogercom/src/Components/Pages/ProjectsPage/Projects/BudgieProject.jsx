@@ -11,24 +11,6 @@ import ViewCodeButton from '../../../Layout/ViewCodeButton'
 import PageSubtitle from '../../../Layout/PageSubtitle'
 import VisibleLink from '../../../Layout/VisibleLink'
 
-const BudgieItems = [
-    { 
-        title: "Transactions Page", 
-        description: "The transaction page displays a graph of transactions (positive and negative) over time.",
-        image: TransactionImg
-    },
-    {
-        title: "Income Page", 
-        description: "The income page displays a graph of recorded income, a pie chart of income categories, and the ability to add more income items.",
-        image: IncomeImg
-    }, 
-    {
-        title: "Expenses Page", 
-        description: "The expense page, similar to the income page, displays a graph of recorded expenses, a pie chart of expense categories, and the ability to add more expense items.",
-        image: ExpensesImg
-    }
-]
-
 export default function BudgieProject() {
     return (
         <div>
