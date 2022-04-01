@@ -38,7 +38,7 @@ export default function BudgieProject() {
                 <SplitContainerPanel>
                     <p>I created Budgie to gain some experience with data visualization and play around with a gradient-heavy visual style. The front-end is a React app that uses <VisibleLink href="https://reactrouter.com/">React Router</VisibleLink> for navigation.</p>
 
-                    <p>The server portion was written in Java with the Spring Framework as the web layer. It uses JPA with an in-memory h2 database for storage.</p>
+                    <p>The server portion was written in Java with the Spring Framework as the web layer. It uses JPA with an in-memory H2 database for storage.</p>
 
                     <p>I originally used the <VisibleLink href="https://recharts.org/en-US/">ReChart</VisibleLink> library for the data visualizations but found it wasn't as flexible as I'd like it to be, so I changed over to <VisibleLink href="https://www.chartjs.org/">Chart.js</VisibleLink> and the accompanying <VisibleLink href="https://github.com/reactchartjs/react-chartjs-2">React ChartJS 2</VisibleLink> library for it.</p>
 

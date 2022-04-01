@@ -23,6 +23,7 @@ import StasherProject from '../Pages/ProjectsPage/Projects/StasherProject';
 import ScrollToTop from './ScrollToTop';
 import Content from '../Layout/Content';
 import Footer from '../Footer/Footer';
+import SpringReactGuide from '../Blog/BlogPages/SpringReactGuide';
 
 
 
@@ -52,6 +53,7 @@ export default function AppRouter() {
                     <Route path="projects/shippingapp" element={<ShippingAppProject />} />
 
                     <Route path="blog" element={<Blog />} />
+                    <Route path="blog/spring-react-guide" element={<SpringReactGuide />} />
                     <Route path="blog/buildsheet-editor" element={<BuildsheetEditorBlog />} />
                     <Route path="blog/automating-account-creation" element={<AutomatingAccountCreationBlog />} />
                 </Routes>
