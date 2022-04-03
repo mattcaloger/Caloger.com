@@ -55,6 +55,14 @@ const CodeContainer = styled.pre`
     }
 `
 
+const TerminalContainer = styled.code`
+    background: black;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+`
+
 export default function BuildsheetEditorBlog() {
     useEffect(() => {
         setTimeout(() => Prism.highlightAll(), 0)
@@ -77,7 +85,7 @@ export default function BuildsheetEditorBlog() {
         
                 <PageSubtitle>Compiling Your React App</PageSubtitle>
                 <p>
-                    Run the <code>npm run build</code> command to compile your React app for production. Copy all files located under <code>/build</code> React folder to your Spring project under <code>/src/main/resources/public</code>.
+                    Run the <TerminalContainer>npm run build</TerminalContainer> command to compile your React app for production. Copy all files located under <TerminalContainer>/build</TerminalContainer> React folder to your Spring project under <TerminalContainer>/src/main/resources/public</TerminalContainer>.
                 </p>
 
                 <PageSubtitle>Add Your Spring Controller</PageSubtitle>
@@ -90,7 +98,7 @@ export default function BuildsheetEditorBlog() {
                 </pre>
 
                 <p>
-                    This ensures that navigating to <code>https://website.com/</code> or <code>https://website.com/route</code> returns the compiled front-end, and ensures that any sub-routes are also forwarded properly.
+                    This ensures that navigating to <TerminalContainer>https://website.com/</TerminalContainer> or <TerminalContainer>https://website.com/route</TerminalContainer> returns the compiled front-end, and ensures that any sub-routes are also forwarded properly.
                 </p>
 
                 <PageSubtitle>Add to your Applications.Properties Config</PageSubtitle>
