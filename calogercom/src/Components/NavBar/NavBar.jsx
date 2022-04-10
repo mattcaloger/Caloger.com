@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link, Router } from "react-router-dom";
 import { DROP_SHADOW } from '../Layout/LightDarkCard';
 import { PRIMARY } from '../Layout/Colors';
+import { SHADOWS } from '../Layout/Shadows';
 
 const HeaderNav = styled.nav`
     background: ${PRIMARY};
@@ -13,7 +14,9 @@ const HeaderNav = styled.nav`
     display: flex;
     z-index: 1;
     font-weight: bold;
-    ${DROP_SHADOW}
+    
+    
+
     @media (max-width: 768px) {
         flex-direction: row;
         &>* {
@@ -27,6 +30,12 @@ const HeaderNav = styled.nav`
         color: rgba(0, 0, 0, .65);
         cursor: pointer;
     }
+
+    &>*:active {
+        color: rgba(0, 0, 0, .75);
+        cursor: pointer;
+    }
+
     & > * {
         justify-content: center;
         text-align: center;

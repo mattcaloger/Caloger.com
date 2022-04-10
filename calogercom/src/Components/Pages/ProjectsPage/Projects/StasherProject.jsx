@@ -1,15 +1,21 @@
 import React from 'react'
 import SplitContainer from '../../../Layout/SplitContainer'
 import SplitContainerPanel from '../../../Layout/SplitContainerPanel'
-import CreateNewImg from '../../../../img/proj-img/stasher-img/createnew.png'
-import GetUrlImg from '../../../../img/proj-img/stasher-img/geturl.png'
-import PasswordScreenImg from '../../../../img/proj-img/stasher-img/passwordscreen.png'
-import IncorrectMessageImg from '../../../../img/proj-img/stasher-img/incorrectmessage.png'
+
+
 import PageTitle from '../../../Layout/PageTitle'
 import CaptionedImage from '../../../Layout/CaptionedImage'
 import ViewCodeButton from '../../../Layout/ViewCodeButton'
 import PageSubtitle from '../../../Layout/PageSubtitle'
 import VisibleLink from '../../../Layout/VisibleLink'
+
+import CreateNewImg from '../../../../img/proj-img/stasher-img/1_home.png'
+import NewSecretImg from '../../../../img/proj-img/stasher-img/2_new_secret.png'
+import ReadSecretImg from '../../../../img/proj-img/stasher-img/3_read_secret.png'
+import SecuredSecretImg from '../../../../img/proj-img/stasher-img/4_secured_secret.png'
+import NewSecuredImg from '../../../../img/proj-img/stasher-img/5_new_secured.png'
+import CorrectPasswordImg from '../../../../img/proj-img/stasher-img/6_correct_password.png'
+import IncorrectPasswordImg from '../../../../img/proj-img/stasher-img/7_incorrect_password.png'
 
 export default function StasherProject() {
     return (
@@ -28,11 +34,17 @@ export default function StasherProject() {
 
                     <CaptionedImage image={CreateNewImg} title={"Create New Message"} description={"Gives users the ability to enter a message and optionally apply a password required to access the message."} />
 
-                    <CaptionedImage image={GetUrlImg} title={"Get URL Page"} description={"After submitting a message, the user will receieve a URL they can share to give a one-time access link."} />    
+                    <CaptionedImage image={NewSecretImg} title={"Get URL Page"} description={"After submitting a message, the user will receieve a URL they can share to give a one-time access link."} />
 
-                    <CaptionedImage image={PasswordScreenImg} title={"Password Page"} description={"If a message was submitted with a password, visiting the link will prompt for a password to access the message."} />   
+                    <CaptionedImage image={ReadSecretImg} title={"Get Message page"} description={"If the link hasn't been used and the time limit hasn't expired, following the link will show the message."} />
 
-                    <CaptionedImage image={IncorrectMessageImg} title={"Inbcorrect Message Page"} description={"If an incorrect password is given, or the message was already retrieved, the user will get a notice that the message isn't available."} />   
+                    <CaptionedImage image={SecuredSecretImg} title={"Secured Secret Message"} description={"Adding a password to the message provides an extra layer of security."} />   
+
+                    <CaptionedImage image={NewSecuredImg} title={"Password Prompt"} description={"Password request screen for messages locked with a password."} />  
+
+                    <CaptionedImage image={CorrectPasswordImg} title={"Correct Password"} description={"If the password is correct, the user will see the message."} /> 
+
+                    <CaptionedImage image={IncorrectPasswordImg} title={"Incorrect Password"} description={"If the password is incorrect, the message won;t be accessible and will be deleted."} />  
 
                     <ViewCodeButton url="https://github.com/MCaloger/Stasher" />
                 </SplitContainerPanel>
