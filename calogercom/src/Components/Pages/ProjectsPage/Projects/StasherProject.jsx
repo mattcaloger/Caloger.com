@@ -44,7 +44,7 @@ export default function StasherProject() {
 
                     <CaptionedImage image={CorrectPasswordImg} title={"Correct Password"} description={"If the password is correct, the user will see the message."} /> 
 
-                    <CaptionedImage image={IncorrectPasswordImg} title={"Incorrect Password"} description={"If the password is incorrect, the message won;t be accessible and will be deleted."} />  
+                    <CaptionedImage image={IncorrectPasswordImg} title={"Incorrect Password"} description={"If the password is incorrect, the message won't be accessible and will be deleted."} />  
 
                     <ViewCodeButton url="https://github.com/MCaloger/Stasher" />
                 </SplitContainerPanel>
