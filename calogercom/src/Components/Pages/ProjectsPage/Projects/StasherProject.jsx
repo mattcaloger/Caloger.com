@@ -26,7 +26,7 @@ export default function StasherProject() {
                 <SplitContainerPanel>
                     <p>I created Stasher to gain some experience with encryption and security practices. The front-end is a TypeScript React app that uses <VisibleLink href="https://reactrouter.com/">React Router</VisibleLink> for navigation.</p>
 
-                    <p>Stasher improves security by creating messages that can only be accessed once and in a one-hour time period. This improves the sharing of credentials or sensitive information over a chat application by removing plaintext passwords in a communication channel, and ensuring that the credentials can only be accessed a single time.</p>
+                    <p>Stasher improves security by creating messages that can only be accessed once and in a one-hour time period. This improves the sharing of credentials or sensitive information over a chat application by removing plaintext passwords in a communication channel, and ensuring that credential access can only be ateempted a single time.</p>
 
                     <p>The server portion was written in Java with the Spring Framework as the web layer. It uses JPA with an in-memory H2 database for storage.</p>
 
