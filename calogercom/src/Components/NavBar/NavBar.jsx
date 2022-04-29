@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, Router } from "react-router-dom";
+import { Link, Router, NavLink } from "react-router-dom";
 import { DROP_SHADOW } from '../Layout/LightDarkCard';
 import { PRIMARY } from '../Layout/Colors';
 import { SHADOWS } from '../Layout/Shadows';
@@ -15,33 +15,7 @@ const HeaderNav = styled.nav`
     z-index: 1;
     font-weight: bold;
     
-    
-
-    @media (max-width: 768px) {
-        flex-direction: row;
-        &>* {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-      }
-    
-    
-    &>*:hover {
-        color: rgba(0, 0, 0, .65);
-        cursor: pointer;
-    }
-
-    &>*:active {
-        color: rgba(0, 0, 0, .75);
-        cursor: pointer;
-    }
-
-    & > * {
-        justify-content: center;
-        text-align: center;
-        flex: 1;
-        align-self: center;
-    }
+   
 `
 
 const NavGroup = styled.div`
@@ -54,10 +28,12 @@ const NavItem = styled.li`
     all: unset;
     flex: 1;
     align-self: center;
-    justify-content: center;
     user-select: none;
-    text-align: center;
     
+`
+
+const NavItemRight = styled(NavItem)`
+    text-align: right;
 `
 const HighlightedLink = styled.div`
 justify-content: center;
@@ -84,27 +60,68 @@ const BlogLink = styled(NavItem)`
     order: 3
   }
 `
+const InnerNav = styled.div`
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: row;
+        &>* {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &>*:hover {
+        color: rgba(0, 0, 0, .65);
+        cursor: pointer;
+    }
+
+    &>*:active {
+        color: rgba(0, 0, 0, .75);
+        cursor: pointer;
+    }
+
+    & > * {
+        display: flex;
+        flex: 1;
+        align-self: center;
+    }
+
+    justify-content: flex-end;
+`
+
+const StyledNavLink = styled(NavLink)`
+    &.active {
+        color: rgba(0, 0, 0, .65);
+    }
+`
+
 
 export default function NavBar() {
     return (
         <HeaderNav>
-            <Link to="/projects">
-                <NavItem>
-                    Projects
-                </NavItem>
-            </Link>
-            <Link to="/">
-                <NavItem>
-                    <HighlightedLink>Matthew Caloger</HighlightedLink>
-                </NavItem>
-            </Link>
-            <Link to="/blog">
-                <NavItem>
-                    Blog
-
-                </NavItem>
-            </Link>
-            
+            <InnerNav>
+                <StyledNavLink to="/projects">
+                    <NavItem>
+                        Projects
+                    </NavItem>
+                </StyledNavLink>
+                <StyledNavLink to="/">
+                    <NavItem>
+                        <HighlightedLink>Matthew Caloger</HighlightedLink>
+                    </NavItem>
+                </StyledNavLink>
+                <StyledNavLink to="/blog">
+                    <NavItemRight>
+                        Blog
+                    </NavItemRight>
+                </StyledNavLink>
+            </InnerNav>
         </HeaderNav>
     )
 }

@@ -38,6 +38,13 @@ const ColorTypescript = styled(LangSpan)`color: #2F72BC;`
 const ColorReactJs = styled(LangSpan)`color: #77D4F2;`
 
 const ColorSql = styled(LangSpan)`color: #F1AA00;`
+const ColorAspDotNetCore = styled(LangSpan)`color: #9E89E7;`
+const ColorGit = styled(LangSpan)`color: #F05133;`
+const ColorIntellij = styled(LangSpan)`color: #000000;`
+
+const ColorVisualStudio = styled(LangSpan)`color: #9356CF;`
+const ColorVisualStudioCode = styled(LangSpan)`color: #1A8CD3;`
+
 
 const ColorCSharpTag = styled(LangTag)`background: #9366CB; color: White;`;
 const ColorJavaTag = styled(LangTag)`background: #E42D2F; color: White;`;
@@ -48,8 +55,13 @@ const ColorIllustratorTag = styled(LangTag)`background: #F29202; color: black;`;
 const ColorTypescriptTag = styled(LangTag)`background: #2F72BC; color: White;`;
 const ColorReactJsTag = styled(LangTag)`background: #77D4F2; color: black;`;
 const ColorSqlTag = styled(LangTag)`background: #F1AA00; color: black;`;
-const ColorDotnet = styled(LangSpan)`color: #9E89E7;`
-const ColorDotnetTag = styled(LangTag)`background: #9E89E7; color: white;`
+
+const ColorAspDotNetTag = styled(LangTag)`background: #9E89E7; color: white;`
+const ColorGitTag = styled(LangTag)`background: #9E89E7; color: white;`
+const ColorIntelliJTag = styled(LangTag)`background: #000000; color: white;`
+
+const ColorVisualStudioTag = styled(LangTag)`background: #9356CF; color: white;`
+const ColorVisualStudioCodeTag = styled(LangTag)`background: #1A8CD3; color: white;`
 
 
-export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag, ColorDotnet, ColorDotnetTag }
+export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag, ColorAspDotNetCore as ColorDotnet, ColorAspDotNetTag as ColorDotnetTag, ColorGit, ColorGitTag, ColorIntellij, ColorIntelliJTag, ColorVisualStudio, ColorVisualStudioTag, ColorVisualStudioCode, ColorVisualStudioCodeTag }

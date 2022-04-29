@@ -6,7 +6,6 @@ const ContentBox = styled.div`
     flex-direction: column;
     width: 90%;
     margin: auto;
-    padding: 10px;
 
     @media only screen and (min-width: 992px) {
         width: 50%;

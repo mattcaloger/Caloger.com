@@ -1,17 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, Router } from "react-router-dom";
+import { Link, Router, NavLink } from "react-router-dom";
 import { DROP_SHADOW } from '../Layout/LightDarkCard';
 import { PRIMARY } from '../Layout/Colors';
-import { ReactComponent as Logo1 } from '../../img/logo/logo1_white.svg'
+import { ReactComponent as Logo1 } from '../../img/logo/logo1_teal.svg'
 
 const HeaderNav = styled.nav`
 
-    background: ${PRIMARY};
-    color: white;
+    background: white;
+    color: ${PRIMARY};
 
     font-size: 20px;
     width: 100%;
+    margin: auto;
     height: 75px;
     display: flex;
     z-index: 1;
@@ -19,14 +20,17 @@ const HeaderNav = styled.nav`
 
     font-weight: bold;
 
-    ${DROP_SHADOW}
-
     @media (max-width: 768px) {
 
         flex-direction: column;
         height: auto;
         justify-content: center;
       }
+`
+const StyledNavLink = styled(NavLink)`
+    &.active {
+        color: #962300;
+    }
 `
 
 const NavGroup = styled.div`
@@ -36,9 +40,8 @@ const NavGroup = styled.div`
     height: 100%;
 
     &>*:hover {
-        color: rgba(0, 0, 0, .65);
+        filter: grayscale(100%);
         cursor: pointer;
-
     }
 
     @media (max-width: 768px) {
@@ -142,29 +145,24 @@ export default function NavBarPotential() {
         <HeaderNav>
 
         <NavGroupLeft>
-            <LogoContainer>
-                <Logo1 />
-            </LogoContainer>
-
-            <Link to="/">
+            <StyledNavLink to="/">
                 <NavItem>
                     <HighlightedLink>Matthew Caloger</HighlightedLink>
                 </NavItem>
-            </Link>
+            </StyledNavLink>
         </NavGroupLeft>
         <NavGroupRight>
-             <Link to="/projects">
+             <StyledNavLink to="/projects">
                 <NavItem>
                     Projects
                 </NavItem>
-            </Link>
+            </StyledNavLink>
             
-            <Link to="/blog">
+            <StyledNavLink to="/blog">
                 <NavItem>
                     Blog
-
                 </NavItem>
-            </Link>
+            </StyledNavLink>
         </NavGroupRight>
             
            

@@ -10,22 +10,42 @@ import SpringIcon from '../../img/lang-icons/spring.svg';
 import SqlIcon from '../../img/lang-icons/sql.svg';
 import TypeScriptIcon from '../../img/lang-icons/typescript.svg';
 import DotnetIcon from '../../img/lang-icons/dotnet.svg'
-import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql, ColorDotnet } from './Languages';
+import GitIcon from '../../img/lang-icons/git.svg';
+import IntelliJIcon from '../../img/lang-icons/IntelliJIDEA.svg';
+import VisualStudioIcon from '../../img/lang-icons/visualstudio.svg';
+import VisualStudioCodeIcon from '../../img/lang-icons/vscode.svg';
+
+import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql, ColorDotnet, ColorGit, ColorIntellij, ColorVisualStudio, ColorVisualStudioCode } from './Languages';
 
 import styled from 'styled-components';
 import React from 'react';
 
 import IconImage from '../Layout/IconImage';
+import { SHADOWS } from '../Layout/Shadows';
+import { BORDER_RADIUS } from '../Layout/BorderRadius';
 
+const DROP_SHADOW = SHADOWS.medium;
+const DROP_SHADOW_HOVER = SHADOWS.large;
+
+const BORDER = BORDER_RADIUS;
 
 const IconBlock = styled.div`
     display:flex;
     flex-direction: column;
     font-weight: bold;
     align-items: center;
+    background: white;
+
+    transition: all ease-in .1s;
+
     &>*{
         margin: 5px;
     }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
 
 `
 
@@ -128,13 +148,49 @@ const SqlIconBlock = () => {
     )
 }
 
-const DotnetIconBlock = () => {
+const AspDotNotCoreIconBlock = () => {
     return (
         <IconBlock>
             <IconImage src={DotnetIcon} />
-            <ColorDotnet>.NET</ColorDotnet>
+            <ColorDotnet>ASP.NET</ColorDotnet>
         </IconBlock>
     )
 }
 
-export { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, DotnetIconBlock }
+const GitIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={GitIcon} />
+            <ColorGit>Git</ColorGit>
+        </IconBlock>
+    )
+}
+
+const IntelliJIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={IntelliJIcon} />
+            <ColorIntellij>IntelliJ</ColorIntellij>
+        </IconBlock>
+    )
+}
+
+const VisualStudioIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={VisualStudioIcon} />
+            <ColorVisualStudio>Visual Studio</ColorVisualStudio>
+        </IconBlock>
+    )
+}
+
+const VisualStudioCodeIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={VisualStudioCodeIcon} />
+            <ColorVisualStudioCode>VS Code</ColorVisualStudioCode>
+        </IconBlock>
+    )
+}
+
+export { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, AspDotNotCoreIconBlock as DotnetIconBlock, GitIconBlock, IntelliJIconBlock, VisualStudioCodeIconBlock, VisualStudioIconBlock };

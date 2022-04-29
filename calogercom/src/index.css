@@ -47,14 +47,14 @@ a:visited	{
   text-decoration: none;
   cursor: pointer;	
 }
-
+/* 
 a:link:active	{
   color: inherit;
-}
+} */
 
-a:visited:active {
+/* a:visited:active {
   color: inherit;
-}	
+}	 */
 
 code[class*="language-"],
 pre[class*="language-"] {

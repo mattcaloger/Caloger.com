@@ -20,9 +20,6 @@ const AboutBlock = styled.div`
     &>* {
         margin-bottom: 25px;
     }
-
-    
-    border-: 10px;
 `
 
 
@@ -33,8 +30,6 @@ const BlurbCard = styled.div`
     color: black;
     background: white;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
     margin: auto;
     user-select: none;
     &>* {
@@ -76,7 +71,11 @@ export default function AboutBlurb() {
             <BlurbBody>
 
                 <p>
-                    With over 5 years of experience in the IT industry, my goal is to become a software developer to apply my love for programming and system design. I greatly enjoy problem-solving and engineering solutions that help others succeed. I am located in Toronto, Canada.
+                    With over 5 years of experience in the IT industry, my goal is to become a software developer to apply my love for programming and system design. I greatly enjoy problem-solving and engineering solutions that help others succeed. 
+                </p>
+
+                <p>
+                    Having started my career and education in the United States, I immigrated to Canada in 2018, having received permanent residency status at the end of 2019. I currently reside in Toronto, Ontario.
                 </p>
             </BlurbBody>
             <BlurbFooter>

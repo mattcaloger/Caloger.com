@@ -20,11 +20,6 @@ import Title from '../../Layout/Title'
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
-
-    &>* {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
 `
 
 
@@ -33,18 +28,17 @@ export default function HomePage() {
     return (
         <HomePageContainer>
             <AboutBlurb />
-            
+
             <FlatCardContainer>
                 <FlatLightFooter>
-                    <PageTitle>Front-End Skills</PageTitle>
+                    <PageTitle>Languages</PageTitle>
                 </FlatLightFooter>
                 <FlatLightBody>
                     <IconGrid>
+                        <LanguageIcons.JavaIconBlock/>
                         <LanguageIcons.JavaScriptIconBlock />
-                        <LanguageIcons.HtmlIconBlock />
-                        <LanguageIcons.CssIconBlock />
-                        <LanguageIcons.ReactIconBlock />
                         <LanguageIcons.TypeScriptIconBlock />
+                        <LanguageIcons.CSharpIconBlock />
                     </IconGrid>
 
                     {/* <PageTitle>Examples</PageTitle>
@@ -61,20 +55,34 @@ export default function HomePage() {
                 <FlatLightFooter>
                 </FlatLightFooter>
             </FlatCardContainer>
-
+            
             <FlatCardContainer>
                 <FlatLightFooter>
-                    <PageTitle>Back-End Skills</PageTitle>
+                    <PageTitle>Frameworks</PageTitle>
                 </FlatLightFooter>
                 <FlatLightBody>
                     <IconGrid>
-                        <LanguageIcons.NodeIconBlock/>
-                        {/* <CSharpIconBlock/> */}
-                        <LanguageIcons.JavaIconBlock/>
                         <LanguageIcons.SpringIconBlock/>
-                        <LanguageIcons.PhpIconBlock/>
-                        <LanguageIcons.SqlIconBlock/>
-                        {/* <DotnetIconBlock/> */}
+                        <LanguageIcons.ReactIconBlock />
+                        <LanguageIcons.NodeIconBlock/>
+                        <LanguageIcons.DotnetIconBlock />
+                    </IconGrid>
+
+                </FlatLightBody>
+                <FlatLightFooter>
+                </FlatLightFooter>
+            </FlatCardContainer>
+
+            <FlatCardContainer>
+                <FlatLightFooter>
+                    <PageTitle>Tools</PageTitle>
+                </FlatLightFooter>
+                <FlatLightBody>
+                    <IconGrid>
+                        <LanguageIcons.GitIconBlock />
+                        <LanguageIcons.IntelliJIconBlock />
+                        <LanguageIcons.VisualStudioIconBlock />
+                        <LanguageIcons.VisualStudioCodeIconBlock />
                     </IconGrid>
                 </FlatLightBody>
                 <FlatLightFooter></FlatLightFooter>
