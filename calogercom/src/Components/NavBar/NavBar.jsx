@@ -6,14 +6,10 @@ import { PRIMARY } from '../Layout/Colors';
 import { SHADOWS } from '../Layout/Shadows';
 
 const HeaderNav = styled.nav`
-    background: ${PRIMARY};
-    color: white;
-    font-size: 20px;
-    width: 100%;
-    height: 75px;
-    display: flex;
-    z-index: 1;
-    font-weight: bold;
+
+background: ${PRIMARY};
+width: 100%;
+
     
    
 `
@@ -22,7 +18,7 @@ const NavGroup = styled.div`
     
 `
 
-const NavItem = styled.li`
+const NavItem = styled.div`
     display:flex;
     color: white;
     all: unset;
@@ -30,10 +26,21 @@ const NavItem = styled.li`
     align-self: center;
     user-select: none;
     
+    
+    &:hover {
+        color: rgba(0, 0, 0, .65);
+        cursor: pointer;
+    }
+
+    &:active {
+        color: rgba(0, 0, 0, .75);
+        cursor: pointer;
+    }
+
 `
 
 const NavItemRight = styled(NavItem)`
-    text-align: right;
+    
 `
 const HighlightedLink = styled.div`
 justify-content: center;
@@ -44,23 +51,33 @@ text-align: center;
     font-size: 30px;
 `
 
-const ProjectLink = styled(NavItem)`
+const ProjectLink = styled.div`
   @media (max-width: 768px) {
-    order: 1
-  }
-`
-
-const NameLink = styled(NavItem)`
-@media (max-width: 768px) {
     order: 2
   }
 `
-const BlogLink = styled(NavItem)`
+
+const NameLink = styled.div`
+@media (max-width: 768px) {
+    order: 1
+  }
+`
+const BlogLink = styled.div`
 @media (max-width: 768px) {
     order: 3
   }
+  display: flex;
+  justify-content: flex-end;
 `
 const InnerNav = styled.div`
+background: ${PRIMARY};
+    color: white;
+    font-size: 20px;
+    width: 100%;
+
+    display: flex;
+    z-index: 1;
+    font-weight: bold;
     width: 50%;
     margin: auto;
     display: flex;
@@ -68,22 +85,17 @@ const InnerNav = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    &>* {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
     @media (max-width: 768px) {
         flex-direction: row;
         &>* {
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
         }
-    }
-
-    &>*:hover {
-        color: rgba(0, 0, 0, .65);
-        cursor: pointer;
-    }
-
-    &>*:active {
-        color: rgba(0, 0, 0, .75);
-        cursor: pointer;
     }
 
     & > * {
@@ -93,6 +105,15 @@ const InnerNav = styled.div`
     }
 
     justify-content: flex-end;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        &>* {
+            flex: 1;
+        }
+        
+    }
 `
 
 const StyledNavLink = styled(NavLink)`
@@ -106,21 +127,30 @@ export default function NavBar() {
     return (
         <HeaderNav>
             <InnerNav>
-                <StyledNavLink to="/projects">
+                <ProjectLink>
+                    <StyledNavLink to="/projects">
                     <NavItem>
                         Projects
                     </NavItem>
                 </StyledNavLink>
-                <StyledNavLink to="/">
+                </ProjectLink>
+                
+                <NameLink>
+                    <StyledNavLink to="/">
                     <NavItem>
                         <HighlightedLink>Matthew Caloger</HighlightedLink>
                     </NavItem>
                 </StyledNavLink>
-                <StyledNavLink to="/blog">
+                </NameLink>
+                
+                <BlogLink>
+                    <StyledNavLink to="/blog">
                     <NavItemRight>
                         Blog
                     </NavItemRight>
                 </StyledNavLink>
+                </BlogLink>
+                
             </InnerNav>
         </HeaderNav>
     )

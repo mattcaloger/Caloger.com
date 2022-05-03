@@ -26,6 +26,7 @@ import Footer from '../Footer/Footer';
 import SpringReactGuide from '../Blog/BlogPages/SpringReactGuide';
 
 import NavBarPotential from '../NavBar/NavBarPotential';
+import BookDBProject from '../Pages/ProjectsPage/Projects/BookDB';
 
 
 
@@ -49,6 +50,7 @@ export default function AppRouter() {
                         <Route path="/projects/shortcake" element={<ShortcakeProject />} />
                         <Route path="/projects/instantchat" element={<ReactChatProject />} />
                         <Route path="/projects/shippingapp" element={<ShippingAppProject />} />
+                        <Route path="/projects/bookdb" element={<BookDBProject />} />
                     
                     
 

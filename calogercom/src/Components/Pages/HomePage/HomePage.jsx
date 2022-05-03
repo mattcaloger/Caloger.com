@@ -105,13 +105,13 @@ export default function HomePage() {
 
                     <CenteredPragraph>A secure message sharing service.</CenteredPragraph>
                     
-                    <Link to="https://mcaloger-stasher.herokuapp.com/">
+                    <a href="https://mcaloger-stasher.herokuapp.com/">
                         <CardContainerMini>
 
                             <PageSubtitle>Live Demo</PageSubtitle>
 
                         </CardContainerMini>
-                    </Link>
+                    </a>
 
                     <Link to="/projects/Stasher">
                         <CardContainerMini>
@@ -121,13 +121,13 @@ export default function HomePage() {
                         </CardContainerMini>
                     </Link>
 
-                    <Link to="https://github.com/MCaloger/Stasher">
+                    <a href="https://github.com/MCaloger/Stasher">
                         <CardContainerMini>
 
                             <PageSubtitle>Source Code</PageSubtitle>
 
                         </CardContainerMini>
-                    </Link>
+                    </a>
 
                 </FlatLightBody>
                 <FlatLightFooter>
