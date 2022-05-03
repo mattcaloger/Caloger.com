@@ -63,5 +63,10 @@ const ColorIntelliJTag = styled(LangTag)`background: #000000; color: white;`
 const ColorVisualStudioTag = styled(LangTag)`background: #9356CF; color: white;`
 const ColorVisualStudioCodeTag = styled(LangTag)`background: #1A8CD3; color: white;`
 
+const ColorAngular = styled(LangSpan)`color: #C3002F;`
+const ColorAngularTag = styled(LangTag)`background: #C3002F; color: white;`
 
-export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag, ColorAspDotNetCore as ColorDotnet, ColorAspDotNetTag as ColorDotnetTag, ColorGit, ColorGitTag, ColorIntellij, ColorIntelliJTag, ColorVisualStudio, ColorVisualStudioTag, ColorVisualStudioCode, ColorVisualStudioCodeTag }
+const ColorFigma = styled(LangSpan)`color: black;`
+const COlorFigmaTag = styled(LangTag)`background: black; color: white;`
+
+export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag, ColorAspDotNetCore as ColorDotnet, ColorAspDotNetTag as ColorDotnetTag, ColorGit, ColorGitTag, ColorIntellij, ColorIntelliJTag, ColorVisualStudio, ColorVisualStudioTag, ColorVisualStudioCode, ColorVisualStudioCodeTag, ColorAngular, ColorAngularTag, ColorFigma }

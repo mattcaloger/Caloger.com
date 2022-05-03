@@ -14,8 +14,10 @@ import GitIcon from '../../img/lang-icons/git.svg';
 import IntelliJIcon from '../../img/lang-icons/IntelliJIDEA.svg';
 import VisualStudioIcon from '../../img/lang-icons/visualstudio.svg';
 import VisualStudioCodeIcon from '../../img/lang-icons/vscode.svg';
+import AngularIcon from '../../img/lang-icons/angular.svg';
+import FigmaIcon from '../../img/lang-icons/Figma.svg';
 
-import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql, ColorDotnet, ColorGit, ColorIntellij, ColorVisualStudio, ColorVisualStudioCode } from './Languages';
+import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql, ColorDotnet, ColorGit, ColorIntellij, ColorVisualStudio, ColorVisualStudioCode, ColorAngular, ColorFigma } from './Languages';
 
 import styled from 'styled-components';
 import React from 'react';
@@ -40,10 +42,6 @@ const IconBlock = styled.div`
 
     &>*{
         margin: 5px;
-    }
-
-    &:hover {
-        transform: scale(1.2);
     }
 
 
@@ -193,4 +191,22 @@ const VisualStudioCodeIconBlock = () => {
     )
 }
 
-export { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, AspDotNotCoreIconBlock as DotnetIconBlock, GitIconBlock, IntelliJIconBlock, VisualStudioCodeIconBlock, VisualStudioIconBlock };
+const AngularIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={AngularIcon} />
+            <ColorAngular>Angular</ColorAngular>
+        </IconBlock>
+    )
+}
+
+const FigmaIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={FigmaIcon} />
+            <ColorFigma>Figma</ColorFigma>
+        </IconBlock>
+    )
+}
+
+export { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, AspDotNotCoreIconBlock as DotnetIconBlock, GitIconBlock, IntelliJIconBlock, VisualStudioCodeIconBlock, VisualStudioIconBlock, AngularIconBlock, FigmaIconBlock };

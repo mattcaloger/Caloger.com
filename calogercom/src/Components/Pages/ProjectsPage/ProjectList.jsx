@@ -1,5 +1,5 @@
 import React from 'react'
-import { CssIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, SqlIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
+import { AngularIconBlock, CSharpIcon, CSharpIconBlock, CssIconBlock, DotnetIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, SqlIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
 import ProjectCard from './ProjectCard'
 
 const projects = [
@@ -32,6 +32,21 @@ const projects = [
           <SpringIconBlock/>,
       ]
   },
+
+  {
+    url: "BookDB",
+    title: "BookDB",
+    summary: "Categorize books with uploadable covers.",
+    tags: [
+        "Full-Stack", 
+        "File Management"
+    ],
+    icons: [
+        <CSharpIconBlock />,
+        <DotnetIconBlock />,
+        <AngularIconBlock />,
+    ]
+},
 
   {
       url: "emilysite",

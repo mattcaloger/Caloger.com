@@ -17,12 +17,15 @@ import { CardContainerMini, LightHeaderMini, LightBodyMini, LightFooterMini} fro
 import { Link } from 'react-router-dom'
 import Title from '../../Layout/Title'
 
+import PageSubtitle from '../../Layout/PageSubtitle'
+
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
 `
 
-
+const CenteredPragraph = styled.p`
+text-align: center;`
 
 export default function HomePage() {
     return (
@@ -39,6 +42,7 @@ export default function HomePage() {
                         <LanguageIcons.JavaScriptIconBlock />
                         <LanguageIcons.TypeScriptIconBlock />
                         <LanguageIcons.CSharpIconBlock />
+                        <LanguageIcons.PhpIconBlock />
                     </IconGrid>
 
                     {/* <PageTitle>Examples</PageTitle>
@@ -62,10 +66,12 @@ export default function HomePage() {
                 </FlatLightFooter>
                 <FlatLightBody>
                     <IconGrid>
+                        <LanguageIcons.AngularIconBlock />
                         <LanguageIcons.SpringIconBlock/>
+                        
                         <LanguageIcons.ReactIconBlock />
-                        <LanguageIcons.NodeIconBlock/>
                         <LanguageIcons.DotnetIconBlock />
+                        <LanguageIcons.NodeIconBlock/>
                     </IconGrid>
 
                 </FlatLightBody>
@@ -81,11 +87,51 @@ export default function HomePage() {
                     <IconGrid>
                         <LanguageIcons.GitIconBlock />
                         <LanguageIcons.IntelliJIconBlock />
-                        <LanguageIcons.VisualStudioIconBlock />
                         <LanguageIcons.VisualStudioCodeIconBlock />
+                        <LanguageIcons.VisualStudioIconBlock />
+                        <LanguageIcons.FigmaIconBlock />
                     </IconGrid>
                 </FlatLightBody>
                 <FlatLightFooter></FlatLightFooter>
+            </FlatCardContainer>
+
+            <FlatCardContainer>
+                <FlatLightFooter>
+                    <PageTitle>Featured Project</PageTitle>
+                </FlatLightFooter>
+                <FlatLightBody>
+
+                    <PageSubtitle>Stasher</PageSubtitle>
+
+                    <CenteredPragraph>A secure message sharing service.</CenteredPragraph>
+                    
+                    <Link to="https://mcaloger-stasher.herokuapp.com/">
+                        <CardContainerMini>
+
+                            <PageSubtitle>Live Demo</PageSubtitle>
+
+                        </CardContainerMini>
+                    </Link>
+
+                    <Link to="/projects/Stasher">
+                        <CardContainerMini>
+
+                            <PageSubtitle>Project Page</PageSubtitle>
+
+                        </CardContainerMini>
+                    </Link>
+
+                    <Link to="https://github.com/MCaloger/Stasher">
+                        <CardContainerMini>
+
+                            <PageSubtitle>Source Code</PageSubtitle>
+
+                        </CardContainerMini>
+                    </Link>
+
+                </FlatLightBody>
+                <FlatLightFooter>
+                </FlatLightFooter>
             </FlatCardContainer>
 
         </HomePageContainer>

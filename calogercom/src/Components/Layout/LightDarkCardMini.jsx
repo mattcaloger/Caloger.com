@@ -27,6 +27,7 @@ const CardContainerMini = styled.div`
     border-radius:${BORDER_RADIUS};
 
     @media (min-width: 768px) {
+        width: 50%;
         &:hover {
             ${DROP_SHADOW_HOVER}
         }
@@ -41,8 +42,8 @@ const CardContainerMini = styled.div`
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     user-select: none;

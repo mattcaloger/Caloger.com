@@ -13,6 +13,7 @@ const TerminalCardComponent = styled.div`
             margin-bottom: 50px;
             padding: 20px;
             user-select: none;
+            font-family: monospace;
             &>* {
                 padding: 10px;
             }

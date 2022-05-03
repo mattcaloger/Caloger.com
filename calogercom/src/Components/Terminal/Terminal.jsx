@@ -8,29 +8,28 @@ import * as Languages from './Languages'
 import { CSharpIconBlock, CssIconBlock, HtmlIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock } from './LanguageIcons'
         
 
-        const Blink = styled.span`
+        export const Blink = styled.span`
         
         animation: blink-cursor 1.5s infinite;
-
             @keyframes blink-cursor {
                 0% {
-                    Languages.Color: #fff;
+                    color: #fff;
                 }
             
                 50% {
-                    Languages.Color: #fff;
+                    color: #fff;
                 }
             
                 60% {
-                    Languages.Color: black;
+                    color: black;
                 }
             
                 99% {
-                    Languages.Color: black;
+                    color: black;
                 }
             
                 100% {
-                    Languages.Color: #fff;
+                    color: #fff;
                 }
             }
         `
