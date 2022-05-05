@@ -58,6 +58,7 @@ const ProjectLink = styled.div`
 `
 
 const NameLink = styled.div`
+justify-content: center;
 @media (max-width: 768px) {
     order: 1
   }

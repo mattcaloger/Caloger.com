@@ -4,11 +4,10 @@ import styled from 'styled-components';
 export const IconGrid = styled.div`
     display: grid; 
     grid-template-columns: repeat(5, 1fr); 
-    gap: 20px 20px; 
+    gap: 3em 3em; 
 
     @media (max-width: 768px) {
-        grid-template-columns: repeat(1, 1fr); 
-        grid-template-rows: repeat(4, 1fr); 
+        grid-template-columns: repeat(3, 1fr); 
         gap: 20px 20px;
     }
 
