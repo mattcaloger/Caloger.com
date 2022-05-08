@@ -31,6 +31,34 @@ export default function HomePage() {
     return (
         <HomePageContainer>
             <AboutBlurb />
+
+            <FlatCardContainer>
+                <FlatLightFooter>
+                    <PageTitle>Languages</PageTitle>
+                </FlatLightFooter>
+                <FlatLightBody>
+                    <IconGrid>
+                        <LanguageIcons.JavaIconBlock/>
+                        <LanguageIcons.JavaScriptIconBlock />
+                        <LanguageIcons.TypeScriptIconBlock />
+                        <LanguageIcons.CSharpIconBlock />
+                        <LanguageIcons.PhpIconBlock />
+                    </IconGrid>
+
+                    {/* <PageTitle>Examples</PageTitle>
+                    
+                    <Link to="/projects/">
+                        <CardContainerMini>
+
+                            <Title>Graphic Designer's Portfolio</Title>
+
+                        </CardContainerMini>
+                    </Link> */}
+
+                </FlatLightBody>
+                <FlatLightFooter>
+                </FlatLightFooter>
+            </FlatCardContainer>
             
             <FlatCardContainer>
                 <FlatLightFooter>
