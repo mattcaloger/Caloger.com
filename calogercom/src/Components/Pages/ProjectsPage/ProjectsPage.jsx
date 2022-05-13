@@ -10,7 +10,6 @@ export default function ProjectsPage() {
     return (
         
         <PageContainer> 
-                <PageTitle>Projects</PageTitle>
                 <PageSubtitle>Select a project to view details</PageSubtitle>
 
             <ProjectList />

@@ -99,7 +99,7 @@ const DarkBody = styled(CardBase)`
 
 const LightFooter = styled(FooterBase)`
     color: black;
-    background: ${LIGHT_COLOUR};
+    background: #DDD;;
 `
 
 const DarkFooter = styled(FooterBase)`

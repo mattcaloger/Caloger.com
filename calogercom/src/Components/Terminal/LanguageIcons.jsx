@@ -36,12 +36,23 @@ const IconBlock = styled.div`
     flex-direction: column;
     font-weight: bold;
     align-items: center;
+    justify-content: center;
     background: white;
+    width: 8vw;
+    height: 8vw;
+    border-radius: ${BORDER};
+    text-align: center;
+    padding: 10px;
+
 
     transition: all ease-in .1s;
 
     &>*{
         margin: 5px;
+    }
+
+    &:hover {
+        ${DROP_SHADOW_HOVER};
     }
 
 

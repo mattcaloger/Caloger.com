@@ -48,6 +48,22 @@ const projects = [
     ]
 },
 
+{
+    url: "shortcake",
+    title: "Shortcake",
+    summary: "Shortcake is a simple API for shortening and sharing URLs.",
+    tags: [
+        "API", 
+        "Back End"
+    ],
+    icons: [
+        <AngularIconBlock />,
+        <JavaScriptIconBlock />,
+        <NodeIconBlock />,
+        <SqlIconBlock />,
+    ]
+},
+
   {
       url: "emilysite",
       title: "Graphic Designer's Portfolio",
@@ -60,21 +76,6 @@ const projects = [
           <PhpIconBlock />,
           <HtmlIconBlock />,
           <CssIconBlock />,
-      ]
-  },
-
-  {
-      url: "shortcake",
-      title: "Shortcake",
-      summary: "Shortcake is a simple API for shortening and sharing URLs.",
-      tags: [
-          "API", 
-          "Back End"
-      ],
-      icons: [
-          <JavaScriptIconBlock />,
-          <NodeIconBlock />,
-          <SqlIconBlock />,
       ]
   },
 

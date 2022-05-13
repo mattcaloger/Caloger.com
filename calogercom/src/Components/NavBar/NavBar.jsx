@@ -52,13 +52,14 @@ text-align: center;
 `
 
 const ProjectLink = styled.div`
+justify-content: center;
   @media (max-width: 768px) {
     order: 2
   }
 `
 
 const NameLink = styled.div`
-justify-content: center;
+justify-content: left;
 @media (max-width: 768px) {
     order: 1
   }
@@ -128,6 +129,13 @@ export default function NavBar() {
     return (
         <HeaderNav>
             <InnerNav>
+                <NameLink>
+                    <StyledNavLink to="/">
+                    <NavItem>
+                        <HighlightedLink>Matthew Caloger</HighlightedLink>
+                    </NavItem>
+                </StyledNavLink>
+                </NameLink>
                 <ProjectLink>
                     <StyledNavLink to="/projects">
                     <NavItem>
@@ -136,13 +144,7 @@ export default function NavBar() {
                 </StyledNavLink>
                 </ProjectLink>
                 
-                <NameLink>
-                    <StyledNavLink to="/">
-                    <NavItem>
-                        <HighlightedLink>Matthew Caloger</HighlightedLink>
-                    </NavItem>
-                </StyledNavLink>
-                </NameLink>
+                
                 
                 <BlogLink>
                     <StyledNavLink to="/blog">

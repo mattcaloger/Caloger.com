@@ -63,7 +63,7 @@ export default function AboutBlurb() {
         <AboutBlock>
             
             <BlurbHeader>
-                <PageTitle>About Me</PageTitle>
+
                 <ProfilePicture />
             </BlurbHeader>
             <BlurbBody>

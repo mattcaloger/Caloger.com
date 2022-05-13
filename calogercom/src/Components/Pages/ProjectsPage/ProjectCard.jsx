@@ -8,9 +8,22 @@ import { CardContainer, LightFooter, LightBody, LightHeader } from '../../Layout
 import EvenSpanRow from '../../Terminal/EvenSpanRow';
 import Title from '../../Layout/Title'
 
+import VideoIcon from '../../../img/icons/PlayVideo.svg'
+
 const ProjectSummary = styled.div`
     cursor: default;
     user-select: none;
+`
+const CardFooter = styled.div`
+    height: 50px;
+    width: 100%;
+    background: #DDD; 
+`
+
+const ActionIcon = styled.img`
+    height: 50px;;
+    width: auto;
+
 `
 
 export default function ProjectCard(props) {
@@ -29,14 +42,20 @@ export default function ProjectCard(props) {
                 </LightHeader>
                 <LightBody>
                     <ProjectSummary>{props.summary}</ProjectSummary>
-                </LightBody>
-                <LightFooter>
                     <EvenSpanRow>
                         {props.icons.map((icon, index) => {
                             return <React.Fragment key={index}>{icon}</React.Fragment>
                         })}
                     </EvenSpanRow>
+                </LightBody>
+                <LightFooter>
+                    <CardFooter>
+                    <EvenSpanRow>
+                        <ActionIcon src={VideoIcon} alt="Video"></ActionIcon>
+                    </EvenSpanRow>
+                    </CardFooter>
                 </LightFooter>
+                
             </CardContainer>
         </Link>
     )
