@@ -14,15 +14,14 @@ const AboutImgContainer = styled.div`
 `
 
 const AboutImg = styled.img`
-    width: 100%;
+    width: 48px;
     height: auto;
     border-radius: 100%;
 `
 
 export default function ProfilePicture() {
     return (
-        <AboutImgContainer>
+
                 <AboutImg src={ProfilePic}></AboutImg>
-            </AboutImgContainer>
     )
 }

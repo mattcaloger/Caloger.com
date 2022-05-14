@@ -1,10 +1,12 @@
 import React from 'react'
 import PageTitle from '../../Layout/PageTitle'
 import PageContainer from '../../Layout/PageContainer'
+import Content from '../../Layout/Content'
 
 export default function AutomatingAccountCreationBlog() {
     return (
-        <PageContainer>
+        <Content>
+
             <PageTitle>Automating the Account Creation Process</PageTitle>
             <div>
 
@@ -35,6 +37,6 @@ export default function AutomatingAccountCreationBlog() {
                 <p>This process was an interesting look for me into how to automate a process with restrictions and stop-gaps, while </p>
 
             </div>
-        </PageContainer>
+        </Content>
     )
 }

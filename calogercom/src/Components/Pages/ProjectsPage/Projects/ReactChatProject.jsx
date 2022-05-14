@@ -15,10 +15,11 @@ import FirstMessageImage from '../../../../img/proj-img/InstantChat/First messag
 import VisibleLink from '../../../Layout/VisibleLink';
 
 import SecondMessageImage from '../../../../img/proj-img/InstantChat/Second message.png'
+import Content from '../../../Layout/Content'
 
 export default function ReactChatProject() {
     return (
-        <div>
+        <Content>
 
             <PageTitle>Instant Chat</PageTitle>
             <SplitContainer>
@@ -41,6 +42,6 @@ export default function ReactChatProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/Instant-Chat" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </Content>
     )
 }

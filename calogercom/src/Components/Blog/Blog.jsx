@@ -7,12 +7,16 @@ import BlogList from './BlogList'
 
 export default function Blog() {
     return (
+    <>
+    <PageSubtitle>Select a blog to view details</PageSubtitle>
         <PageContainer>
 
-            <PageSubtitle>Select a blog to view details</PageSubtitle>
+            
 
             <BlogList />
             
         </PageContainer>
+    
+    </>
     )
 }

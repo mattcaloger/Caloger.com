@@ -9,10 +9,11 @@ import DynamicCSSImage from '../../../../img/proj-img/Canyon/dynamiccss.png'
 import PageTitle from '../../../Layout/PageTitle'
 import CaptionedImage from '../../../Layout/CaptionedImage'
 import PageSubtitle from '../../../Layout/PageSubtitle'
+import Content from '../../../Layout/Content'
 
 export default function CanyonpProject() {
     return (
-        <>
+        <Content>
 
             <PageTitle>Canyon</PageTitle>
             <SplitContainer>
@@ -30,6 +31,6 @@ export default function CanyonpProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/CanyonJS" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </>
+        </Content>
     )
 }

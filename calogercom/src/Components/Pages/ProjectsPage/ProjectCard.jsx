@@ -26,36 +26,39 @@ const ActionIcon = styled.img`
 
 `
 
+const CardIcon = styled.div`
+
+&>* {
+    width: 24px;
+    height: 24px;
+}
+    
+`
+
 export default function ProjectCard(props) {
     return (
         <Link to={props.url}>
             <CardContainer>
                 <LightHeader>
-                    <DividedContainer>
-                            <Title>{props.title}</Title>
-                        <SpanRow>
-                            {props.tags.map((tag, index) => {
-                                return <Tag key={index}>{tag}</Tag>
-                            })}
-                        </SpanRow>
-                    </DividedContainer>
-                </LightHeader>
-                <LightBody>
-                    <ProjectSummary>{props.summary}</ProjectSummary>
-                    <EvenSpanRow>
-                        {props.icons.map((icon, index) => {
-                            return <React.Fragment key={index}>{icon}</React.Fragment>
+                    <Title>{props.title}</Title>
+                    <SpanRow>
+                        {props.tags.map((tag, index) => {
+                            return <Tag key={index}>{tag}</Tag>
                         })}
-                    </EvenSpanRow>
+                    </SpanRow>
+                    </LightHeader>
+                <LightBody>
+                    
+                    <ProjectSummary>{props.summary}</ProjectSummary>
+                    
                 </LightBody>
                 <LightFooter>
-                    <CardFooter>
-                    <EvenSpanRow>
-                        <ActionIcon src={VideoIcon} alt="Video"></ActionIcon>
+                <EvenSpanRow>
+                        {props.icons.map((icon, index) => {
+                            return <CardIcon key={index}>{icon}</CardIcon>
+                        })}
                     </EvenSpanRow>
-                    </CardFooter>
                 </LightFooter>
-                
             </CardContainer>
         </Link>
     )

@@ -11,17 +11,17 @@ export default function BlogCard(props) {
     <Link to={props.url}>
         <CardContainer>
             <LightHeader>
-                <DividedContainer>
+
                         <Title>{props.title}</Title>
                     <SpanRow>
                         {props.tags.map((tag, index) => {
                             return <Tag key={index}>{tag}</Tag>
                         })}
                     </SpanRow>
-                </DividedContainer>
+<p>{props.summary}</p>
             </LightHeader>
             <LightFooter>
-                <p>{props.summary}</p>
+                
             </LightFooter>
         </CardContainer>    
     </Link> 

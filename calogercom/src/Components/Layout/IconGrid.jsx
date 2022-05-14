@@ -3,17 +3,22 @@ import styled from 'styled-components';
 
 export const IconGrid = styled.div`
     display: grid; 
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 3em 3em; 
+    grid-template-columns: repeat(auto-fill, minmax(7vw, 1fr));
+    grid-gap: 1em;
 
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20px 20px;
+  align-items: center;
+  justify-content: center;
+
+    @media (max-width: 1080px) {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1em;
     }
 
-    *>*{
+    &>*{
+        flex: 1;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
 

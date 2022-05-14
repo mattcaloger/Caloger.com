@@ -34,7 +34,7 @@ const CardContainerMini = styled.div`
 
 
     &>* {
-        margin-bottom: 25px;
+        margin-bottom: 1em;
     }
 
     display: flex;
@@ -43,15 +43,15 @@ const CardContainerMini = styled.div`
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     user-select: none;
     text-align: center;
 
     &>* {
         flex: 1;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     @media only screen and (max-width: 992px) {

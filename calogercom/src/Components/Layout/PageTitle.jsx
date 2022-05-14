@@ -3,12 +3,12 @@ import styled from "styled-components";
 const PageTitle = styled.div`
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    text-align: left;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
     user-select:none;
-    cusor: default;
+    cursor: default;
 `
 
 export default PageTitle

@@ -5,10 +5,11 @@ import PageTitle from '../../../Layout/PageTitle'
 
 import VisibleLink from '../../../Layout/VisibleLink'
 import ViewCodeButton from '../../../Layout/ViewCodeButton'
+import Content from '../../../Layout/Content'
 
 export default function BudgieProject() {
     return (
-        <div>
+        <Content>
             <PageTitle>Shortcake</PageTitle>
             <SplitContainer>
 
@@ -24,6 +25,6 @@ export default function BudgieProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/Shortcake" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </Content>
     )
 }

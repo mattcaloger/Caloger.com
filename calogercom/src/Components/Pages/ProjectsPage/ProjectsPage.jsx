@@ -8,12 +8,14 @@ import PageContainer from '../../Layout/PageContainer';
 export default function ProjectsPage() {
     
     return (
-        
-        <PageContainer> 
-                <PageSubtitle>Select a project to view details</PageSubtitle>
+        <>
+            <PageSubtitle>Select a project to view details</PageSubtitle>
+            <PageContainer> 
+                    
 
-            <ProjectList />
+                <ProjectList />
 
-        </PageContainer>
+            </PageContainer>
+        </>
     )
 }

@@ -27,10 +27,11 @@ import TechHomeImage from '../../../../img/proj-img/university-helpdesk/technici
 import TechTicketViewImage from '../../../../img/proj-img/university-helpdesk/technician_ticket_view.png'
 
 import TechTicketDetailsImage from '../../../../img/proj-img/university-helpdesk/technician_ticket_details.png'
+import Content from '../../../Layout/Content'
 
 export default function HelpdeskProject() {
     return (
-        <>
+        <Content>
 
             <PageTitle>University Helpdesk</PageTitle>
             <SplitContainer>
@@ -63,6 +64,6 @@ export default function HelpdeskProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/University-Helpdesk" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </>
+        </Content>
     )
 }

@@ -22,6 +22,11 @@ const SpanRow = styled.div`
             &>:only-child {
                 margin-left: 0 ;
             }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
         `
 
 export default SpanRow

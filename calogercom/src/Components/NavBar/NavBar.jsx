@@ -1,17 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, Router, NavLink } from "react-router-dom";
+import { Link, Router, NavLink, useLocation } from "react-router-dom";
 import { DROP_SHADOW } from '../Layout/LightDarkCard';
 import { PRIMARY } from '../Layout/Colors';
 import { SHADOWS } from '../Layout/Shadows';
+import Footer from '../Footer/Footer';
+import ProfilePicture from '../ProfilePicture/ProfilePicture';
+
+
 
 const HeaderNav = styled.nav`
+border-top: 10px solid ${PRIMARY};
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: white;
+    ${DROP_SHADOW}
 
-background: ${PRIMARY};
-width: 100%;
-
-    
-   
 `
 
 const NavGroup = styled.div`
@@ -20,16 +25,15 @@ const NavGroup = styled.div`
 
 const NavItem = styled.div`
     display:flex;
-    color: white;
-    all: unset;
     flex: 1;
     align-self: center;
     user-select: none;
+    flex-direction: row;
     
     
-    &:hover {
-        color: rgba(0, 0, 0, .65);
+    &>:hover {
         cursor: pointer;
+        color: grey;
     }
 
     &:active {
@@ -37,18 +41,28 @@ const NavItem = styled.div`
         cursor: pointer;
     }
 
+    &>* {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
 `
 
 const NavItemRight = styled(NavItem)`
+display: flex;
+justify-content: flex-end;
+&>* {
     
+}
 `
 const HighlightedLink = styled.div`
-justify-content: center;
-text-align: center;
+
+align-self: center;
+    text-align: center;
     @media (max-width: 768px) {
         font-size: 22px;
     }
-    font-size: 30px;
+    font-size: 24px;
 `
 
 const ProjectLink = styled.div`
@@ -68,19 +82,19 @@ const BlogLink = styled.div`
 @media (max-width: 768px) {
     order: 3
   }
-  display: flex;
-  justify-content: flex-end;
+  
 `
 const InnerNav = styled.div`
-background: ${PRIMARY};
-    color: white;
+
+    background: white;
+    color: ${PRIMARY};
     font-size: 20px;
-    width: 100%;
+    width: 66%;
 
     display: flex;
     z-index: 1;
     font-weight: bold;
-    width: 50%;
+
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -88,16 +102,8 @@ background: ${PRIMARY};
     justify-content: space-between;
 
     &>* {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    @media (max-width: 768px) {
-        flex-direction: row;
-        &>* {
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     & > * {
@@ -108,9 +114,13 @@ background: ${PRIMARY};
 
     justify-content: flex-end;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         flex-direction: column;
         justify-content: center;
+        &>* {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
         &>* {
             flex: 1;
         }
@@ -120,38 +130,49 @@ background: ${PRIMARY};
 
 const StyledNavLink = styled(NavLink)`
     &.active {
-        color: rgba(0, 0, 0, .65);
+        color: black;
     }
 `
 
 
 export default function NavBar() {
+
+    const location = useLocation();
+
     return (
         <HeaderNav>
             <InnerNav>
                 <NameLink>
                     <StyledNavLink to="/">
                     <NavItem>
+                        <ProfilePicture />
                         <HighlightedLink>Matthew Caloger</HighlightedLink>
                     </NavItem>
                 </StyledNavLink>
                 </NameLink>
-                <ProjectLink>
-                    <StyledNavLink to="/projects">
-                    <NavItem>
-                        Projects
-                    </NavItem>
-                </StyledNavLink>
-                </ProjectLink>
-                
-                
-                
                 <BlogLink>
-                    <StyledNavLink to="/blog">
                     <NavItemRight>
-                        Blog
-                    </NavItemRight>
-                </StyledNavLink>
+                    {location.pathname == "/" ?
+                    <>
+                    <StyledNavLink to={{hash: "#about"}}>
+                            <NavItem>About</NavItem>
+                        </StyledNavLink>
+                        <StyledNavLink to={{hash: "#skills"}}>
+                            <NavItem>Skills</NavItem>
+                        </StyledNavLink>
+                        <StyledNavLink to={{hash: "#projects"}}>
+                            <NavItem>Projects</NavItem>
+                        </StyledNavLink>
+                        <StyledNavLink to={{hash: "#blog"}}>
+                            <NavItem>Blog</NavItem>
+                        </StyledNavLink>
+                    </>
+                    :
+                        <StyledNavLink to="/">
+                            <NavItem>Back</NavItem>
+                        </StyledNavLink>
+                    }
+                    </NavItemRight> 
                 </BlogLink>
                 
             </InnerNav>

@@ -2,10 +2,11 @@ import React from 'react'
 import SplitContainer from '../../../Layout/SplitContainer'
 import SplitContainerPanel from '../../../Layout/SplitContainerPanel'
 import ProjectDetails from '../../../Layout/ProjectDetails'
+import Content from '../../../Layout/Content'
 
 export default function ShippingAppProject() {
     return (
-        <>
+        <Content>
             <h1>Escargo</h1>
             <SplitContainer>
 
@@ -15,6 +16,6 @@ export default function ShippingAppProject() {
                     </ProjectDetails>
                 </SplitContainerPanel>
             </SplitContainer>
-        </>
+        </Content>
     )
 }

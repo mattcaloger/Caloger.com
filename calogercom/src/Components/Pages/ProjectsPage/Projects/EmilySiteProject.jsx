@@ -12,6 +12,7 @@ import ProjectsPage from '../../../../img/proj-img/portfolio-img/port-projects.p
 import PageSubtitle from '../../../Layout/PageSubtitle'
 import ViewCodeButton from '../../../Layout/ViewCodeButton'
 import styled from 'styled-components'
+import Content from '../../../Layout/Content'
 
 const ClickableLink = styled.a`
     cursor: pointer;
@@ -21,7 +22,7 @@ const ClickableLink = styled.a`
 export default function EmilySiteProject() {
     return (
 
-        <div>
+        <Content>
             <PageTitle>Graphic Designer Portfolio Website</PageTitle>
             <SplitContainer>
 
@@ -44,6 +45,6 @@ export default function EmilySiteProject() {
                     <ViewCodeButton url="https://github.com/MCaloger/EmilyDesignPortfolio" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </Content>
     )
 }

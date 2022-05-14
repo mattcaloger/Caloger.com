@@ -4,7 +4,7 @@ import HtmlIcon from '../../img/lang-icons/html5.svg';
 import JavaIcon from '../../img/lang-icons/java.svg';
 import JavaScriptIcon from '../../img/lang-icons/javascript.svg';
 import NodeIcon from '../../img/lang-icons/nodejs.svg';
-import PhpIcon from '../../img/lang-icons/php.png';
+import PhpIcon from '../../img/lang-icons/php.svg';
 import ReactIcon from '../../img/lang-icons/react.svg';
 import SpringIcon from '../../img/lang-icons/spring.svg';
 import SqlIcon from '../../img/lang-icons/sql.svg';
@@ -16,8 +16,10 @@ import VisualStudioIcon from '../../img/lang-icons/visualstudio.svg';
 import VisualStudioCodeIcon from '../../img/lang-icons/vscode.svg';
 import AngularIcon from '../../img/lang-icons/angular.svg';
 import FigmaIcon from '../../img/lang-icons/Figma.svg';
+import DockerIcon from '../../img/lang-icons/docker.svg';
+import ApacheIcon from '../../img/lang-icons/apache.svg';
 
-import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql, ColorDotnet, ColorGit, ColorIntellij, ColorVisualStudio, ColorVisualStudioCode, ColorAngular, ColorFigma } from './Languages';
+import { ColorCSharp, ColorHtml, ColorJs, ColorCss, ColorPhp, ColorReactJs, ColorNode, ColorTypescript, ColorJava, ColorSpring, ColorSql, ColorDotnet, ColorGit, ColorIntellij, ColorVisualStudio, ColorVisualStudioCode, ColorAngular, ColorFigma, ColorDocker, ColorApache } from './Languages';
 
 import styled from 'styled-components';
 import React from 'react';
@@ -38,23 +40,10 @@ const IconBlock = styled.div`
     align-items: center;
     justify-content: center;
     background: white;
-    width: 8vw;
-    height: 8vw;
+    aspect-ratio: 1;
     border-radius: ${BORDER};
-    text-align: center;
-    padding: 10px;
-
-
-    transition: all ease-in .1s;
-
-    &>*{
-        margin: 5px;
-    }
-
-    &:hover {
-        ${DROP_SHADOW_HOVER};
-    }
-
+    border: 1px solid #00000022;
+    padding: 5px;
 
 `
 
@@ -220,4 +209,23 @@ const FigmaIconBlock = () => {
     )
 }
 
-export { CSharpIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, AspDotNotCoreIconBlock as DotnetIconBlock, GitIconBlock, IntelliJIconBlock, VisualStudioCodeIconBlock, VisualStudioIconBlock, AngularIconBlock, FigmaIconBlock };
+const DockerIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={DockerIcon} />
+            <ColorDocker>Docker</ColorDocker>
+        </IconBlock>
+    )
+}
+
+const ApacheIconBlock = () => {
+    return (
+        <IconBlock>
+            <IconImage src={ApacheIcon} />
+            <ColorApache>Apache</ColorApache>
+        </IconBlock>
+    )
+}
+
+
+export {CSharpIcon,CssIcon,HtmlIcon,JavaIcon,JavaScriptIcon,NodeIcon,PhpIcon,ReactIcon,SpringIcon,SqlIcon,TypeScriptIcon,DotnetIcon,GitIcon,IntelliJIcon,VisualStudioIcon,VisualStudioCodeIcon,AngularIcon,FigmaIcon, DockerIcon, CSharpIconBlock, JavaScriptIconBlock, HtmlIconBlock, CssIconBlock, PhpIconBlock, ReactIconBlock, NodeIconBlock, TypeScriptIconBlock, JavaIconBlock, SpringIconBlock, SqlIconBlock, AspDotNotCoreIconBlock as DotnetIconBlock, GitIconBlock, IntelliJIconBlock, VisualStudioCodeIconBlock, VisualStudioIconBlock, AngularIconBlock, FigmaIconBlock, DockerIconBlock, ApacheIconBlock, ApacheIcon };

@@ -5,135 +5,102 @@ import Terminal from '../../Terminal/Terminal'
 import styled from 'styled-components'
 import PageTitle from '../../Layout/PageTitle'
 
-import * as LanguageIcons from '../../Terminal/LanguageIcons'
-import IconImage from '../../Layout/IconImage'
-import SpanRow from '../../Terminal/SpanRow'
-import { CardContainer, LightHeader } from '../../Layout/LightDarkCard'
-import { FlatCardContainer, FlatLightBody, FlatLightFooter } from '../../Layout/LightDarkCardFlat'
-import { IconGrid } from '../../Layout/IconGrid'
+import { HashRouter } from 'react-router-dom'
 
-import { CardContainerMini, LightHeaderMini, LightBodyMini, LightFooterMini} from '../../Layout/LightDarkCardMini'
+import * as LanguageIcons from '../../Terminal/LanguageIcons'
+import * as LanguageColors from '../../Terminal/Languages'
+import IconImage from '../../Layout/IconImage'
+
+import { IconGrid } from '../../Layout/IconGrid'
 
 import { Link } from 'react-router-dom'
 import Title from '../../Layout/Title'
 
 import PageSubtitle from '../../Layout/PageSubtitle'
 
+import PageContainer from '../../Layout/PageContainer'
+
+import ProjectList from '../ProjectsPage/ProjectList'
+
+import BlogList from '../../Blog/BlogList'
+import Content from '../../Layout/Content'
+import ToggleIcon from '../../Layout/ToggleIcon'
+import ResponsiveIconImage from '../../Layout/Redesign/ResponsiveIconImage'
+import * as LanguageData from '../../Layout/Redesign/LanguageData'
+
+
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
+
+    
 `
 
 const CenteredPragraph = styled.p`
 text-align: center;`
 
+const PageSection = styled.section`
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    &:nth-child(even) {
+        background: #F3F3F3;
+     };
+`
+
 export default function HomePage() {
+
+    const LanguageList = () => LanguageData.LanguageList.map((language, index) => {
+        return <ToggleIcon key={index} default={LanguageData.LanguageList[index].IconComponentResponsive} hover={LanguageData.LanguageList[index].Text}></ToggleIcon>
+    })
+
     return (
         <HomePageContainer>
-            <AboutBlurb />
-
-            <FlatCardContainer>
-                <FlatLightFooter>
-                    <PageTitle>Languages</PageTitle>
-                </FlatLightFooter>
-                <FlatLightBody>
-                    <IconGrid>
-                        <LanguageIcons.JavaIconBlock/>
-                        <LanguageIcons.JavaScriptIconBlock />
-                        <LanguageIcons.TypeScriptIconBlock />
-                        <LanguageIcons.CSharpIconBlock />
-                        <LanguageIcons.PhpIconBlock />
-                    </IconGrid>
-
-                    {/* <PageTitle>Examples</PageTitle>
-                    
-                    <Link to="/projects/">
-                        <CardContainerMini>
-
-                            <Title>Graphic Designer's Portfolio</Title>
-
-                        </CardContainerMini>
-                    </Link> */}
-
-                </FlatLightBody>
-                <FlatLightFooter>
-                </FlatLightFooter>
-            </FlatCardContainer>
+            <PageSection>
+                <Content>
+                    <PageTitle id="#about">About</PageTitle>
+                    <AboutBlurb />
+                </Content>    
+            </PageSection>
             
-            <FlatCardContainer>
-                <FlatLightFooter>
-                    <PageTitle>Frameworks</PageTitle>
-                </FlatLightFooter>
-                <FlatLightBody>
+            <PageSection>
+                <Content>
+
+                     <PageTitle id="#skills">Skills</PageTitle>
+
                     <IconGrid>
-                        <LanguageIcons.AngularIconBlock />
-                        <LanguageIcons.SpringIconBlock/>
                         
-                        <LanguageIcons.ReactIconBlock />
-                        <LanguageIcons.DotnetIconBlock />
-                        <LanguageIcons.NodeIconBlock/>
+                        {LanguageList()}
+
                     </IconGrid>
 
-                </FlatLightBody>
-                <FlatLightFooter>
-                </FlatLightFooter>
-            </FlatCardContainer>
+   
+                </Content>
+            </PageSection>
 
-            <FlatCardContainer>
-                <FlatLightFooter>
-                    <PageTitle>Tools</PageTitle>
-                </FlatLightFooter>
-                <FlatLightBody>
-                    <IconGrid>
-                        <LanguageIcons.GitIconBlock />
-                        <LanguageIcons.IntelliJIconBlock />
-                        <LanguageIcons.VisualStudioCodeIconBlock />
-                        <LanguageIcons.VisualStudioIconBlock />
-                        <LanguageIcons.FigmaIconBlock />
-                    </IconGrid>
-                </FlatLightBody>
-                <FlatLightFooter></FlatLightFooter>
-            </FlatCardContainer>
+            {/* Projects */}
 
-            <FlatCardContainer>
-                <FlatLightFooter>
-                    <PageTitle>Featured Project</PageTitle>
-                </FlatLightFooter>
-                <FlatLightBody>
+            <PageSection>
+                <Content>
+                    <PageTitle id="#projects">Projects</PageTitle>
+                    <PageSubtitle>Select a project to view details</PageSubtitle>
+                    <PageContainer> 
+                        <ProjectList />
+                    </PageContainer>
+                </Content>
+            </PageSection>
 
-                    <PageSubtitle>Stasher</PageSubtitle>
+            {/* Blog */}
 
-                    <CenteredPragraph>A secure message sharing service.</CenteredPragraph>
-                    
-                    <a href="https://mcaloger-stasher.herokuapp.com/">
-                        <CardContainerMini>
-
-                            <PageSubtitle>Live Demo</PageSubtitle>
-
-                        </CardContainerMini>
-                    </a>
-
-                    <Link to="/projects/Stasher">
-                        <CardContainerMini>
-
-                            <PageSubtitle>Project Page</PageSubtitle>
-
-                        </CardContainerMini>
-                    </Link>
-
-                    <a href="https://github.com/MCaloger/Stasher">
-                        <CardContainerMini>
-
-                            <PageSubtitle>Source Code</PageSubtitle>
-
-                        </CardContainerMini>
-                    </a>
-
-                </FlatLightBody>
-                <FlatLightFooter>
-                </FlatLightFooter>
-            </FlatCardContainer>
-
+            <PageSection>
+                <Content>
+                    <PageTitle id="#blog">Blog</PageTitle>
+                    <PageSubtitle>Select a blog to view details</PageSubtitle>
+                    <PageContainer>
+                        <BlogList />
+                    </PageContainer>
+                </Content>
+            </PageSection>
         </HomePageContainer>
     )
 }

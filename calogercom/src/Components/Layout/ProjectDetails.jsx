@@ -10,8 +10,8 @@ const ProjectDetails = styled.div`
     width: 100%;
     border-radius: ${BORDER_RADIUS};
     margin: auto;
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 1em;
+    padding: 1em;
 `
 
 export default ProjectDetails

@@ -27,41 +27,52 @@ import SpringReactGuide from '../Blog/BlogPages/SpringReactGuide';
 
 import NavBarPotential from '../NavBar/NavBarPotential';
 import BookDBProject from '../Pages/ProjectsPage/Projects/BookDB';
+import ScrollHandler from './ScrollHandler';
+import SocialButtons from '../SocialButtons/SocialButtons';
 
 
 
 export default function AppRouter() {
 
+    
+
     return (
         <BrowserRouter>
-            <NavBar />
             
-            <ScrollToTop />
-            <Content>
-                <Routes>
+                <NavBar />
                 
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="projects" element={<ProjectsPage />} />                 
-                        <Route path="/projects/stasher" element={<StasherProject />} />
-                        <Route path="/projects/budgie" element={<BudgieProject />} />
-                        <Route path="/projects/helpdesk" element={<HelpdeskProject />} />
-                        <Route path="/projects/canyon" element={<CanyonProject />} />
-                        <Route path="/projects/emilysite" element={<EmilySiteProject />} />
-                        <Route path="/projects/shortcake" element={<ShortcakeProject />} />
-                        <Route path="/projects/instantchat" element={<ReactChatProject />} />
-                        <Route path="/projects/shippingapp" element={<ShippingAppProject />} />
-                        <Route path="/projects/bookdb" element={<BookDBProject />} />
-                    
-                    
+<ScrollHandler />
 
-                    <Route path="blog" element={<Blog />} />
-                        <Route path="/blog/spring-react-guide" element={<SpringReactGuide />} />
-                        <Route path="/blog/buildsheet-editor" element={<BuildsheetEditorBlog />} />
-                        <Route path="/blog/automating-account-creation" element={<AutomatingAccountCreationBlog />} />
+                <ScrollToTop />
 
-                </Routes>
-            </Content>
-            <Footer />
+                    <Routes>
+                    
+                        <Route path="/" element={<HomePage />} />
+     
+                            <Route path="stasher" element={<StasherProject />} />
+                            <Route path="budgie" element={<BudgieProject />} />
+                            <Route path="helpdesk" element={<HelpdeskProject />} />
+                            <Route path="/canyon" element={<CanyonProject />} />
+                            <Route path="/projects/emilysite" element={<EmilySiteProject />} />
+                            <Route path="/shortcake" element={<ShortcakeProject />} />
+                            <Route path="/instantchat" element={<ReactChatProject />} />
+                            <Route path="/shippingapp" element={<ShippingAppProject />} />
+                            <Route path="/bookdb" element={<BookDBProject />} />
+                        
+                        
+
+           
+                            <Route path="/spring-react-guide" element={<SpringReactGuide />} />
+                            <Route path="/buildsheet-editor" element={<BuildsheetEditorBlog />} />
+                            <Route path="/automating-account-creation" element={<AutomatingAccountCreationBlog />} />
+
+                            <Route path="*" exact element={<div>404</div>} />
+
+                    </Routes>
+
+
+
+            <SocialButtons />
         </BrowserRouter>
     )
 }

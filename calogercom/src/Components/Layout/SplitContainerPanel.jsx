@@ -7,8 +7,8 @@ const SplitContainerPanelComponent = styled.div`
     justify-content: center;
 
     & > * {
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     
 `

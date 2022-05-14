@@ -1,6 +1,7 @@
 import React from 'react'
-import { AngularIconBlock, CSharpIcon, CSharpIconBlock, CssIconBlock, DotnetIconBlock, HtmlIconBlock, JavaIconBlock, JavaScriptIconBlock, NodeIconBlock, PhpIconBlock, ReactIconBlock, SpringIconBlock, SqlIconBlock, TypeScriptIconBlock } from '../../Terminal/LanguageIcons'
+import * as LanguageIcon from '../../Terminal/LanguageIcons'
 import ProjectCard from './ProjectCard'
+import IconImage from '../../Layout/IconImage'
 
 const projects = [
     {
@@ -8,14 +9,14 @@ const projects = [
         title: "Stasher",
         summary: "A secure message sharing service.",
         tags: [
-            "Full Stack", 
-            "Security"
+            "Security",
+            "Encryption"
         ],
         icons: [
-            <TypeScriptIconBlock />,
-            <ReactIconBlock />, 
-            <JavaIconBlock />, 
-            <SpringIconBlock/>,
+            <IconImage src={LanguageIcon.TypeScriptIcon }/>,
+            <IconImage src={LanguageIcon.ReactIcon} />,
+            <IconImage src={LanguageIcon.JavaIcon} />,
+            <IconImage src={LanguageIcon.SpringIcon} />
         ]
     },
   {
@@ -23,13 +24,13 @@ const projects = [
       title: "Budgie",
       summary: "An expense tracker with data visualization and the ability to add/remove expenses and incomes while displaying graphs based on the input data.",
       tags: [
-          "Full Stack", 
+          "Finance",
           "Data Visualization"
       ],
       icons: [
-          <ReactIconBlock />, 
-          <JavaIconBlock />, 
-          <SpringIconBlock/>,
+          <IconImage src={LanguageIcon.ReactIcon} />,
+          <IconImage src={LanguageIcon.JavaIcon} />,
+          <IconImage src={LanguageIcon.SpringIcon} />
       ]
   },
 
@@ -38,13 +39,12 @@ const projects = [
     title: "BookDB",
     summary: "Categorize books with uploadable covers.",
     tags: [
-        "Full-Stack", 
         "File Management"
     ],
     icons: [
-        <CSharpIconBlock />,
-        <DotnetIconBlock />,
-        <AngularIconBlock />,
+        <IconImage src={LanguageIcon.CSharpIcon } />,
+        <IconImage src={LanguageIcon.DotnetIcon } />,
+        <IconImage src={LanguageIcon.AngularIcon } />
     ]
 },
 
@@ -53,14 +53,13 @@ const projects = [
     title: "Shortcake",
     summary: "Shortcake is a simple API for shortening and sharing URLs.",
     tags: [
-        "API", 
-        "Back End"
+        "URL Shortening"
     ],
     icons: [
-        <AngularIconBlock />,
-        <JavaScriptIconBlock />,
-        <NodeIconBlock />,
-        <SqlIconBlock />,
+        <IconImage src={LanguageIcon.AngularIcon } />,
+        <IconImage src={LanguageIcon.JavaScriptIcon } />,
+        <IconImage src={LanguageIcon.NodeIcon } />,
+        <IconImage src={LanguageIcon.SqlIcon } />
     ]
 },
 
@@ -69,13 +68,12 @@ const projects = [
       title: "Graphic Designer's Portfolio",
       summary: "A completed website to show a Graphic Designer's portfolio.",
       tags: [
-          "Website", 
-          "Front End"
+          "Website"
       ],
       icons: [
-          <PhpIconBlock />,
-          <HtmlIconBlock />,
-          <CssIconBlock />,
+          <IconImage src={LanguageIcon.PhpIcon } />,
+          <IconImage src={LanguageIcon.HtmlIcon } />,
+          <IconImage src={LanguageIcon.CssIcon } />
       ]
   },
 
@@ -84,13 +82,12 @@ const projects = [
       title: "University Helpdesk",
       summary: "A PHP-based helpdesk prototype.",
       tags: [
-          "Authentication", 
-          "Full Stack"
+          "Authentication"
       ],
       icons: [
-          <PhpIconBlock />,
-          <HtmlIconBlock />,
-          <CssIconBlock />,
+          <IconImage src={LanguageIcon.PhpIcon } />,
+          <IconImage src={LanguageIcon.HtmlIcon } />,
+          <IconImage src={LanguageIcon.CssIcon } />
       ]
   },
 
@@ -99,14 +96,12 @@ const projects = [
       title: "Instant Chat",
       summary: "A Node & React real-time chat application.",
       tags: [
-          "Front End", 
-          "Full Stack",
           "Web Sockets"
       ],
       icons: [
-          <TypeScriptIconBlock />,
-          <ReactIconBlock />,
-          <NodeIconBlock />,
+          <IconImage src={LanguageIcon.TypeScriptIcon } />,
+          <IconImage src={LanguageIcon.ReactIcon } />,
+          <IconImage src={LanguageIcon.NodeIcon } />
       ]
   },
 
@@ -115,12 +110,10 @@ const projects = [
       title: "Canyon",
       summary: "A VanillaJS front-end framework that allows you to define components and dynamically render them when certain actions take place. Combines a state container with the observer pattern.",
       tags: [
-          "Vanilla JavaScript", 
-          "Front End",
           "Framework"
       ],
       icons: [
-          <JavaScriptIconBlock />,
+          <IconImage src={LanguageIcon.JavaScriptIcon } />
       ]
   },
 

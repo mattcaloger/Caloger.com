@@ -18,10 +18,6 @@ const FlatCardContainer = styled.div`
 
     border-radius:${BORDER_RADIUS};
     
-
-    margin-top: 25px;
-    margin-bottom: 25px;
-    
 `
 
 const FlatCardBase = styled.div`
@@ -34,12 +30,12 @@ const FlatCardBase = styled.div`
     padding-top: 5px;
     padding-bottom: 5px;
     user-select: none;
-    width: 100%;
+
 
     &>* {
         flex: 1;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     @media only screen and (max-width: 992px) {
@@ -51,8 +47,8 @@ const FlatCardBase = styled.div`
 
         &>* {
 
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
         
     }
@@ -70,7 +66,7 @@ const FlatFooterBase = styled(FlatCardBase)`
 
 const FlatLightHeader = styled(FlatHeaderBase)`
     color: black;
-    background: ${LIGHT_COLOUR};
+
 `
 
 const FlatDarkHeader = styled(FlatHeaderBase)`
@@ -80,7 +76,7 @@ const FlatDarkHeader = styled(FlatHeaderBase)`
 
 const FlatLightBody = styled(FlatCardBase)`
     color: black;
-    background: ${LIGHT_COLOUR};
+
 `
 
 const FlatDarkBody = styled(FlatCardBase)`
@@ -90,7 +86,7 @@ const FlatDarkBody = styled(FlatCardBase)`
 
 const FlatLightFooter = styled(FlatFooterBase)`
     color: black;
-    background: ${LIGHT_COLOUR};
+
 `
 
 const FlatDarkFooter = styled(FlatFooterBase)`

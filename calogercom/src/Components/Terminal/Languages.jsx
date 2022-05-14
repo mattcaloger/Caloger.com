@@ -1,9 +1,11 @@
 import styled from "styled-components"
 
 
-const LangSpan = styled.div`color: black; font-size: 18px;`
+const LangSpan = styled.div`
+color: black; 
+font-size: 1em; user-select: none; cursor: default;`
 
-const LangTag = styled(LangSpan)`padding: 5px; border-radius: 5px;`
+const LangTag = styled(LangSpan)`padding: 5px; border-radius: 5px; user-select: none; cursor: default;`
 
 const ColorJs = styled(LangSpan)`color: black;`
 
@@ -67,6 +69,11 @@ const ColorAngular = styled(LangSpan)`color: #C3002F;`
 const ColorAngularTag = styled(LangTag)`background: #C3002F; color: white;`
 
 const ColorFigma = styled(LangSpan)`color: black;`
-const COlorFigmaTag = styled(LangTag)`background: black; color: white;`
+const ColorFigmaTag = styled(LangTag)`background: black; color: white;`
+const ColorDocker = styled(LangSpan)`color: #2497ED;`
+const ColorDockerTag = styled(LangTag)`background: #2497ED; color: white;`
 
-export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag, ColorAspDotNetCore as ColorDotnet, ColorAspDotNetTag as ColorDotnetTag, ColorGit, ColorGitTag, ColorIntellij, ColorIntelliJTag, ColorVisualStudio, ColorVisualStudioTag, ColorVisualStudioCode, ColorVisualStudioCodeTag, ColorAngular, ColorAngularTag, ColorFigma }
+const ColorApache = styled(LangSpan)`color: #B6204B;`
+const ColorApacheTag = styled(LangTag)`background: #B6204B; color: white;`
+
+export { ColorJs, ColorJsTag, ColorHtml, ColorHtmlTag, ColorCss, ColorCssTag,ColorPhp, ColorCSharp, ColorJava, ColorSpring, ColorNode, ColorPhotoshop, ColorIllustrator, ColorTypescript, ColorReactJs, ColorSql, ColorPhpTag, ColorCSharpTag, ColorJavaTag, ColorSpringTag, ColorNodeTag, ColorPhotoshopTag, ColorIllustratorTag, ColorTypescriptTag, ColorReactJsTag, ColorSqlTag, ColorAspDotNetCore as ColorDotnet, ColorAspDotNetTag as ColorDotnetTag, ColorGit, ColorGitTag, ColorIntellij, ColorIntelliJTag, ColorVisualStudio, ColorVisualStudioTag, ColorVisualStudioCode, ColorVisualStudioCodeTag, ColorAngular, ColorAngularTag, ColorFigma, ColorFigmaTag, ColorDocker, ColorDockerTag, ColorApache, ColorApacheTag }

@@ -10,10 +10,11 @@ import CaptionedImage from '../../../Layout/CaptionedImage'
 import ViewCodeButton from '../../../Layout/ViewCodeButton'
 import PageSubtitle from '../../../Layout/PageSubtitle'
 import VisibleLink from '../../../Layout/VisibleLink'
+import Content from '../../../Layout/Content'
 
 export default function BudgieProject() {
     return (
-        <div>
+        <Content>
             <PageTitle>Budgie</PageTitle>
             <SplitContainer>
 
@@ -41,6 +42,6 @@ export default function BudgieProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/Budgie" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </Content>
     )
 }

@@ -7,8 +7,12 @@ const ContentBox = styled.div`
     width: 90%;
     margin: auto;
 
-    @media only screen and (min-width: 992px) {
-        width: 50%;
+    @media only screen and (min-width: 1081px) {
+        width: 66%;
+    }
+
+    @media only screen and (max-width: 1080px) {
+        width: 90%;
     }
 `
 

@@ -16,10 +16,11 @@ import SecuredSecretImg from '../../../../img/proj-img/stasher-img/4_secured_sec
 import NewSecuredImg from '../../../../img/proj-img/stasher-img/5_new_secured.png'
 import CorrectPasswordImg from '../../../../img/proj-img/stasher-img/6_correct_password.png'
 import IncorrectPasswordImg from '../../../../img/proj-img/stasher-img/7_incorrect_password.png'
+import Content from '../../../Layout/Content'
 
 export default function StasherProject() {
     return (
-        <div>
+        <Content>
             <PageTitle>Stasher</PageTitle>
             <SplitContainer>
 
@@ -49,6 +50,6 @@ export default function StasherProject() {
                     <ViewCodeButton url="https://github.com/MCaloger/Stasher" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </Content>
     )
 }
