@@ -87,8 +87,8 @@ const BlogLink = styled.div`
 const InnerNav = styled.div`
 
     background: white;
-    color: ${PRIMARY};
-    font-size: 20px;
+    // color: ${PRIMARY};
+    font-size: 16px;
     width: 66%;
 
     display: flex;
