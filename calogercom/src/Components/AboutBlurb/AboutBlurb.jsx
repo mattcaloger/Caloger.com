@@ -27,7 +27,6 @@ const BlurbCard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: black;
     width: 100%;
     margin: auto;
     user-select: none;
@@ -40,12 +39,10 @@ const BlurbCard = styled.div`
 const BlurbHeader = styled(BlurbCard)`
     border-top-left-radius: ${BORDER_RADIUS};
     border-top-right-radius: ${BORDER_RADIUS};
-    color: black;
     background: #ffffff;
 `
 
 const BlurbBody = styled(BlurbCard)`
-color: black;
     background: #ffffff;
 `
 

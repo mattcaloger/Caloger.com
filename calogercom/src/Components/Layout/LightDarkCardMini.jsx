@@ -18,7 +18,6 @@ const CardContainerMini = styled.div`
     width: 75%;
     margin: auto;
 
-    color: black;
     background: ${LIGHT_COLOUR};
 
     ${DROP_SHADOW}

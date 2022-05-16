@@ -6,25 +6,32 @@ const SpanRow = styled.div`
             font-weight: bold;
             flex-wrap: wrap;
 
-            &>:first-child {
-                margin-right: 5px;
+            &>* {
+                padding-left: 1em;
             }
 
-            &>:not(:first-child):not(:last-child) {
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-
-            &>:last-child {
-                margin-left: 5px;
-            }
-
-            &>:only-child {
-                margin-left: 0 ;
-            }
-
-            @media (max-width: 768px) {
+            @media only screen and (max-width: 1080px) {
                 flex-direction: column;
+                &>* {
+                    margin: 0px;
+
+                    &>:first-child {
+                        margin-right: 0px;
+                    }
+        
+                    &>:not(:first-child):not(:last-child) {
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
+        
+                    &>:last-child {
+                        margin-left: 0px;
+                    }
+        
+                    &>:only-child {
+                        margin-left: 0px;
+                    }
+                }
             }
 
         `

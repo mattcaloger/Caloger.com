@@ -9,7 +9,7 @@ const DROP_SHADOW = SHADOWS.medium;
 const DROP_SHADOW_HOVER = SHADOWS.large;
 
 const CardContainer = styled.div`
-border-top: 5px solid ${PRIMARY};
+
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -19,12 +19,15 @@ border-top: 5px solid ${PRIMARY};
 
     transition: all ease-in .1s;
     
-    ${DROP_SHADOW}
+    
+    
+        border: 1px solid #00000022;
+        border-top: 5px solid ${PRIMARY};
 
     border-radius:${BORDER_RADIUS};
     @media (min-width: 768px) {
          &:hover {
-            ${DROP_SHADOW_HOVER}
+            
          }
     }
 `
@@ -33,49 +36,58 @@ const CardBase = styled.div`
     display: flex;
     flex-direction: column;
 
-    padding-left: 20px;
-    padding-right: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
+    &:first-child {
+        padding-top: 1em;
+
+    }
+
+    &:last-child {
+        padding-top: 1em;
+    }
+
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+
     user-select: none;
     width: 100%;
 
     &>* {
         flex: 1;
-
-
     }
 
-    @media only screen and (max-width: 992px) {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+    @media only screen and (max-width: 1080px) {
+        padding: 1em;
         text-align: center;
 
-        &>* {
-
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
         
     }
 `
 
 const HeaderBase = styled(CardBase)`
-margin-top: 1em;
+
     border-top-left-radius: ${BORDER_RADIUS};;
     border-top-right-radius: ${BORDER_RADIUS};;
 `
 
+const CardDivider = styled.hr`
+    width: 100%;
+    height: 1px;
+    
+    border: none;
+    background: #00000022;
+    margin: 0;
+
+`
+
 const FooterBase = styled(CardBase)`
-margin-bottom: 1em;
+
     border-bottom-left-radius: ${BORDER_RADIUS};;
     border-bottom-right-radius: ${BORDER_RADIUS};;
 `
 
 const LightHeader = styled(HeaderBase)`
-    color: black;
+
     background: ${LIGHT_COLOUR};
 `
 
@@ -84,9 +96,13 @@ const DarkHeader = styled(HeaderBase)`
     background: ${DARK_COLOUR};
 `
 
-const LightBody = styled(CardBase)`
+const LightBodyExpandable = styled(CardBase)`
     flex: 1;
-    color: black;
+
+    background: ${LIGHT_COLOUR};
+`
+
+const LightBody = styled(CardBase)`
     background: ${LIGHT_COLOUR};
 `
 
@@ -96,7 +112,7 @@ const DarkBody = styled(CardBase)`
 `
 
 const LightFooter = styled(FooterBase)`
-    color: black;
+
     background: ${LIGHT_COLOUR}
 `
 
@@ -105,4 +121,4 @@ const DarkFooter = styled(FooterBase)`
     background: ${DARK_COLOUR};
 `
 
-export { CardContainer, LightHeader, LightBody, LightFooter, DarkHeader, DarkBody, DarkFooter, LIGHT_COLOUR, DARK_COLOUR, DROP_SHADOW, DROP_SHADOW_HOVER }
+export { CardContainer, LightHeader, LightBody, LightFooter, DarkHeader, DarkBody, DarkFooter, LIGHT_COLOUR, DARK_COLOUR, DROP_SHADOW, DROP_SHADOW_HOVER, CardDivider, LightBodyExpandable }

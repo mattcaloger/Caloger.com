@@ -51,6 +51,9 @@ const NavItem = styled.div`
 const NavItemRight = styled(NavItem)`
 display: flex;
 justify-content: flex-end;
+// font-family: monospace;
+//color: #26A69A;
+//color: #00695C;
 &>* {
     
 }
@@ -130,7 +133,7 @@ const InnerNav = styled.div`
 
 const StyledNavLink = styled(NavLink)`
     &.active {
-        color: black;
+        
     }
 `
 
@@ -152,7 +155,7 @@ export default function NavBar() {
                 </NameLink>
                 <BlogLink>
                     <NavItemRight>
-                    {location.pathname == "/" ?
+                        {location.pathname === "/" ?
                     <>
                     <StyledNavLink to={{hash: "#about"}}>
                             <NavItem>About</NavItem>

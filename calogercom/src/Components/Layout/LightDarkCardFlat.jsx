@@ -15,8 +15,9 @@ const FlatCardContainer = styled.div`
     align-items: center;
 
     transition: all ease-in .1s;
+    color: white;
 
-    border-radius:${BORDER_RADIUS};
+    
     
 `
 
@@ -65,7 +66,7 @@ const FlatFooterBase = styled(FlatCardBase)`
 `
 
 const FlatLightHeader = styled(FlatHeaderBase)`
-    color: black;
+   
 
 `
 
@@ -75,7 +76,7 @@ const FlatDarkHeader = styled(FlatHeaderBase)`
 `
 
 const FlatLightBody = styled(FlatCardBase)`
-    color: black;
+    
 
 `
 
@@ -85,7 +86,7 @@ const FlatDarkBody = styled(FlatCardBase)`
 `
 
 const FlatLightFooter = styled(FlatFooterBase)`
-    color: black;
+    
 
 `
 

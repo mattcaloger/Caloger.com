@@ -1,11 +1,17 @@
 
 import styled from 'styled-components'
 
-const SpanRow = styled.div`
+const EvenSpanRow = styled.div`
             display: flex;
             font-weight: bold;
             flex-wrap: wrap;
             justify-content: space-evenly;
+
+            &>* {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             &>:first-child {
                 margin-right: 5px;
@@ -25,4 +31,4 @@ const SpanRow = styled.div`
             }
         `
 
-export default SpanRow
+export default EvenSpanRow

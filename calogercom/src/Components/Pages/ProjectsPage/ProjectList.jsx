@@ -17,7 +17,10 @@ const projects = [
             <IconImage src={LanguageIcon.ReactIcon} />,
             <IconImage src={LanguageIcon.JavaIcon} />,
             <IconImage src={LanguageIcon.SpringIcon} />
-        ]
+        ],
+        github: "https://github.com/MCaloger/Stasher",
+        demo: 'a',
+        video: 'a'
     },
   {
       url: "Budgie",
@@ -31,24 +34,11 @@ const projects = [
           <IconImage src={LanguageIcon.ReactIcon} />,
           <IconImage src={LanguageIcon.JavaIcon} />,
           <IconImage src={LanguageIcon.SpringIcon} />
-      ]
+      ],
+      github: "https://github.com/MCaloger/Budgie",
+      demo: 'a'
   },
-
   {
-    url: "BookDB",
-    title: "BookDB",
-    summary: "Categorize books with uploadable covers.",
-    tags: [
-        "File Management"
-    ],
-    icons: [
-        <IconImage src={LanguageIcon.CSharpIcon } />,
-        <IconImage src={LanguageIcon.DotnetIcon } />,
-        <IconImage src={LanguageIcon.AngularIcon } />
-    ]
-},
-
-{
     url: "shortcake",
     title: "Shortcake",
     summary: "Shortcake is a simple API for shortening and sharing URLs.",
@@ -60,8 +50,26 @@ const projects = [
         <IconImage src={LanguageIcon.JavaScriptIcon } />,
         <IconImage src={LanguageIcon.NodeIcon } />,
         <IconImage src={LanguageIcon.SqlIcon } />
-    ]
+    ],
+    github: "https://github.com/MCaloger/Shortcake",
+    demo: 'a'
 },
+  {
+    url: "BookDB",
+    title: "BookDB",
+    summary: "Categorize books with uploadable covers.",
+    tags: [
+        "File Management"
+    ],
+    icons: [
+        <IconImage src={LanguageIcon.CSharpIcon } />,
+        <IconImage src={LanguageIcon.DotnetIcon } />,
+        <IconImage src={LanguageIcon.AngularIcon } />
+    ],
+    github: "https://github.com/MCaloger/BookDB"
+},
+
+
 
   {
       url: "emilysite",
@@ -74,7 +82,8 @@ const projects = [
           <IconImage src={LanguageIcon.PhpIcon } />,
           <IconImage src={LanguageIcon.HtmlIcon } />,
           <IconImage src={LanguageIcon.CssIcon } />
-      ]
+      ],
+      github: "https://github.com/MCaloger/EmilyDesignPortfolio"
   },
 
   {
@@ -88,7 +97,8 @@ const projects = [
           <IconImage src={LanguageIcon.PhpIcon } />,
           <IconImage src={LanguageIcon.HtmlIcon } />,
           <IconImage src={LanguageIcon.CssIcon } />
-      ]
+      ],
+      github: "https://github.com/MCaloger/University-Helpdesk"
   },
 
   {
@@ -102,7 +112,8 @@ const projects = [
           <IconImage src={LanguageIcon.TypeScriptIcon } />,
           <IconImage src={LanguageIcon.ReactIcon } />,
           <IconImage src={LanguageIcon.NodeIcon } />
-      ]
+      ],
+      github: "https://github.com/MCaloger/Instant-Chat"
   },
 
   {
@@ -114,7 +125,8 @@ const projects = [
       ],
       icons: [
           <IconImage src={LanguageIcon.JavaScriptIcon } />
-      ]
+      ],
+      github: "https://github.com/MCaloger/CanyonJS"
   },
 
 ]

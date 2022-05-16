@@ -11,11 +11,12 @@ import VisibleLink from '../../../Layout/VisibleLink'
 import AddBookPage from '../../../../img/proj-img/BookDB/AddPage.png'
 import HomeBookPage from '../../../../img/proj-img/BookDB/HomePage.png'
 import EditBookPage from '../../../../img/proj-img/BookDB/EditPage.png'
+import Content from '../../../Layout/Content'
 
 
 export default function BookDBProject() {
     return (
-        <div>
+        <Content>
             <PageTitle>BookDB</PageTitle>
             <SplitContainer>
 
@@ -33,6 +34,6 @@ export default function BookDBProject() {
                      <ViewCodeButton url="https://github.com/MCaloger/Budgie" />
                 </SplitContainerPanel>
             </SplitContainer>
-        </div>
+        </Content>
     )
 }

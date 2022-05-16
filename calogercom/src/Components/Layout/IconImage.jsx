@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const IconImage = styled.img`
 
-    width: 25px;
-    height: 25px;
+    width: 36px;
+    height: 36px;
     display:flex;
-    margin: 5px;
+
 
 `
 

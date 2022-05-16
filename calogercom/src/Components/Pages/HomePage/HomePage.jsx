@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import AboutBlurb from '../../AboutBlurb/AboutBlurb'
 import ProfilePicture from '../../ProfilePicture/ProfilePicture'
 import Terminal from '../../Terminal/Terminal'
@@ -27,6 +28,7 @@ import Content from '../../Layout/Content'
 import ToggleIcon from '../../Layout/ToggleIcon'
 import ResponsiveIconImage from '../../Layout/Redesign/ResponsiveIconImage'
 import * as LanguageData from '../../Layout/Redesign/LanguageData'
+import ScrollToTopOnMount from '../../AppRouter/ScrollToTopOnMount'
 
 
 const HomePageContainer = styled.div`
@@ -56,6 +58,7 @@ export default function HomePage() {
 
     return (
         <HomePageContainer>
+            {/* <ScrollToTopOnMount /> */}
             <PageSection>
                 <Content>
                     <PageTitle id="#about">About</PageTitle>
@@ -83,7 +86,7 @@ export default function HomePage() {
             <PageSection>
                 <Content>
                     <PageTitle id="#projects">Projects</PageTitle>
-                    <PageSubtitle>Select a project to view details</PageSubtitle>
+
                     <PageContainer> 
                         <ProjectList />
                     </PageContainer>
@@ -95,7 +98,7 @@ export default function HomePage() {
             <PageSection>
                 <Content>
                     <PageTitle id="#blog">Blog</PageTitle>
-                    <PageSubtitle>Select a blog to view details</PageSubtitle>
+
                     <PageContainer>
                         <BlogList />
                     </PageContainer>

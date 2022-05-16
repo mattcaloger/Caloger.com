@@ -14,7 +14,7 @@ const SocialButtonContainer = styled.div`
 
     @media only screen and (max-width: 1080px) {
         display: flex;
-        position: fixed;
+        position: sticky;
         width: 100%;
         bottom: 0;
         right: 0;
@@ -28,6 +28,7 @@ const SocialButtonContainer = styled.div`
 
         padding-top: 25px;
         padding-bottom: 25px;
+        ${DROP_SHADOW}
     }
 
 `
@@ -46,18 +47,21 @@ const ImgContainer = styled.img`
 const SocialButton = styled.div`
     @media only screen and (min-width: 1080px) {
         background: white;
-        padding: 20px;
+        padding: 1em;
         ${DROP_SHADOW}
+
         &:hover {
-            ${DROP_SHADOW_HOVER}
-            cursor: pointer;
+            &>img {
+                opacity: 66%;
+            }
+            
         }
+        
 
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
         margin-top: 1em;
         margin-bottom: 1em;
     }
@@ -65,6 +69,7 @@ const SocialButton = styled.div`
     display: flex;
     justify-content: center;
         align-items: center;
+
 `
 
 export default function SocialButtons() {
