@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-1.76329,-7.46798)">
+        <g transform="matrix(1,0,0,1,-336.228,-249.021)">
+            <g transform="matrix(1,0,0,1,1.77329,-2.87702)">
+                <path d="M363.228,261.376L343.228,261.376C340.469,261.376 338.228,263.617 338.228,266.376L338.228,306.376C338.228,309.136 340.469,311.376 343.228,311.376L383.228,311.376C385.988,311.376 388.228,309.136 388.228,306.376L388.228,286.376" style="fill:none;stroke:rgb(38,166,154);stroke-width:4.02px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-336.228,-249.021)">
+            <g transform="matrix(1.00594,2.79205e-16,2.79196e-16,1.00591,337.694,246.133)">
+                <path d="M26.853,37.147L51.706,12.294" style="fill:none;stroke:rgb(38,166,154);stroke-width:3.98px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-336.228,-249.021)">
+            <g transform="matrix(0.502955,0,0,0.5,363.701,252.353)">
+                <path d="M51.707,12.294L26.853,12.294" style="fill:none;stroke:rgb(38,166,154);stroke-width:7.98px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-336.228,-249.021)">
+            <g transform="matrix(-5.39139e-16,-0.502987,0.502987,-5.39139e-16,383.818,284.507)">
+                <path d="M51.707,12.294L26.853,12.294" style="fill:none;stroke:rgb(38,166,154);stroke-width:7.95px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9,7 +9,7 @@ import EvenSpanRow from '../../Terminal/EvenSpanRow';
 import Title from '../../Layout/Title'
 
 import VideoIcon from '../../../img/icons/PlayVideo.svg'
-import ExternalLinkIcon from '../../../img/icons/exportarrow.svg'
+import ExternalLinkIcon from '../../../img/icons/exportarrow3.svg'
 import WriteupIcon from '../../../img/icons/writeup.svg'
 
 import GitHubIcon from '../../../img/github.svg'
@@ -98,18 +98,18 @@ export default function ProjectCard(props) {
                 <LightFooter>
                     <IconRow>
                         {props.demo ? 
-                            <a href={props.demo}>
+                            <a target="_blank" rel="noreferrer" href={props.demo}>
                                 
                                     <ActionIcon src={ExternalLinkIcon}></ActionIcon>
                                 
                             
                             </a> : ''}
                         
-                        {props.github ? <a href={props.github}><ActionIcon src={GitHubIcon}></ActionIcon></a> : ''}
+                        {props.github ? <a target="_blank" rel="noreferrer" href={props.github}><ActionIcon src={GitHubIcon}></ActionIcon></a> : ''}
 
-                        {props.video ? <a href={props.video}><ActionIcon src={VideoIcon}></ActionIcon></a> : ''}
+                        {props.video ? <a target="_blank" rel="noreferrer" href={props.video}><ActionIcon src={VideoIcon}></ActionIcon></a> : ''}
 
-                        {props.writeup ? <a href={props.writeup}> <ActionIcon src={WriteupIcon}></ActionIcon></a> : ''}
+                        {props.writeup ? <a target="_blank" rel="noreferrer" href={props.writeup}> <ActionIcon src={WriteupIcon}></ActionIcon></a> : ''}
         
                         
                     </IconRow>

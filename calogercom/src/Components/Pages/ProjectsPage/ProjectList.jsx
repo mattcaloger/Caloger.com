@@ -19,8 +19,7 @@ const projects = [
             <IconImage src={LanguageIcon.SpringIcon} />
         ],
         github: "https://github.com/MCaloger/Stasher",
-        demo: 'a',
-        video: 'a'
+        demo: 'https://stasher.caloger.com/'
     },
   {
       url: "Budgie",
