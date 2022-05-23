@@ -1,21 +1,18 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const IconRowContainer = styled.div`
   display: flex;
   flex-direction: row;
 
-  
-
-  &>*:not(:first-child) {
-    
-    margin-left: 50px;
+  & > *:not(:first-child) {
+    margin-left: 1em;
   }
 
   @media only screen and (max-width: 1080px) {
     align-content: center;
-      justify-content: center;
-    &>* {
+    justify-content: center;
+    & > * {
       display: flex;
       margin: 0px;
       flex: 1;
@@ -23,15 +20,12 @@ const IconRowContainer = styled.div`
       justify-content: center;
     }
 
-    &>*:not(:first-child) {
-    
+    & > *:not(:first-child) {
       margin-left: 0px;
     }
   }
-`
+`;
 
 export default function IconRow(props) {
-  return (
-    <IconRowContainer>{ props.children }</IconRowContainer>
-  )
+  return <IconRowContainer>{props.children}</IconRowContainer>;
 }
