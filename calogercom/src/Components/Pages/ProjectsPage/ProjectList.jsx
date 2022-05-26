@@ -15,7 +15,7 @@ const projects = [
       <IconImage src={LanguageIcon.TypeScriptIcon} />,
       <IconImage src={LanguageIcon.ReactIcon} />,
     ],
-    github: "https://github.com/MCaloger/Stasher",
+    github: "https://github.com/mattcaloger/Stasher",
     demo: "https://stasher.caloger.com/",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
       <IconImage src={LanguageIcon.JavaScriptIcon} />,
       <IconImage src={LanguageIcon.ReactIcon} />,
     ],
-    github: "https://github.com/MCaloger/Budgie",
+    github: "https://github.com/mattcaloger/Budgie",
     demo: "https://budgie.caloger.com/",
     video: "",
   },
@@ -44,7 +44,7 @@ const projects = [
       <IconImage src={LanguageIcon.NodeIcon} />,
       <IconImage src={LanguageIcon.AngularIcon} />,
     ],
-    github: "https://github.com/MCaloger/Shortcake",
+    github: "https://github.com/mattcaloger/Shortcake",
     demo: "",
   },
   {
@@ -57,7 +57,7 @@ const projects = [
       <IconImage src={LanguageIcon.DotnetIcon} />,
       <IconImage src={LanguageIcon.AngularIcon} />,
     ],
-    github: "https://github.com/MCaloger/BookDB",
+    github: "https://github.com/mattcaloger/BookDB",
   },
 
   {
@@ -70,7 +70,7 @@ const projects = [
       <IconImage src={LanguageIcon.HtmlIcon} />,
       <IconImage src={LanguageIcon.CssIcon} />,
     ],
-    github: "https://github.com/MCaloger/EmilyDesignPortfolio",
+    github: "https://github.com/mattcaloger/EmilyDesignPortfolio",
   },
 
   {
@@ -83,7 +83,7 @@ const projects = [
       <IconImage src={LanguageIcon.HtmlIcon} />,
       <IconImage src={LanguageIcon.CssIcon} />,
     ],
-    github: "https://github.com/MCaloger/University-Helpdesk",
+    github: "https://github.com/mattcaloger/University-Helpdesk",
   },
 
   {
@@ -96,7 +96,7 @@ const projects = [
       <IconImage src={LanguageIcon.NodeIcon} />,
       <IconImage src={LanguageIcon.ReactIcon} />,
     ],
-    github: "https://github.com/MCaloger/Instant-Chat",
+    github: "https://github.com/mattcaloger/Instant-Chat",
   },
 
   {
@@ -106,7 +106,7 @@ const projects = [
       "A VanillaJS front-end framework that allows you to define components and dynamically render them when certain actions take place. Combines a state container with the observer pattern.",
     tags: ["Framework"],
     icons: [<IconImage src={LanguageIcon.JavaScriptIcon} />],
-    github: "https://github.com/MCaloger/CanyonJS",
+    github: "https://github.com/mattcaloger/CanyonJS",
   },
 ];
 

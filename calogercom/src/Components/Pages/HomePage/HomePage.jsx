@@ -1,109 +1,88 @@
-import React, { useRef, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
-import AboutBlurb from '../../AboutBlurb/AboutBlurb'
-import ProfilePicture from '../../ProfilePicture/ProfilePicture'
-import Terminal from '../../Terminal/Terminal'
-import styled from 'styled-components'
-import PageTitle from '../../Layout/PageTitle'
+import React from "react";
+import AboutBlurb from "../../AboutBlurb/AboutBlurb";
 
-import { HashRouter } from 'react-router-dom'
+import styled from "styled-components";
+import PageTitle from "../../Layout/PageTitle";
 
-import * as LanguageIcons from '../../Terminal/LanguageIcons'
-import * as LanguageColors from '../../Terminal/Languages'
-import IconImage from '../../Layout/IconImage'
+import { IconGrid } from "../../Layout/IconGrid";
 
-import { IconGrid } from '../../Layout/IconGrid'
+import PageContainer from "../../Layout/PageContainer";
 
-import { Link } from 'react-router-dom'
-import Title from '../../Layout/Title'
+import ProjectList from "../ProjectsPage/ProjectList";
 
-import PageSubtitle from '../../Layout/PageSubtitle'
-
-import PageContainer from '../../Layout/PageContainer'
-
-import ProjectList from '../ProjectsPage/ProjectList'
-
-import BlogList from '../../Blog/BlogList'
-import Content from '../../Layout/Content'
-import ToggleIcon from '../../Layout/ToggleIcon'
-import ResponsiveIconImage from '../../Layout/Redesign/ResponsiveIconImage'
-import * as LanguageData from '../../Layout/Redesign/LanguageData'
-import ScrollToTopOnMount from '../../AppRouter/ScrollToTopOnMount'
-
+import BlogList from "../../Blog/BlogList";
+import Content from "../../Layout/Content";
+import ToggleIcon from "../../Layout/ToggleIcon";
+import * as LanguageData from "../../Layout/Redesign/LanguageData";
 
 const HomePageContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    
-`
-
-const CenteredPragraph = styled.p`
-text-align: center;`
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+`;
 
 const PageSection = styled.section`
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 
-    &:nth-child(even) {
-        background: #F3F3F3;
-     };
-`
+  &:nth-child(even) {
+    background: #f3f3f3;
+  }
+`;
 
 export default function HomePage() {
+  const LanguageList = () =>
+    LanguageData.LanguageList.map((_language, index) => {
+      return (
+        <ToggleIcon
+          key={index}
+          default={LanguageData.LanguageList[index].IconComponentResponsive}
+          hover={LanguageData.LanguageList[index].Text}
+        ></ToggleIcon>
+      );
+    });
 
-    const LanguageList = () => LanguageData.LanguageList.map((language, index) => {
-        return <ToggleIcon key={index} default={LanguageData.LanguageList[index].IconComponentResponsive} hover={LanguageData.LanguageList[index].Text}></ToggleIcon>
-    })
+  return (
+    <HomePageContainer id="#about">
+      {/* <ScrollToTopOnMount /> */}
+      <PageSection>
+        <Content>
+          <PageTitle>About</PageTitle>
+          <AboutBlurb />
+        </Content>
+      </PageSection>
 
-    return (
-        <HomePageContainer>
-            {/* <ScrollToTopOnMount /> */}
-            <PageSection>
-                <Content>
-                    <PageTitle id="#about">About</PageTitle>
-                    <AboutBlurb />
-                </Content>    
-            </PageSection>
-            
-            <PageSection>
-                <Content>
+      <PageSection>
+        <Content>
+          <PageTitle id="#skills">Skills</PageTitle>
 
-                     <PageTitle id="#skills">Skills</PageTitle>
+          <IconGrid>{LanguageList()}</IconGrid>
+        </Content>
+      </PageSection>
 
-                    <IconGrid>
-                        
-                        {LanguageList()}
+      {/* Projects */}
 
-                    </IconGrid>
+      <PageSection>
+        <Content>
+          <PageTitle id="#projects">Projects</PageTitle>
 
-   
-                </Content>
-            </PageSection>
+          <PageContainer>
+            <ProjectList />
+          </PageContainer>
+        </Content>
+      </PageSection>
 
-            {/* Projects */}
+      {/* Blog */}
 
-            <PageSection>
-                <Content>
-                    <PageTitle id="#projects">Projects</PageTitle>
+      <PageSection>
+        <Content>
+          <PageTitle id="#blog">Blog</PageTitle>
 
-                    <PageContainer> 
-                        <ProjectList />
-                    </PageContainer>
-                </Content>
-            </PageSection>
-
-            {/* Blog */}
-
-            <PageSection>
-                <Content>
-                    <PageTitle id="#blog">Blog</PageTitle>
-
-                    <PageContainer>
-                        <BlogList />
-                    </PageContainer>
-                </Content>
-            </PageSection>
-        </HomePageContainer>
-    )
+          <PageContainer>
+            <BlogList />
+          </PageContainer>
+        </Content>
+      </PageSection>
+    </HomePageContainer>
+  );
 }

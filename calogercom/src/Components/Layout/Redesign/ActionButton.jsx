@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { PRIMARY } from "../Colors";
-import { DROP_SHADOW_HOVER, DROP_SHADOW } from "../LightDarkCard";
-import { SHADOWS } from "../Shadows";
 
 const ActionButtonContainer = styled.div`
   display: flex;

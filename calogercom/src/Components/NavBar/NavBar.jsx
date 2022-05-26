@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Link, Router, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { DROP_SHADOW } from "../Layout/LightDarkCard";
 import { PRIMARY } from "../Layout/Colors";
-import { SHADOWS } from "../Layout/Shadows";
-import Footer from "../Footer/Footer";
 import ProfilePicture from "../ProfilePicture/ProfilePicture";
+
+import DownloadIcon from "../../img/icons/download.svg";
+import ActionButton from "../Layout/Redesign/ActionButton";
 
 const HeaderNav = styled.nav`
   border-top: 5px solid ${PRIMARY};
@@ -16,54 +17,39 @@ const HeaderNav = styled.nav`
   ${DROP_SHADOW}
 `;
 
-const NavGroup = styled.div``;
-
 const NavItem = styled.div`
+  color: black;
   display: flex;
   flex: 1;
   align-self: center;
   user-select: none;
   flex-direction: row;
 
-  & > :hover {
+  &:hover {
     cursor: pointer;
-    color: grey;
+    color: ${PRIMARY};
   }
 
-  &:active {
-    color: rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-  }
-
-  & > * {
-    margin-right: 15px;
-    margin-left: 15px;
+  & > *:not(:first-child) {
+    margin-left: 1em;
   }
 `;
 
 const NavItemRight = styled(NavItem)`
   display: flex;
   justify-content: flex-end;
-  // font-family: monospace;
-  //color: #26A69A;
-  //color: #00695C;
-  & > * {
+  align-items: center;
+  & > *:not(:last-child) {
+    margin-right: 1em;
   }
 `;
 const HighlightedLink = styled.div`
   align-self: center;
   text-align: center;
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 24px;
   }
   font-size: 24px;
-`;
-
-const ProjectLink = styled.div`
-  justify-content: center;
-  @media (max-width: 768px) {
-    order: 2;
-  }
 `;
 
 const NameLink = styled.div`
@@ -134,7 +120,7 @@ export default function NavBar() {
           <StyledNavLink to="/">
             <NavItem>
               <ProfilePicture />
-              <HighlightedLink>Matthew Caloger</HighlightedLink>
+              <HighlightedLink>Matt Caloger</HighlightedLink>
             </NavItem>
           </StyledNavLink>
         </NameLink>
@@ -142,9 +128,6 @@ export default function NavBar() {
           <NavItemRight>
             {location.pathname === "/" ? (
               <>
-                <StyledNavLink to={{ hash: "#about" }}>
-                  <NavItem>About</NavItem>
-                </StyledNavLink>
                 <StyledNavLink to={{ hash: "#skills" }}>
                   <NavItem>Skills</NavItem>
                 </StyledNavLink>
@@ -154,6 +137,9 @@ export default function NavBar() {
                 <StyledNavLink to={{ hash: "#blog" }}>
                   <NavItem>Blog</NavItem>
                 </StyledNavLink>
+                <a href="Matt Caloger Resume.pdf" download>
+                  <ActionButton icon={DownloadIcon} text="Resume" />
+                </a>
               </>
             ) : (
               <StyledNavLink to="/">

@@ -43,14 +43,14 @@ body {
 } */
 
 a:link {
-  color: inherit;
+  
   text-decoration: none;
   cursor: pointer;	
 }	
 
 
 a:visited	{
-  color: inherit;
+  all: unset;
   text-decoration: none;
   cursor: pointer;	
 }

@@ -74,7 +74,7 @@ export default function SocialButtons() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/matthew-caloger/"
+        href="https://www.linkedin.com/in/mattcaloger"
         target="_blank"
         rel="noreferrer"
       >
@@ -83,7 +83,7 @@ export default function SocialButtons() {
         </SocialButton>
       </a>
 
-      <a href="https://github.com/MCaloger" target="_blank" rel="noreferrer">
+      <a href="https://github.com/mattcaloger" target="_blank" rel="noreferrer">
         <SocialButton>
           <ImgContainer src={GitHubIcon} />
         </SocialButton>
